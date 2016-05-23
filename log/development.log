@@ -1,0 +1,1923 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:28:08 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'bundle.js' with type 'application/javascript'):
+    2: <html>
+    3: <head>
+    4:   <title>OrganGrinder</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+    6:   <%= javascript_include_tag 'application' %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/javascripts/application.js:16
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3916231273393001810_47113977357340'
+
+
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.4ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.7ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.8ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:28:08 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'bundle.js' with type 'application/javascript'):
+    2: <html>
+    3: <head>
+    4:   <title>OrganGrinder</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+    6:   <%= javascript_include_tag 'application' %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/javascripts/application.js:16
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3916231273393001810_47113977357340'
+
+
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.4ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (10.1ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (21.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:29:29 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'bundle.js' with type 'application/javascript'):
+    2: <html>
+    3: <head>
+    4:   <title>OrganGrinder</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+    6:   <%= javascript_include_tag 'application' %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/javascripts/application.js:16
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3916231273393001810_47113977357340'
+
+
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.2ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (9.5ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (21.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:33:22 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 745ms (Views: 744.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:33:22 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a97ef93ad8e8a761dc754b5f4c473ee38ada87bd53d17c6e1314160ff1bc420c.css?body=1" for 127.0.0.1 at 2016-05-23 01:33:22 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:33:22 -0700
+
+
+Started GET "/assets/bundle.self-7310dda8f28500e0db97ed5f6da7a5a92f3a0bcdbfae5e51779029862da603f9.js?body=1" for 127.0.0.1 at 2016-05-23 01:33:22 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:33:22 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:34:00 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:37:40 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 267ms (Views: 267.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-49d4ccc81a76f511342fb2e09f49540712aede341e8aa059c2609898791dbc4e.css?body=1" for 127.0.0.1 at 2016-05-23 01:37:41 -0700
+
+
+Started GET "/assets/bundle.self-9af36f4e948122ec3dd77506c30017fdc6103a27a5abd1162a466478b4b1c89e.js?body=1" for 127.0.0.1 at 2016-05-23 01:37:41 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:37:41 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:37:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:37:41 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:37:41 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:37:41 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:37:41 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:40:02 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:40:02 -0700
+
+
+Started GET "/assets/application.self-de00002ccaaabddbb04e69f56800b73f7a0225fb91b53fb0e66f6c35613ab643.css?body=1" for 127.0.0.1 at 2016-05-23 01:40:02 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:40:02 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:40:02 -0700
+
+
+Started GET "/assets/bundle.self-9af36f4e948122ec3dd77506c30017fdc6103a27a5abd1162a466478b4b1c89e.js?body=1" for 127.0.0.1 at 2016-05-23 01:40:02 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:40:02 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:40:02 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:40:02 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:41:21 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:41:21 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:41:21 -0700
+
+
+Started GET "/assets/application.self-2dc6568a9d356073eb40cd3cc091cceb8f6302a851a0672a36aef26c3faf22e4.css?body=1" for 127.0.0.1 at 2016-05-23 01:41:21 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:41:21 -0700
+
+
+Started GET "/assets/bundle.self-9af36f4e948122ec3dd77506c30017fdc6103a27a5abd1162a466478b4b1c89e.js?body=1" for 127.0.0.1 at 2016-05-23 01:41:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:41:21 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:41:21 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:41:21 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:42:16 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:42:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:42:16 -0700
+
+
+Started GET "/assets/bundle.self-9af36f4e948122ec3dd77506c30017fdc6103a27a5abd1162a466478b4b1c89e.js?body=1" for 127.0.0.1 at 2016-05-23 01:42:16 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:42:16 -0700
+
+
+Started GET "/assets/application.self-ecf272e54c7df52a39a07c71349506cc9d648cfecc29c317284ea9ebeaa7bda5.css?body=1" for 127.0.0.1 at 2016-05-23 01:42:16 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:42:16 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:42:16 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:42:16 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:44:03 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:44:03 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:44:03 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:44:03 -0700
+
+
+Started GET "/assets/application.self-3aad0fbf33b1de03e713810ca8ad167733b2e62c5b378a43feb11e2ef04619e1.css?body=1" for 127.0.0.1 at 2016-05-23 01:44:03 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:44:03 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:44:03 -0700
+
+
+Started GET "/assets/bundle.self-9af36f4e948122ec3dd77506c30017fdc6103a27a5abd1162a466478b4b1c89e.js?body=1" for 127.0.0.1 at 2016-05-23 01:44:03 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:44:03 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:45:38 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 256ms (Views: 255.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:45:38 -0700
+
+
+Started GET "/assets/application.self-3aad0fbf33b1de03e713810ca8ad167733b2e62c5b378a43feb11e2ef04619e1.css?body=1" for 127.0.0.1 at 2016-05-23 01:45:38 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:45:38 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:45:38 -0700
+
+
+Started GET "/assets/bundle.self-99782648fb1da5819b863262cb87a38f542ded053ae62435bd3901d9beb497d3.js?body=1" for 127.0.0.1 at 2016-05-23 01:45:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:45:38 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:45:38 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:45:38 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:48:02 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 291ms (Views: 290.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:48:02 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:48:02 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:48:02 -0700
+
+
+Started GET "/assets/application.self-3aad0fbf33b1de03e713810ca8ad167733b2e62c5b378a43feb11e2ef04619e1.css?body=1" for 127.0.0.1 at 2016-05-23 01:48:02 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:48:02 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:48:02 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:48:02 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:48:03 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:50:27 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:50:27 -0700
+
+
+Started GET "/assets/application.self-c3aedbbfcdbfb1b72c8432dfdcc4b83350be595961fded7814a26cfdacad13a9.css?body=1" for 127.0.0.1 at 2016-05-23 01:50:27 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:50:27 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:50:27 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:50:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:50:27 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:50:27 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:50:27 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:50:36 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5994b563b25adda146ad0925feb2224b42762501e7f9dc3d35d7a27d1b893edc.css?body=1" for 127.0.0.1 at 2016-05-23 01:50:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:50:36 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:50:36 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:50:36 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:50:36 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:50:36 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:50:36 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:50:37 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:51:16 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 25ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:51:16 -0700
+
+
+Started GET "/assets/application.self-5d99032f3a394fdc442ef8288cc28c693bcea511b54eddfd730c0b31c249941d.css?body=1" for 127.0.0.1 at 2016-05-23 01:51:16 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:51:16 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:51:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:51:16 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:51:16 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:51:16 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:51:16 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:51:41 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:51:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:51:41 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:51:41 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:51:41 -0700
+
+
+Started GET "/assets/application.self-a6b41028f60c7ef670ad09562afcbb408e2ba61d207454dbb145de3ca3b55de6.css?body=1" for 127.0.0.1 at 2016-05-23 01:51:41 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:51:41 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:51:41 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:51:41 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:52:01 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:52:01 -0700
+
+
+Started GET "/assets/application.self-8b4ea47454758d88227b96a6eea305278a229aa6b28296e012b5aaffd6959b20.css?body=1" for 127.0.0.1 at 2016-05-23 01:52:01 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:52:01 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:52:01 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:52:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:52:01 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:52:01 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:52:02 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:52:08 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:52:08 -0700
+
+
+Started GET "/assets/application.self-de1e0412dcea748d5322e68b087f8c3f68a85e4da7a73f3a68af3cf4b0639e7d.css?body=1" for 127.0.0.1 at 2016-05-23 01:52:08 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:52:08 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:52:08 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:52:08 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:52:08 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:52:08 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:52:09 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:52:15 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:52:16 -0700
+
+
+Started GET "/assets/application.self-c1ec47280700506900781edb10f3aa0a9e9ba7d60d47fe557e5b011e04bf210e.css?body=1" for 127.0.0.1 at 2016-05-23 01:52:16 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:52:16 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:52:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:52:16 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:52:16 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:52:16 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:52:16 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:53:01 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:53:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:53:01 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:53:01 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:53:01 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:53:01 -0700
+
+
+Started GET "/assets/application.self-a6567402763354b9b662c2a0b144272e2aceadda5685bd452e1bca0db1ba4bd5.css?body=1" for 127.0.0.1 at 2016-05-23 01:53:01 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:53:01 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:53:01 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:54:41 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7bfdcd36348e7631d6f87315805639684c7b0c296f5be56b17085280335154bc.css?body=1" for 127.0.0.1 at 2016-05-23 01:54:42 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:54:42 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:54:42 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:54:42 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:54:42 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:54:42 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:54:42 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:54:42 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:56:43 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:56:43 -0700
+
+
+Started GET "/assets/application.self-b49c7c095b4133ba376c68233113705df23bf8b88af98a0e6aba8087e795deb8.css?body=1" for 127.0.0.1 at 2016-05-23 01:56:43 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:56:43 -0700
+
+
+Started GET "/assets/application.self-b49c7c095b4133ba376c68233113705df23bf8b88af98a0e6aba8087e795deb8.css?body=1" for 127.0.0.1 at 2016-05-23 01:56:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:56:43 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:56:43 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:56:43 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:56:43 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:56:43 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:57:16 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a4eaa84c1f7b2961272f9370668334c934c2c523e7e8eec92f3856a626cc6a0c.css?body=1" for 127.0.0.1 at 2016-05-23 01:57:16 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:57:16 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:57:16 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:57:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:57:16 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:57:16 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:57:16 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:57:16 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:57:30 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6f5e0d7d8ef64b215d36f7812825ad20bdb3bc91193caa9c96018f06a102ea3a.css?body=1" for 127.0.0.1 at 2016-05-23 01:57:30 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:57:30 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:57:30 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:57:30 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:57:30 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:57:30 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:57:30 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:57:30 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:58:04 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b6d0d5ee8e6ee9f0ccdb9fd54260bf5d3a9c619e15c4229054357dcd1065897c.css?body=1" for 127.0.0.1 at 2016-05-23 01:58:04 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:58:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:58:04 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:58:04 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:58:04 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:58:04 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:58:04 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:58:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:58:40 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:58:40 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:58:40 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:58:40 -0700
+
+
+Started GET "/assets/application.self-70ce1473b18b0eef5e85ca2145f6d6aef56a1579d3bd4609c9d9dd926a989230.css?body=1" for 127.0.0.1 at 2016-05-23 01:58:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:58:40 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:58:40 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:58:40 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:58:40 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 01:59:39 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 19ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 01:59:39 -0700
+
+
+Started GET "/assets/application.self-92bd3f946ecd32ec64b6eaa74ab7eb808cd7a0558ecbb2fc51f7b1be2fcc9b4d.css?body=1" for 127.0.0.1 at 2016-05-23 01:59:39 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 01:59:39 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 01:59:39 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 01:59:39 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 01:59:39 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 01:59:39 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 01:59:39 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:00:09 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:00:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:00:09 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:00:09 -0700
+
+
+Started GET "/assets/bundle.self-aac5d618ad19c084e6d5a8b83862400202876337655861a31512fa1f71a289c8.js?body=1" for 127.0.0.1 at 2016-05-23 02:00:09 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:00:09 -0700
+
+
+Started GET "/assets/application.self-c6b26bdb548442fec4703dd3a6c2d483a22bda1e085a4568e78a203757157b04.css?body=1" for 127.0.0.1 at 2016-05-23 02:00:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:00:09 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:00:09 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:02:06 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 278ms (Views: 277.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c6b26bdb548442fec4703dd3a6c2d483a22bda1e085a4568e78a203757157b04.css?body=1" for 127.0.0.1 at 2016-05-23 02:02:06 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:02:06 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:02:06 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:02:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:02:06 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:02:06 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:02:06 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:02:06 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:03:28 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8aa8aa0fbf88c156ba89deaf7c3b1022fa100cb67aba9091f26f702d138150f4.css?body=1" for 127.0.0.1 at 2016-05-23 02:03:28 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:03:28 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:03:28 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:03:28 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:03:29 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:03:29 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:03:29 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:03:29 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:03:46 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:03:46 -0700
+
+
+Started GET "/assets/application.self-074610968ad6ca485f298e8fb1450e67d3e75bfbd008b5a336408c0b7a6609ca.css?body=1" for 127.0.0.1 at 2016-05-23 02:03:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:03:46 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:03:46 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:03:46 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:03:46 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:03:46 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:03:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:04:09 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:04:09 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:04:09 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:04:09 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:04:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:04:09 -0700
+
+
+Started GET "/assets/application.self-42bcf5a77ba94a2151747d6d3bcfb070ccee9b4a0a99f8b448cc72745899a5a4.css?body=1" for 127.0.0.1 at 2016-05-23 02:04:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:04:09 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:04:09 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:04:37 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:04:37 -0700
+
+
+Started GET "/assets/application.self-bf35db96485b3cd30d83145c12753d612a6dd9c2a2cf4e06046c750d89976fc7.css?body=1" for 127.0.0.1 at 2016-05-23 02:04:37 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:04:37 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:04:37 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:04:37 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:04:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:04:37 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:04:37 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:05:09 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1c906f235e75165fe67d9cb79251576ca3de3311fa31920e7f29030e4bd617b5.css?body=1" for 127.0.0.1 at 2016-05-23 02:05:09 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:05:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:09 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:09 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:09 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:09 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:05:09 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:05:10 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:10 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:10 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:05:10 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:10 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:10 -0700
+
+
+Started GET "/assets/application.self-1c906f235e75165fe67d9cb79251576ca3de3311fa31920e7f29030e4bd617b5.css?body=1" for 127.0.0.1 at 2016-05-23 02:05:10 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:10 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:05:11 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:05:26 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 9ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:05:26 -0700
+
+
+Started GET "/assets/application.self-59c06a2a97a3f59146d4a47a011b29d764a8367b816563aee8ecbcb3084df599.css?body=1" for 127.0.0.1 at 2016-05-23 02:05:26 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:26 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:26 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:26 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:26 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:05:27 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:05:49 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:05:49 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:49 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:49 -0700
+
+
+Started GET "/assets/application.self-48a9b8ccd8ada09cc92871572b45262b1c91ea643fa2493b91a22d0fd1080ff1.css?body=1" for 127.0.0.1 at 2016-05-23 02:05:49 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:49 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:05:49 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:05:49 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:06:34 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-72173f52c3962980ef9c71d0bc921e40205caac868eb48e188ecdc3cd65652f8.css?body=1" for 127.0.0.1 at 2016-05-23 02:06:34 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:06:35 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:06:35 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:06:35 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:06:35 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:06:35 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:06:35 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:06:35 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:06:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4de1f9773c13f9a04bb20f2594614e4e207e2c057c8907c27f8deea215e236c4.css?body=1" for 127.0.0.1 at 2016-05-23 02:06:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:06:51 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:06:51 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:06:51 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:06:51 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:06:51 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:06:51 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:06:51 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:07:38 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:07:38 -0700
+
+
+Started GET "/assets/application.self-7fc49f5d963446fa3a8faff7961ba8515dee6d008de99a5ebdfdad2e7fc293e4.css?body=1" for 127.0.0.1 at 2016-05-23 02:07:38 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:07:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:07:38 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:07:38 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:07:38 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:07:38 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:07:38 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:08:20 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-abff12e652c3271a8ec260220d486aa47eae1838893c05f4d31cab8a10373ccb.css?body=1" for 127.0.0.1 at 2016-05-23 02:08:20 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:08:20 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:20 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:20 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:20 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:20 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:08:20 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:08:33 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:08:33 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:33 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:33 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:33 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:33 -0700
+
+
+Started GET "/assets/application.self-e41fb06357b6d3b44c3bec0709b1e902ced1a2995c93365b4f80832b57f43a8d.css?body=1" for 127.0.0.1 at 2016-05-23 02:08:33 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:08:33 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:08:41 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 22ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:08:41 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:41 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:41 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:41 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:41 -0700
+
+
+Started GET "/assets/application.self-a839c376fa7535d920125cdd13a008d56112637a19a3feae597f82aa22de5bce.css?body=1" for 127.0.0.1 at 2016-05-23 02:08:41 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:08:41 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:08:53 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:08:53 -0700
+
+
+Started GET "/assets/application.self-121ba16b982ad0cb42f46435981f1652c00e452df487e5754acfb8b950c4149d.css?body=1" for 127.0.0.1 at 2016-05-23 02:08:53 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:53 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:53 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:53 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:08:53 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:08:53 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:09:52 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-07d7d2e7698f2ea4ced71a75ae362306291717165ddcf5748bebc9f9011e9724.css?body=1" for 127.0.0.1 at 2016-05-23 02:09:52 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:09:52 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:09:52 -0700
+
+
+Started GET "/assets/bundle.self-bdcf2a60defab9d6520b5ed771ed06ea97628b46dcc7415ced0b35a7555074d2.js?body=1" for 127.0.0.1 at 2016-05-23 02:09:52 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:09:52 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:09:52 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:09:52 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:09:52 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:10:14 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 238ms (Views: 237.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:10:14 -0700
+
+
+Started GET "/assets/application.self-07d7d2e7698f2ea4ced71a75ae362306291717165ddcf5748bebc9f9011e9724.css?body=1" for 127.0.0.1 at 2016-05-23 02:10:14 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:10:14 -0700
+
+
+Started GET "/assets/bundle.self-89b28e894c411dfedef3ba4049ef4c561168e8103c31373fb821d6624fd41151.js?body=1" for 127.0.0.1 at 2016-05-23 02:10:14 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:10:14 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:10:14 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:10:14 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:10:14 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:10:23 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 253ms (Views: 252.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:10:24 -0700
+
+
+Started GET "/assets/application.self-07d7d2e7698f2ea4ced71a75ae362306291717165ddcf5748bebc9f9011e9724.css?body=1" for 127.0.0.1 at 2016-05-23 02:10:24 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:10:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:10:24 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:10:24 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:10:24 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:10:24 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:10:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:11:13 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e594d79eb641a1ba66c1ac032749eca135b23b901a267b4e9dcf70ffbfb7b48a.css?body=1" for 127.0.0.1 at 2016-05-23 02:11:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:11:13 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:11:13 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:11:13 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:11:13 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:11:13 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:11:13 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:11:13 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:11:53 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f62757568d0d7f65e21e671fe3da1f0bcc57f57e57406c9ba03199490611dd5f.css?body=1" for 127.0.0.1 at 2016-05-23 02:11:53 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:11:53 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:11:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:11:53 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:11:53 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:11:53 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:11:53 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:11:53 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:12:29 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0e2e2ee0204a29d67f4d187013df7f905787fc7aa7ff84c91a0251ac076d9cfd.css?body=1" for 127.0.0.1 at 2016-05-23 02:12:29 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:12:29 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:12:29 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:12:29 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:12:29 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:12:29 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:12:29 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:12:29 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:13:46 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:13:46 -0700
+
+
+Started GET "/assets/application.self-44cc1d0959b7d7e1c420c4650f61d34b0093d1d00e89593a25d4623a72968abc.css?body=1" for 127.0.0.1 at 2016-05-23 02:13:46 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:13:46 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:13:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:13:46 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:13:46 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:13:46 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:13:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:14:11 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4b04d01354bdbe79fffdf4357b43ca0e982f93b40390d5bc3f5539a08faaf318.css?body=1" for 127.0.0.1 at 2016-05-23 02:14:11 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:14:12 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:14:12 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:14:12 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:14:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:14:12 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:14:12 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:14:12 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:14:39 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d7316d0ab657ab48da66693febc2382138dcf83a94b2a060c75a7f42c92c6bb9.css?body=1" for 127.0.0.1 at 2016-05-23 02:14:39 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:14:39 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:14:39 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:14:39 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:14:39 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:14:39 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:14:39 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:14:40 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:14:47 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ae43490bd8f09dd07ca09a7742c9d8e3e87f27b3001bf833793c8ff14900452c.css?body=1" for 127.0.0.1 at 2016-05-23 02:14:47 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:14:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:14:47 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:14:47 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:14:47 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:14:47 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:14:47 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:14:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:15:00 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-abbf7330a3ea96042dcacbcc7ccb5420edd38597c7a6e77ab51ec70377b52219.css?body=1" for 127.0.0.1 at 2016-05-23 02:15:00 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:15:00 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:15:00 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:15:00 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:15:00 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:15:00 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:15:00 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:15:00 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:15:11 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:15:11 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:15:11 -0700
+
+
+Started GET "/assets/application.self-a0527d8b2eea4734672274bb9bb351e1bdb8466a51432ffe1109857e79f4ce86.css?body=1" for 127.0.0.1 at 2016-05-23 02:15:11 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:15:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:15:11 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:15:11 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:15:11 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:15:11 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:16:09 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-61ebc01d6e0bb4e6f9e8b68c95424866495ece0991dc369ffa22659c0443a5e5.css?body=1" for 127.0.0.1 at 2016-05-23 02:16:09 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:16:10 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:16:10 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:16:10 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:16:10 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:16:10 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:16:10 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:16:10 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:16:46 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:16:46 -0700
+
+
+Started GET "/assets/application.self-a79394f7b5f2e9a12872e268bc6a6597f6fd6e6417c9d333231afc041ae5da6f.css?body=1" for 127.0.0.1 at 2016-05-23 02:16:46 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:16:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:16:46 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:16:46 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:16:46 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:16:46 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:16:46 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:17:04 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0003be1cf07ac8f47a4a9ec69179bbd601477308a9e5c78a75ce3c9eba16ee0b.css?body=1" for 127.0.0.1 at 2016-05-23 02:17:04 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:17:04 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:17:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:17:04 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:17:04 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:17:04 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:17:04 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:17:04 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:18:29 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:18:29 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:18:29 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:18:29 -0700
+
+
+Started GET "/assets/application.self-0003be1cf07ac8f47a4a9ec69179bbd601477308a9e5c78a75ce3c9eba16ee0b.css?body=1" for 127.0.0.1 at 2016-05-23 02:18:29 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:18:29 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:18:29 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:18:29 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:18:29 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:18:47 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0003be1cf07ac8f47a4a9ec69179bbd601477308a9e5c78a75ce3c9eba16ee0b.css?body=1" for 127.0.0.1 at 2016-05-23 02:18:47 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:18:47 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:18:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:18:47 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:18:47 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:18:47 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:18:47 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:18:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:18:57 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:18:58 -0700
+
+
+Started GET "/assets/application.self-0003be1cf07ac8f47a4a9ec69179bbd601477308a9e5c78a75ce3c9eba16ee0b.css?body=1" for 127.0.0.1 at 2016-05-23 02:18:58 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:18:58 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:18:58 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:18:58 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:18:58 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:18:58 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:18:58 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:20:57 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5dcade46080007047772c16a0431c989ffa4f9bbbd63be1cc06f8d79054c11bd.css?body=1" for 127.0.0.1 at 2016-05-23 02:20:57 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:20:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:20:57 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:20:57 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:20:57 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:20:57 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:20:57 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:20:58 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:21:19 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:21:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:21:19 -0700
+
+
+Started GET "/assets/application.self-82c59aee96b117bd36febf7b33304991fb5bb4ec0c38d6dd447dfb9ca281b236.css?body=1" for 127.0.0.1 at 2016-05-23 02:21:19 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:21:19 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:21:19 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:21:19 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:21:19 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:21:19 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 02:22:38 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 02:22:38 -0700
+
+
+Started GET "/assets/bundle.self-0f233ec7a146a6e7600d25ffd57ed2324b95cc6ea2c5f62e28c99b90d96c5518.js?body=1" for 127.0.0.1 at 2016-05-23 02:22:38 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 02:22:38 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 02:22:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 02:22:38 -0700
+
+
+Started GET "/assets/application.self-6319eddb4d203bd574fe05710f1836d3082f97b33e49f5c18fe17633ce3fbb34.css?body=1" for 127.0.0.1 at 2016-05-23 02:22:38 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 02:22:38 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-23 02:22:38 -0700
