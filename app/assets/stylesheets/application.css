@@ -38,7 +38,7 @@
 }
 
 .ivory:first-of-type {
-  background-color: #990033;
+  background-color: darkred;
   height: 240px;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .ivory:nth-of-type(8) {
-  background-color: darkred;
+  background-color: #990033;
   height: 135px;
 }
 
