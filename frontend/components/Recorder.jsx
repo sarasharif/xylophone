@@ -19,6 +19,12 @@ var Recorder = React.createClass({
     this.keyListener.remove();
   },
 
+  _keysChanged: function(){
+    if (this.state.isRecording){
+      this.state.track.addNotes(KeyStore.all());
+    }
+  },
+
   isRecording: function(){
     return this.state.isRecording;
   },
@@ -55,6 +61,21 @@ var Recorder = React.createClass({
     if(!this.isTrackNew()){
       this.state.track.play();
     }
+  },
+
+  trackSavingElements: function () {
+    if (this.isDoneRecording()) {
+      return (
+        <button onClick={this.saveTrack} >
+          Save Your Song
+        </button>
+      );
+    }
+  },
+
+  saveTrack: function (event) {
+    this.state.track.set("name", prompt("Name your song!"));
+    this.state.track.save();
   },
 
   render: function () {

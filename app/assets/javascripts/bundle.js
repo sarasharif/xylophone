@@ -20451,6 +20451,14 @@
 	      actionType: 'ADDKEY',
 	      note: note
 	    });
+	  },
+	
+	  //all keys/notes
+	  groupUpdate: function (notes) {
+	    Dispatcher.dispatch({
+	      actionType: 'GROUP_UPDATE',
+	      notes: notes
+	    });
 	  }
 	};
 	
@@ -20785,8 +20793,11 @@
 	var Note = __webpack_require__(193);
 	
 	var KeyStore = new Store(Dispatcher);
-	
 	var _currentKeys = [];
+	
+	KeyStore.all = function () {
+	  return _currentKeys.slice(0);
+	};
 	
 	KeyStore.addKey = function (note) {
 	  if (!this.playing(note)) {
@@ -20817,6 +20828,9 @@
 	      break;
 	    case 'REMOVEKEY':
 	      KeyStore.removeKey(payload.note);
+	      break;
+	    case 'GROUP_UPDATE':
+	      KeyStore._groupUpdate(payload.notes);
 	      break;
 	  }
 	};
@@ -27334,8 +27348,8 @@
 /* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var KeyActions = __webpack_require__(170);
-	var Tones = __webpack_require__(194);
+	var KeyActions = __webpack_require__(170),
+	    Tones = __webpack_require__(194);
 	
 	$(document).on("keyup", function (event) {
 	  var note = Mapping[event.keyCode];

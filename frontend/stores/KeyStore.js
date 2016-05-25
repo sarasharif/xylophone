@@ -3,8 +3,15 @@ var Store = require("flux/utils").Store;
 var Note = require("../util/Note");
 
 var KeyStore = new Store (Dispatcher);
-
 var _currentKeys = [];
+
+
+
+
+
+KeyStore.all = function(){
+  return _currentKeys.slice(0);
+};
 
 KeyStore.addKey = function(note){
   if (!this.playing(note)){
@@ -35,6 +42,9 @@ KeyStore.__onDispatch = function(payload){
     break;
     case 'REMOVEKEY':
     KeyStore.removeKey(payload.note);
+    break;
+    case 'GROUP_UPDATE':
+    KeyStore._groupUpdate(payload.notes);
     break;
   }
 };

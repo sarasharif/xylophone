@@ -1,5 +1,5 @@
-var KeyActions = require("../actions/KeyActions");
-var Tones = require("../constants/Tones");
+var KeyActions = require("../actions/KeyActions"),
+    Tones = require("../constants/Tones");
 
 
 

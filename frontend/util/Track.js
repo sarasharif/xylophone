@@ -1,14 +1,16 @@
 var $ = require("jquery"),
     KeyActions = require('../actions/KeyActions');
-    // TrackActions = require('../actions/TrackActions');
+    // TrackClientActions = require('../actions/TrackClientActions');
 
 
 
 function Track (attrs) {
-  var attributeDefaults = {
+  var defaults = {
     name: "",
     roll: []
   };
+
+  this.attributeDefaults = $.extend(defaults, attrs || {});
 }
 
 Track.prototype = {
@@ -16,6 +18,10 @@ Track.prototype = {
   startRecording: function(){
     this.attributeDefaults.roll = [];
     this.startTime = Date.now();
+  },
+
+  stopRecording: function(){
+    this.addNotes([]);
   },
 
   _timeDelta: function(){
@@ -31,21 +37,19 @@ Track.prototype = {
     this.attributeDefaults.roll.push(timeSlice);
   },
 
-  stopRecording: function(){
-    this.addNotes([]);
-  },
-
   isBlank: function() {
-    return this.defaultAttributes.roll.length === 0;
+    return this.attributeDefaults.roll.length === 0;
   },
 
   play: function(){
     if (this.interval) { return; }
 
-    var currentNote, playbackStartTime, roll = 0, Date.now(), this.attributeDefaults.roll;
+    var currentNote = 0
+    var playbackStartTime = Date.now();
+    var roll = this.attributeDefaults.roll;
     var delta;
 
-    this.interval = setInterval(function()) {
+    this.interval = setInterval(function() {
 
       if (currentNote < roll.length) {
         delta = Date.now() - playbackStartTime;
@@ -53,16 +57,35 @@ Track.prototype = {
         if (delta >= roll[currentNote].time){
 
           var notes = roll[currentNote].notes || [];
-          // NEED TODO Make this function in KeyActions
           KeyActions.groupUpdate(notes);
           currentNote++;
         }
       } else {
         clearInterval(this.interval);
-        delete.this.interval;
+        delete this.interval;
       }
 
-    }.bind((this), 1);
+    }.bind(this), 1);
+  },
+
+  save: function(){
+    if (this.isBlank()){
+      throw "Cannot save a blank track.";
+    } else if (this.attributeDefaults.name === "") {
+      throw "Cannot save an unnamed track";
+    } else {
+      TrackClientActions.createTrack(this.attributeDefaults);
+    }
+  },
+
+  //TODO Add delete 
+
+  set: function(attribute, value){
+    this.attributeDefaults[attribute] = value;
+  },
+
+  get: function(attribute){
+    return this.attributeDefaults[attribute];
   }
 
 };
