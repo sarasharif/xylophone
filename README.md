@@ -1,12 +1,12 @@
 #Xylophonica
 
-[xylophonica live web app] [heroku]
+[Xylophonica Live App] [heroku]
 
 [heroku]: http://xylophone.herokuapp.com/
 
 Xylophonica is a full-stack web application for playing, recording, and re-playing stored music. The back end was built with Ruby and Rails, with a PostgreSQL database. The front end was built with Javascript, React.js, and Flux.
 
-![xylphonica_pic](https://github.com/sarasharif/xylophone/tree/master/docs/xylophonica.png)
+![xylophonica](https://github.com/sarasharif/xylophone/tree/master/docs/xylophonica.png)
 
 ## Single Page App powered by React and Flux
 
