@@ -79,7 +79,7 @@ addKey: function(note) {
 
 
 ##React components
-Xylophonica utilizes React.js components to render and re-render this single-page web app immediately in response to user input. React is a very intuitive framework and enabled us to keep the code base organized, clean, and concise. The primary page for the app is stored in a .jsx file and all other components are stored in separate .jsx files. Being able to keep the components separate and being able to ensure each component owned only its own functionality was a huge advantage of using React.
+Xylophonica utilizes React.js components to immediately render and re-render this single-page web app in response to user input. React is a very intuitive framework and enabled us to keep the code base organized, clean, and concise. The primary page for the app is stored in a .jsx file and all other components are stored in separate .jsx files. Being able to keep the components separate and being able to ensure each component owned only its own functionality was a huge advantage of using React.
 
 A code sample from one React component for Xylophonica:
 ```javascript
