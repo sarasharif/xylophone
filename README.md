@@ -66,7 +66,7 @@ KeyStore.__onDispatch = function(payload){
 
 ```
 
-A code snippet from the Flux loop Key Actions
+A code snippet from the Flux loop Key Actions:
 ```javascript
 addKey: function(note) {
 
