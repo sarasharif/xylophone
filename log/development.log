@@ -1936,3 +1936,6 @@ Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/application.self-6319eddb4d203bd574fe05710f1836d3082f97b33e49f5c18fe17633ce3fbb34.css?body=1" for 127.0.0.1 at 2016-05-24 18:35:28 -0700
+  [1m[36m (29.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (16.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
