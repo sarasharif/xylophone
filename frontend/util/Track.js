@@ -33,6 +33,36 @@ Track.prototype = {
 
   stopRecording: function(){
     this.addNotes([]);
+  },
+
+  isBlank: function() {
+    return this.defaultAttributes.roll.length === 0;
+  },
+
+  play: function(){
+    if (this.interval) { return; }
+
+    var currentNote, playbackStartTime, roll = 0, Date.now(), this.attributeDefaults.roll;
+    var delta;
+
+    this.interval = setInterval(function()) {
+
+      if (currentNote < roll.length) {
+        delta = Date.now() - playbackStartTime;
+
+        if (delta >= roll[currentNote].time){
+
+          var notes = roll[currentNote].notes || [];
+          // NEED TODO Make this function in KeyActions
+          KeyActions.groupUpdate(notes);
+          currentNote++;
+        }
+      } else {
+        clearInterval(this.interval);
+        delete.this.interval;
+      }
+
+    }.bind((this), 1);
   }
 
 };
