@@ -60,6 +60,22 @@ The front end and back end data sharing is handled through Flux, which plays ext
 Code Sample from they Flux loop Key Store:
 
 ```javascript
+
+KeyStore.all = function(){
+  return _currentKeys.slice(0);
+};
+
+KeyStore.addKey = function(note){
+  if (!this.playing(note)){
+    _currentKeys.push(note);
+  }
+};
+
+KeyStore.removeKey = function(note){
+  var index = _currentKeys.indexOf(note);
+  _currentKeys.splice(index, 1);
+};
+
 KeyStore.currentKeys = function(){
   return _currentKeys.slice();
 };
@@ -78,6 +94,8 @@ KeyStore.__onDispatch = function(payload){
     KeyStore.removeKey(payload.note);
     break;
   }
+
+  this.__emitChange();
 };
 
 ```

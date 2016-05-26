@@ -20807,14 +20807,12 @@
 	KeyStore.addKey = function (note) {
 	  if (!this.playing(note)) {
 	    _currentKeys.push(note);
-	    KeyStore.__emitChange();
 	  }
 	};
 	
 	KeyStore.removeKey = function (note) {
 	  var index = _currentKeys.indexOf(note);
 	  _currentKeys.splice(index, 1);
-	  KeyStore.__emitChange();
 	};
 	
 	KeyStore.currentKeys = function () {
@@ -20838,6 +20836,8 @@
 	      KeyStore._groupUpdate(payload.notes);
 	      break;
 	  }
+	
+	  this.__emitChange();
 	};
 	
 	module.exports = KeyStore;
