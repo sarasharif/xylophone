@@ -1,5 +1,7 @@
 var React = require("react"),
     ReactDOM = require("react-dom"),
+    Recorder = require("./Recorder"),
+    JukeBox = require("./JukeBox"),
     OrganKey = require("./OrganKey"),
 
 
@@ -9,11 +11,19 @@ var Organ = React.createClass({
 
   render: function() {
 
-    return (<div className="organ">
-      {Object.keys(TONES).map(function(tone){
-        return <OrganKey note={tone} />;
-      })}
-    </div>);
+    return (
+      <div>
+        <div className="organ">
+          {
+            Object.keys(TONES).map(function(tone){
+            return <OrganKey note={tone} />;
+            })
+          }
+        </div>
+        <Recorder/>
+        <JukeBox/>
+    </div>
+    );
   }
 
 });

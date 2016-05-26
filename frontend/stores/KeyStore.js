@@ -5,10 +5,6 @@ var Note = require("../util/Note");
 var KeyStore = new Store (Dispatcher);
 var _currentKeys = [];
 
-
-
-
-
 KeyStore.all = function(){
   return _currentKeys.slice(0);
 };
@@ -32,17 +28,22 @@ KeyStore.playing = function(currentKey){
   return _currentKeys.includes(currentKey);
 };
 
+KeyStore.groupUpdate = function (keys) {
+  _currentKeys = keys.slice();
+};
+
 KeyStore.__onDispatch = function(payload){
   switch(payload.actionType){
     case 'ADDKEY':
-
     KeyStore.addKey(payload.note);
     break;
+
     case 'REMOVEKEY':
     KeyStore.removeKey(payload.note);
     break;
+    
     case 'GROUP_UPDATE':
-    KeyStore._groupUpdate(payload.notes);
+    KeyStore.groupUpdate(payload.notes);
     break;
   }
 
