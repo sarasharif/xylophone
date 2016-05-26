@@ -6251,3 +6251,29 @@ Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:53:46 -0700
 Processing by Api::TracksController#index as JSON
   [1m[35mTrack Load (0.3ms)[0m  SELECT "tracks".* FROM "tracks"
 Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-05-25 23:05:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (6.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 738ms (Views: 737.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-0de4bce935ac9f1afac9360579da3d6c701f136776a955ff4439fce26835e694.js?body=1" for ::1 at 2016-05-25 23:05:19 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2016-05-25 23:05:19 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.5ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/tracks" for ::1 at 2016-05-25 23:05:41 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"track"=>{"name"=>"Emily's Jams", "roll"=>"[{\"time\":182,\"notes\":[\"C4\"]},{\"time\":436},{\"time\":446,\"notes\":[\"D4\"]},{\"time\":636},{\"time\":645,\"notes\":[\"E4\"]},{\"time\":859},{\"time\":893,\"notes\":[\"F4\"]},{\"time\":1131},{\"time\":1404,\"notes\":[\"C4\"]},{\"time\":1571,\"notes\":[\"C4\",\"D4\"]},{\"time\":1652,\"notes\":[\"D4\"]},{\"time\":1739,\"notes\":[\"D4\",\"E4\"]},{\"time\":1764,\"notes\":[\"E4\"]},{\"time\":2008,\"notes\":[\"E4\",\"F4\"]},{\"time\":2037,\"notes\":[\"F4\"]},{\"time\":2211},{\"time\":2323,\"notes\":[\"C4\"]},{\"time\":2451,\"notes\":[\"C4\",\"D4\"]},{\"time\":2498,\"notes\":[\"D4\"]},{\"time\":2595,\"notes\":[\"D4\",\"E4\"]},{\"time\":2642,\"notes\":[\"E4\"]},{\"time\":2667,\"notes\":[\"E4\",\"F4\"]},{\"time\":2730,\"notes\":[\"F4\"]},{\"time\":2842},{\"time\":2875,\"notes\":[\"C4\"]},{\"time\":2987,\"notes\":[\"C4\",\"D4\"]},{\"time\":3042,\"notes\":[\"D4\"]},{\"time\":3139,\"notes\":[\"D4\",\"E4\"]},{\"time\":3141,\"notes\":[\"E4\"]},{\"time\":3267,\"notes\":[\"E4\",\"F4\"]},{\"time\":3306,\"notes\":[\"F4\"]},{\"time\":3442},{\"time\":3973}]"}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (27.1ms)[0m  INSERT INTO "tracks" ("name", "roll", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "Emily's Jams"], ["roll", "[{\"time\":182,\"notes\":[\"C4\"]},{\"time\":436},{\"time\":446,\"notes\":[\"D4\"]},{\"time\":636},{\"time\":645,\"notes\":[\"E4\"]},{\"time\":859},{\"time\":893,\"notes\":[\"F4\"]},{\"time\":1131},{\"time\":1404,\"notes\":[\"C4\"]},{\"time\":1571,\"notes\":[\"C4\",\"D4\"]},{\"time\":1652,\"notes\":[\"D4\"]},{\"time\":1739,\"notes\":[\"D4\",\"E4\"]},{\"time\":1764,\"notes\":[\"E4\"]},{\"time\":2008,\"notes\":[\"E4\",\"F4\"]},{\"time\":2037,\"notes\":[\"F4\"]},{\"time\":2211},{\"time\":2323,\"notes\":[\"C4\"]},{\"time\":2451,\"notes\":[\"C4\",\"D4\"]},{\"time\":2498,\"notes\":[\"D4\"]},{\"time\":2595,\"notes\":[\"D4\",\"E4\"]},{\"time\":2642,\"notes\":[\"E4\"]},{\"time\":2667,\"notes\":[\"E4\",\"F4\"]},{\"time\":2730,\"notes\":[\"F4\"]},{\"time\":2842},{\"time\":2875,\"notes\":[\"C4\"]},{\"time\":2987,\"notes\":[\"C4\",\"D4\"]},{\"time\":3042,\"notes\":[\"D4\"]},{\"time\":3139,\"notes\":[\"D4\",\"E4\"]},{\"time\":3141,\"notes\":[\"E4\"]},{\"time\":3267,\"notes\":[\"E4\",\"F4\"]},{\"time\":3306,\"notes\":[\"F4\"]},{\"time\":3442},{\"time\":3973}]"], ["created_at", "2016-05-26 06:05:41.225598"], ["updated_at", "2016-05-26 06:05:41.225598"]]
+  [1m[36m (65.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 123ms (Views: 0.6ms | ActiveRecord: 107.0ms)
+  [1m[36mTrack Load (0.3ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
