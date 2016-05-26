@@ -1,6 +1,6 @@
 var React = require('react'),
     TrackStore = require('../stores/TrackStore'),
-    // TrackApiUtil = require('../util/TrackApiUtil'),
+    TrackApiUtil = require('../util/TrackApiUtil'),
     TrackPlayer = require('../components/TrackPlayer');
 
 

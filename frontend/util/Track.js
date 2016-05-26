@@ -1,6 +1,6 @@
 var $ = require("jquery"),
-    KeyActions = require('../actions/KeyActions');
-    // TrackClientActions = require('../actions/TrackClientActions');
+    KeyActions = require('../actions/KeyActions'),
+    TrackClientActions = require('../actions/TrackClientActions');
 
 
 
