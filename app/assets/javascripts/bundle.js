@@ -20358,6 +20358,7 @@
 	
 	
 	  render: function () {
+	    var i = 0;
 	
 	    return React.createElement(
 	      "div",
@@ -20366,7 +20367,8 @@
 	        "div",
 	        { className: "organ" },
 	        Object.keys(TONES).map(function (tone) {
-	          return React.createElement(OrganKey, { note: tone });
+	          i++;
+	          return React.createElement(OrganKey, { note: tone, key: i });
 	        })
 	      ),
 	      React.createElement(Recorder, null),
