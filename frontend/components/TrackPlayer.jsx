@@ -45,8 +45,8 @@ var TrackPlayer = React.createClass({
     return (
       <div className="track">
         <div className="track-name">{this.props.track.name}</div>
-        <button onClick={this.playTrack}><i className="fa fa-play-circle-o"></i></button>
-        <button onClick={this.deleteTrack}><i className="fa fa-trash-o"></i></button>
+        <button title="play" onClick={this.playTrack}><i className="fa fa-play-circle-o"></i></button>
+        <button title="delete" onClick={this.deleteTrack}><i className="fa fa-trash-o"></i></button>
       </div>
     );
   }

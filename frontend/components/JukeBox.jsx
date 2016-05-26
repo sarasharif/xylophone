@@ -31,7 +31,6 @@ var JukeBox = React.createClass({
     var trackUpdate = this.getTracks;
     return (
       <div className="jukebox">
-        <h3>XYLOPHONE JAMS JUKEBOX</h3>
         <div className="track-holder">
           {
             this.state.tracks.map(function (track) {

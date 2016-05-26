@@ -41,8 +41,8 @@ var Recorder = React.createClass({
   //TODO we will actually refactor/change this function to render
   //clear/red depending on recording/not recording
   recordingMessage: function () {
-    if (this.isRecording()) { return "Stop Recording"; }
-    else { return "Start Recording"; }
+    if (this.isRecording()) { return <i className="fa fa-dot-circle-o turn-red"></i>; }
+    else { return <i className="fa fa-dot-circle-o"></i>; }
   },
 
   handleRecordClick: function(event){
@@ -83,21 +83,18 @@ var Recorder = React.createClass({
 
   render: function () {
     return (
-      <div>
-        <h3>Record & Play Jams!</h3>
-
-        <button onClick={this.handleRecordClick}>
+      <div className="recorder-buttons">
+        <button title="RECORD" onClick={this.handleRecordClick}>
           { this.recordingMessage() }
         </button>
 
-        <button onClick={this.handlePlayClick} >
-          Play
+        <button title="PLAY" onClick={this.handlePlayClick} >
+          <i className="fa fa-play-circle-o"></i>
         </button>
 
-        <button onClick={this.saveTrack} >
-          Save Your Song
+        <button title="SAVE" onClick={this.saveTrack} >
+          <i className="fa fa-floppy-o"></i>
         </button>
-
       </div>
     );
   }

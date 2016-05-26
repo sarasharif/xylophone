@@ -20435,9 +20435,9 @@
 	  //clear/red depending on recording/not recording
 	  recordingMessage: function () {
 	    if (this.isRecording()) {
-	      return "Stop Recording";
+	      return React.createElement('i', { className: 'fa fa-dot-circle-o turn-red' });
 	    } else {
-	      return "Start Recording";
+	      return React.createElement('i', { className: 'fa fa-dot-circle-o' });
 	    }
 	  },
 	
@@ -20480,26 +20480,21 @@
 	  render: function () {
 	    return React.createElement(
 	      'div',
-	      null,
-	      React.createElement(
-	        'h3',
-	        null,
-	        'Record & Play Jams!'
-	      ),
+	      { className: 'recorder-buttons' },
 	      React.createElement(
 	        'button',
-	        { onClick: this.handleRecordClick },
+	        { title: 'RECORD', onClick: this.handleRecordClick },
 	        this.recordingMessage()
 	      ),
 	      React.createElement(
 	        'button',
-	        { onClick: this.handlePlayClick },
-	        'Play'
+	        { title: 'PLAY', onClick: this.handlePlayClick },
+	        React.createElement('i', { className: 'fa fa-play-circle-o' })
 	      ),
 	      React.createElement(
 	        'button',
-	        { onClick: this.saveTrack },
-	        'Save Your Song'
+	        { title: 'SAVE', onClick: this.saveTrack },
+	        React.createElement('i', { className: 'fa fa-floppy-o' })
 	      )
 	    );
 	  }
@@ -27658,11 +27653,6 @@
 	      'div',
 	      { className: 'jukebox' },
 	      React.createElement(
-	        'h3',
-	        null,
-	        'XYLOPHONE JAMS JUKEBOX'
-	      ),
-	      React.createElement(
 	        'div',
 	        { className: 'track-holder' },
 	        this.state.tracks.map(function (track) {
@@ -27799,12 +27789,12 @@
 	      ),
 	      React.createElement(
 	        "button",
-	        { onClick: this.playTrack },
+	        { title: "play", onClick: this.playTrack },
 	        React.createElement("i", { className: "fa fa-play-circle-o" })
 	      ),
 	      React.createElement(
 	        "button",
-	        { onClick: this.deleteTrack },
+	        { title: "delete", onClick: this.deleteTrack },
 	        React.createElement("i", { className: "fa fa-trash-o" })
 	      )
 	    );
