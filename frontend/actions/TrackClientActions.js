@@ -2,11 +2,11 @@ var TrackApiUtil = require('../util/TrackApiUtil');
 
 var TrackClientActions = {
 
-  createTrack: function () {
+  createTrack: function (trackData) {
     TrackApiUtil.createTrack(trackData);
   },
 
-  deleteTrack: function () {
+  deleteTrack: function (id) {
     TrackApiUtil.destroyTrack(id);
   },
 

@@ -27488,7 +27488,7 @@
 	      React.createElement(
 	        'h3',
 	        null,
-	        'Record your Jams!'
+	        'Record & Play Jams!'
 	      ),
 	      React.createElement(
 	        'button',
@@ -27614,11 +27614,11 @@
 	
 	var TrackClientActions = {
 	
-	  createTrack: function () {
+	  createTrack: function (trackData) {
 	    TrackApiUtil.createTrack(trackData);
 	  },
 	
-	  deleteTrack: function () {
+	  deleteTrack: function (id) {
 	    TrackApiUtil.destroyTrack(id);
 	  },
 	

@@ -81,11 +81,11 @@ var Recorder = React.createClass({
   render: function () {
     return (
       <div>
-        <h3>Record your Jams!</h3>
+        <h3>Record & Play Jams!</h3>
         <button onClick={this.handleRecordClick}>
           { this.recordingMessage() }
         </button>
-        { this.trackSavingElements() }
+          { this.trackSavingElements() }
         <button onClick={this.handlePlayClick} >
           Play
         </button>
