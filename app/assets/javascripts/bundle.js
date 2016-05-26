@@ -27445,6 +27445,8 @@
 	    return true;
 	  },
 	
+	  //TODO we will actually refactor/change this function to render
+	  //clear/red depending on recording/not recording
 	  recordingMessage: function () {
 	    if (this.isRecording()) {
 	      return "Stop Recording";
