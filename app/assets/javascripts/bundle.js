@@ -49,7 +49,7 @@
 	// var OrganKey = require('./components/OrganKey');
 	// var TONES = require('./constants/Tones');
 	var Organ = __webpack_require__(168);
-	__webpack_require__(195);
+	__webpack_require__(203);
 	
 	// var OrganGrinder = React.createClass({
 	//   render: function(){
@@ -20348,10 +20348,10 @@
 
 	var React = __webpack_require__(1),
 	    ReactDOM = __webpack_require__(38),
-	    Recorder = __webpack_require__(196),
-	    JukeBox = __webpack_require__(201),
-	    OrganKey = __webpack_require__(169),
-	    TONES = __webpack_require__(194);
+	    Recorder = __webpack_require__(169),
+	    JukeBox = __webpack_require__(198),
+	    OrganKey = __webpack_require__(201),
+	    TONES = __webpack_require__(202);
 	
 	var Organ = React.createClass({
 	  displayName: "Organ",
@@ -20371,7 +20371,11 @@
 	          return React.createElement(OrganKey, { note: tone, key: i });
 	        })
 	      ),
-	      React.createElement(Recorder, null),
+	      React.createElement(
+	        "div",
+	        { className: "recorder" },
+	        React.createElement(Recorder, null)
+	      ),
 	      React.createElement(JukeBox, null)
 	    );
 	  }
@@ -20385,71 +20389,224 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1),
-	    KeyActions = __webpack_require__(170),
-	    KeyStore = __webpack_require__(175),
-	    Note = __webpack_require__(193),
-	    Tones = __webpack_require__(194);
+	    Track = __webpack_require__(170),
+	    KeyStore = __webpack_require__(179);
 	
-	var OrganKey = React.createClass({
-	  displayName: "OrganKey",
-	
+	var Recorder = React.createClass({
+	  displayName: 'Recorder',
 	
 	  getInitialState: function () {
 	    return {
-	      playing: false
+	      isRecording: false,
+	      track: new Track()
 	    };
 	  },
 	
 	  componentDidMount: function () {
-	    KeyStore.addListener(this.handleChange);
+	    this.keyListener = KeyStore.addListener(this._keysChanged);
 	  },
 	
 	  componentWillUnmount: function () {
-	    this.currentNote.stop();
-	    // this.state.notes.splice(index, 1);
+	    this.keyListener.remove();
 	  },
 	
-	  handleChange: function () {
-	    this.setState({
-	      playing: KeyStore.playing(this.props.note)
-	    });
-	  },
-	
-	  sound: function () {
-	    this.currentNote = this.currentNote || new Note(Tones[this.props.note]);
-	
-	    if (this.state.playing) {
-	      this.currentNote.start();
-	    } else {
-	      this.currentNote.stop();
+	  _keysChanged: function () {
+	    if (this.state.isRecording) {
+	      this.state.track.addNotes(KeyStore.all());
 	    }
 	  },
+	
+	  isRecording: function () {
+	    return this.state.isRecording;
+	  },
+	
+	  isTrackNew: function () {
+	    return this.state.track.isBlank();
+	  },
+	
+	  isDoneRecording: function () {
+	    if (this.isTrackNew() || this.state.isRecording) {
+	      return false;
+	    }
+	    return true;
+	  },
+	
+	  //TODO we will actually refactor/change this function to render
+	  //clear/red depending on recording/not recording
+	  recordingMessage: function () {
+	    if (this.isRecording()) {
+	      return "Stop Recording";
+	    } else {
+	      return "Start Recording";
+	    }
+	  },
+	
+	  handleRecordClick: function (event) {
+	    if (this.state.isRecording) {
+	      this.state.track.stopRecording();
+	      this.setState({ isRecording: false });
+	    } else {
+	      this.setState({ isRecording: true });
+	      this.state.track.startRecording();
+	    }
+	  },
+	
+	  handlePlayClick: function () {
+	    if (!this.isTrackNew()) {
+	      this.state.track.play();
+	    }
+	  },
+	
+	  //TODO reconfigure this to always show save button but only allow to save if isDoneRecording is true
+	  trackSavingElements: function () {
+	    if (this.isDoneRecording()) {
+	      return React.createElement(
+	        'button',
+	        { onClick: this.saveTrack },
+	        'Save Your Song'
+	      );
+	    }
+	  },
+	
+	  saveTrack: function (event) {
+	    if (!this.isDoneRecording()) {
+	      alert("Nothing to save here.");
+	    } else {
+	      this.state.track.setAttribute("name", prompt("Name your song!"));
+	      this.state.track.save();
+	    }
+	  },
+	
 	  render: function () {
-	    this.sound();
-	    if (this.props.note.length > 2) {
-	      var classy = "ivory";
-	    } else {
-	      var classy = "ivory";
-	    }
-	
 	    return React.createElement(
-	      "div",
-	      { className: classy },
-	      React.createElement("div", { className: "top-nail" }),
-	      React.createElement("div", { className: "bottom-nail" })
+	      'div',
+	      null,
+	      React.createElement(
+	        'h3',
+	        null,
+	        'Record & Play Jams!'
+	      ),
+	      React.createElement(
+	        'button',
+	        { onClick: this.handleRecordClick },
+	        this.recordingMessage()
+	      ),
+	      React.createElement(
+	        'button',
+	        { onClick: this.handlePlayClick },
+	        'Play'
+	      ),
+	      React.createElement(
+	        'button',
+	        { onClick: this.saveTrack },
+	        'Save Your Song'
+	      )
 	    );
 	  }
+	
 	});
 	
-	// {JSON.stringify(this.state.playing)}
-	// {JSON.stringify(this.currentNote)}
-	module.exports = OrganKey;
+	module.exports = Recorder;
 
 /***/ },
 /* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Dispatcher = __webpack_require__(171);
+	var KeyActions = __webpack_require__(171),
+	    TrackClientActions = __webpack_require__(176);
+	
+	function Track(attrs) {
+	  var defaults = {
+	    name: "",
+	    roll: []
+	  };
+	
+	  this.attributeDefaults = $.extend(defaults, attrs || {});
+	}
+	
+	Track.prototype = {
+	
+	  startRecording: function () {
+	    this.attributeDefaults.roll = [];
+	    this.startTime = Date.now();
+	  },
+	
+	  stopRecording: function () {
+	    this.addNotes([]);
+	  },
+	
+	  _timeDelta: function () {
+	    return Date.now() - this.startTime;
+	  },
+	
+	  addNotes: function (notes) {
+	    var timeSlice = { time: this._timeDelta() };
+	    if (notes.length > 0) {
+	      timeSlice.notes = notes;
+	    }
+	
+	    this.attributeDefaults.roll.push(timeSlice);
+	  },
+	
+	  isBlank: function () {
+	    return this.attributeDefaults.roll.length === 0;
+	  },
+	
+	  play: function () {
+	    if (this.interval) {
+	      return;
+	    }
+	
+	    var currentNote = 0;
+	    var playbackStartTime = Date.now();
+	    var roll = this.attributeDefaults.roll;
+	    var delta;
+	
+	    this.interval = setInterval(function () {
+	
+	      if (currentNote < roll.length) {
+	        delta = Date.now() - playbackStartTime;
+	
+	        if (delta >= roll[currentNote].time) {
+	
+	          var notes = roll[currentNote].notes || [];
+	          KeyActions.groupUpdate(notes);
+	          currentNote++;
+	        }
+	      } else {
+	        clearInterval(this.interval);
+	        delete this.interval;
+	      }
+	    }.bind(this), 1);
+	  },
+	
+	  save: function () {
+	    if (this.isBlank()) {
+	      throw "Cannot save a blank track.";
+	    } else if (this.attributeDefaults.name === "") {
+	      throw "Cannot save an unnamed track";
+	    } else {
+	      TrackClientActions.createTrack(this.attributeDefaults);
+	    }
+	  },
+	
+	  delete: function () {
+	    TrackClientActions.deleteTrack(this.attributeDefaults);
+	  },
+	
+	  setAttribute: function (attribute, value) {
+	    this.attributeDefaults[attribute] = value;
+	  }
+	
+	};
+	
+	module.exports = Track;
+
+/***/ },
+/* 171 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Dispatcher = __webpack_require__(172);
 	
 	var KeyActions = {
 	  removeKey: function (note) {
@@ -20485,14 +20642,14 @@
 	module.exports = KeyActions;
 
 /***/ },
-/* 171 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Dispatcher = __webpack_require__(172).Dispatcher;
+	var Dispatcher = __webpack_require__(173).Dispatcher;
 	module.exports = new Dispatcher();
 
 /***/ },
-/* 172 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20504,11 +20661,11 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 */
 	
-	module.exports.Dispatcher = __webpack_require__(173);
+	module.exports.Dispatcher = __webpack_require__(174);
 
 
 /***/ },
-/* 173 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -20530,7 +20687,7 @@
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 	
-	var invariant = __webpack_require__(174);
+	var invariant = __webpack_require__(175);
 	
 	var _prefix = 'ID_';
 	
@@ -20745,7 +20902,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 174 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -20800,12 +20957,130 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 175 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Dispatcher = __webpack_require__(171);
-	var Store = __webpack_require__(176).Store;
-	var Note = __webpack_require__(193);
+	var TrackApiUtil = __webpack_require__(177);
+	
+	var TrackClientActions = {
+	
+	  createTrack: function (trackData) {
+	    trackData.roll = JSON.stringify(trackData.roll);
+	    TrackApiUtil.createTrack(trackData);
+	  },
+	
+	  deleteTrack: function (id) {
+	    TrackApiUtil.deleteTrack(id);
+	  },
+	
+	  fetchAllTracks: function () {
+	    TrackApiUtil.fetchAllTracks();
+	  },
+	
+	  fetchSingleTrack: function (id) {
+	    TrackApiUtil.fetchSingleTrack(id);
+	  }
+	
+	};
+	
+	module.exports = TrackClientActions;
+
+/***/ },
+/* 177 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var TrackServerActions = __webpack_require__(178);
+	
+	var TrackApiUtil = {
+	
+	  createTrack: function (trackData) {
+	    $.ajax({
+	      url: '/api/tracks',
+	      method: 'POST',
+	      data: { track: trackData },
+	      // dataType: 'json',
+	      // contentType: "application/json",
+	      success: function (track) {
+	        TrackServerActions.receiveSingleTrack(track);
+	      }
+	    });
+	  },
+	
+	  deleteTrack: function (id) {
+	
+	    $.ajax({
+	      url: "api/tracks/" + id,
+	      type: "DELETE",
+	      success: function (track) {
+	        TrackServerActions.removeTrack(track);
+	      },
+	      error: function (data) {}
+	    });
+	  },
+	
+	  fetchAllTracks: function () {
+	    $.ajax({
+	      url: "api/tracks",
+	      type: "GET",
+	      success: function (tracks) {
+	        TrackServerActions.receiveAllTracks(tracks);
+	      }
+	    });
+	  },
+	
+	  fetchSingleTrack: function (id) {
+	    $.ajax({
+	      url: "api/tracks/" + id,
+	      type: "GET",
+	      success: function (track) {
+	        TrackServerActions.receiveSingleTrack(track);
+	      }
+	    });
+	  }
+	};
+	
+	module.exports = TrackApiUtil;
+
+/***/ },
+/* 178 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Dispatcher = __webpack_require__(172);
+	// constants
+	
+	var TrackServerActions = {
+	  receiveSingleTrack: function (track) {
+	    Dispatcher.dispatch({
+	      actionType: "ADD_TRACK",
+	      track: track
+	    });
+	  },
+	
+	  removeTrack: function (track) {
+	    Dispatcher.dispatch({
+	      actionType: "REMOVE_TRACK",
+	      track: track
+	    });
+	  },
+	
+	  receiveAllTracks: function (tracks) {
+	    Dispatcher.dispatch({
+	      actionType: "TRACKS_RECEIVED",
+	      tracks: tracks
+	    });
+	  }
+	
+	};
+	
+	module.exports = TrackServerActions;
+
+/***/ },
+/* 179 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Dispatcher = __webpack_require__(172);
+	var Store = __webpack_require__(180).Store;
+	var Note = __webpack_require__(197);
 	
 	var KeyStore = new Store(Dispatcher);
 	var _currentKeys = [];
@@ -20858,7 +21133,7 @@
 	module.exports = KeyStore;
 
 /***/ },
-/* 176 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20870,15 +21145,15 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 */
 	
-	module.exports.Container = __webpack_require__(177);
-	module.exports.MapStore = __webpack_require__(180);
-	module.exports.Mixin = __webpack_require__(192);
-	module.exports.ReduceStore = __webpack_require__(181);
-	module.exports.Store = __webpack_require__(182);
+	module.exports.Container = __webpack_require__(181);
+	module.exports.MapStore = __webpack_require__(184);
+	module.exports.Mixin = __webpack_require__(196);
+	module.exports.ReduceStore = __webpack_require__(185);
+	module.exports.Store = __webpack_require__(186);
 
 
 /***/ },
-/* 177 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -20900,10 +21175,10 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var FluxStoreGroup = __webpack_require__(178);
+	var FluxStoreGroup = __webpack_require__(182);
 	
-	var invariant = __webpack_require__(174);
-	var shallowEqual = __webpack_require__(179);
+	var invariant = __webpack_require__(175);
+	var shallowEqual = __webpack_require__(183);
 	
 	var DEFAULT_OPTIONS = {
 	  pure: true,
@@ -21061,7 +21336,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 178 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -21080,7 +21355,7 @@
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 	
-	var invariant = __webpack_require__(174);
+	var invariant = __webpack_require__(175);
 	
 	/**
 	 * FluxStoreGroup allows you to execute a callback on every dispatch after
@@ -21142,7 +21417,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 179 */
+/* 183 */
 /***/ function(module, exports) {
 
 	/**
@@ -21197,7 +21472,7 @@
 	module.exports = shallowEqual;
 
 /***/ },
-/* 180 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -21218,10 +21493,10 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var FluxReduceStore = __webpack_require__(181);
-	var Immutable = __webpack_require__(191);
+	var FluxReduceStore = __webpack_require__(185);
+	var Immutable = __webpack_require__(195);
 	
-	var invariant = __webpack_require__(174);
+	var invariant = __webpack_require__(175);
 	
 	/**
 	 * This is a simple store. It allows caching key value pairs. An implementation
@@ -21347,7 +21622,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 181 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -21368,10 +21643,10 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var FluxStore = __webpack_require__(182);
+	var FluxStore = __webpack_require__(186);
 	
-	var abstractMethod = __webpack_require__(190);
-	var invariant = __webpack_require__(174);
+	var abstractMethod = __webpack_require__(194);
+	var invariant = __webpack_require__(175);
 	
 	var FluxReduceStore = (function (_FluxStore) {
 	  _inherits(FluxReduceStore, _FluxStore);
@@ -21454,7 +21729,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 182 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -21473,11 +21748,11 @@
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 	
-	var _require = __webpack_require__(183);
+	var _require = __webpack_require__(187);
 	
 	var EventEmitter = _require.EventEmitter;
 	
-	var invariant = __webpack_require__(174);
+	var invariant = __webpack_require__(175);
 	
 	/**
 	 * This class should be extended by the stores in your application, like so:
@@ -21637,7 +21912,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 183 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21650,14 +21925,14 @@
 	 */
 	
 	var fbemitter = {
-	  EventEmitter: __webpack_require__(184)
+	  EventEmitter: __webpack_require__(188)
 	};
 	
 	module.exports = fbemitter;
 
 
 /***/ },
-/* 184 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -21676,11 +21951,11 @@
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 	
-	var EmitterSubscription = __webpack_require__(185);
-	var EventSubscriptionVendor = __webpack_require__(187);
+	var EmitterSubscription = __webpack_require__(189);
+	var EventSubscriptionVendor = __webpack_require__(191);
 	
-	var emptyFunction = __webpack_require__(189);
-	var invariant = __webpack_require__(188);
+	var emptyFunction = __webpack_require__(193);
+	var invariant = __webpack_require__(192);
 	
 	/**
 	 * @class BaseEventEmitter
@@ -21854,7 +22129,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 185 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21875,7 +22150,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var EventSubscription = __webpack_require__(186);
+	var EventSubscription = __webpack_require__(190);
 	
 	/**
 	 * EmitterSubscription represents a subscription with listener and context data.
@@ -21907,7 +22182,7 @@
 	module.exports = EmitterSubscription;
 
 /***/ },
-/* 186 */
+/* 190 */
 /***/ function(module, exports) {
 
 	/**
@@ -21961,7 +22236,7 @@
 	module.exports = EventSubscription;
 
 /***/ },
-/* 187 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -21980,7 +22255,7 @@
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 	
-	var invariant = __webpack_require__(188);
+	var invariant = __webpack_require__(192);
 	
 	/**
 	 * EventSubscriptionVendor stores a set of EventSubscriptions that are
@@ -22070,7 +22345,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 188 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -22125,7 +22400,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 189 */
+/* 193 */
 /***/ function(module, exports) {
 
 	/**
@@ -22167,7 +22442,7 @@
 	module.exports = emptyFunction;
 
 /***/ },
-/* 190 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -22184,7 +22459,7 @@
 	
 	'use strict';
 	
-	var invariant = __webpack_require__(174);
+	var invariant = __webpack_require__(175);
 	
 	function abstractMethod(className, methodName) {
 	   true ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Subclasses of %s must override %s() with their own implementation.', className, methodName) : invariant(false) : undefined;
@@ -22194,7 +22469,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 191 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27178,7 +27453,7 @@
 	}));
 
 /***/ },
-/* 192 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -27195,9 +27470,9 @@
 	
 	'use strict';
 	
-	var FluxStoreGroup = __webpack_require__(178);
+	var FluxStoreGroup = __webpack_require__(182);
 	
-	var invariant = __webpack_require__(174);
+	var invariant = __webpack_require__(175);
 	
 	/**
 	 * `FluxContainer` should be preferred over this mixin, but it requires using
@@ -27301,7 +27576,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 193 */
+/* 197 */
 /***/ function(module, exports) {
 
 	var ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -27343,406 +27618,14 @@
 	module.exports = Note;
 
 /***/ },
-/* 194 */
-/***/ function(module, exports) {
-
-	var TONES = {
-	  "C4": 261.63,
-	  // "Db4": 277.18,
-	  "D4": 293.66,
-	  // "Eb4": 311.13,
-	  "E4": 329.63,
-	  "F4": 349.23,
-	  // "Gb4": 369.99,
-	  "G4": 392.00,
-	  // "Ab4": 415.30,
-	  "A4": 440.00,
-	  // "Bb4": 466.16,
-	  "B4": 493.88,
-	  "C5": 523.25
-	};
-	
-	module.exports = TONES;
-
-/***/ },
-/* 195 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var KeyActions = __webpack_require__(170),
-	    Tones = __webpack_require__(194);
-	
-	$(document).on("keyup", function (event) {
-	  var note = Mapping[event.keyCode];
-	  KeyActions.removeKey(note);
-	});
-	
-	$(document).on("keydown", function (event) {
-	
-	  var note = Mapping[event.keyCode];
-	  KeyActions.addKey(note);
-	});
-	
-	var Mapping = {
-	  65: 'C4',
-	  87: 'Db4',
-	  83: 'D4',
-	  69: 'Eb4',
-	  68: 'E4',
-	  70: 'F4',
-	  85: 'Gb4',
-	  74: 'G4',
-	  73: 'Ab4',
-	  75: 'A4',
-	  79: 'Bb4',
-	  76: 'B4',
-	  186: 'C5'
-	};
-
-/***/ },
-/* 196 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var React = __webpack_require__(1),
-	    Track = __webpack_require__(197),
-	    KeyStore = __webpack_require__(175);
-	
-	var Recorder = React.createClass({
-	  displayName: 'Recorder',
-	
-	  getInitialState: function () {
-	    return {
-	      isRecording: false,
-	      track: new Track()
-	    };
-	  },
-	
-	  componentDidMount: function () {
-	    this.keyListener = KeyStore.addListener(this._keysChanged);
-	  },
-	
-	  componentWillUnmount: function () {
-	    this.keyListener.remove();
-	  },
-	
-	  _keysChanged: function () {
-	    if (this.state.isRecording) {
-	      this.state.track.addNotes(KeyStore.all());
-	    }
-	  },
-	
-	  isRecording: function () {
-	    return this.state.isRecording;
-	  },
-	
-	  isTrackNew: function () {
-	    return this.state.track.isBlank();
-	  },
-	
-	  isDoneRecording: function () {
-	    if (this.isTrackNew() || this.state.isRecording) {
-	      return false;
-	    }
-	    return true;
-	  },
-	
-	  //TODO we will actually refactor/change this function to render
-	  //clear/red depending on recording/not recording
-	  recordingMessage: function () {
-	    if (this.isRecording()) {
-	      return "Stop Recording";
-	    } else {
-	      return "Start Recording";
-	    }
-	  },
-	
-	  handleRecordClick: function (event) {
-	    if (this.state.isRecording) {
-	      this.state.track.stopRecording();
-	      this.setState({ isRecording: false });
-	    } else {
-	      this.setState({ isRecording: true });
-	      this.state.track.startRecording();
-	    }
-	  },
-	
-	  handlePlayClick: function () {
-	    if (!this.isTrackNew()) {
-	      this.state.track.play();
-	    }
-	  },
-	
-	  //TODO reconfigure this to always show save button but only allow to save if isDoneRecording is true
-	  trackSavingElements: function () {
-	    if (this.isDoneRecording()) {
-	      return React.createElement(
-	        'button',
-	        { onClick: this.saveTrack },
-	        'Save Your Song'
-	      );
-	    }
-	  },
-	
-	  saveTrack: function (event) {
-	    if (!this.isDoneRecording()) {
-	      alert("Nothing to save here.");
-	    } else {
-	      this.state.track.setAttribute("name", prompt("Name your song!"));
-	      this.state.track.save();
-	    }
-	  },
-	
-	  render: function () {
-	    return React.createElement(
-	      'div',
-	      null,
-	      React.createElement(
-	        'h3',
-	        null,
-	        'Record & Play Jams!'
-	      ),
-	      React.createElement(
-	        'button',
-	        { onClick: this.handleRecordClick },
-	        this.recordingMessage()
-	      ),
-	      React.createElement(
-	        'button',
-	        { onClick: this.handlePlayClick },
-	        'Play'
-	      ),
-	      React.createElement(
-	        'button',
-	        { onClick: this.saveTrack },
-	        'Save Your Song'
-	      )
-	    );
-	  }
-	
-	});
-	
-	module.exports = Recorder;
-
-/***/ },
-/* 197 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var KeyActions = __webpack_require__(170),
-	    TrackClientActions = __webpack_require__(198);
-	
-	function Track(attrs) {
-	  var defaults = {
-	    name: "",
-	    roll: []
-	  };
-	
-	  this.attributeDefaults = $.extend(defaults, attrs || {});
-	}
-	
-	Track.prototype = {
-	
-	  startRecording: function () {
-	    this.attributeDefaults.roll = [];
-	    this.startTime = Date.now();
-	  },
-	
-	  stopRecording: function () {
-	    this.addNotes([]);
-	  },
-	
-	  _timeDelta: function () {
-	    return Date.now() - this.startTime;
-	  },
-	
-	  addNotes: function (notes) {
-	    var timeSlice = { time: this._timeDelta() };
-	    if (notes.length > 0) {
-	      timeSlice.notes = notes;
-	    }
-	
-	    this.attributeDefaults.roll.push(timeSlice);
-	  },
-	
-	  isBlank: function () {
-	    return this.attributeDefaults.roll.length === 0;
-	  },
-	
-	  play: function () {
-	    if (this.interval) {
-	      return;
-	    }
-	
-	    var currentNote = 0;
-	    var playbackStartTime = Date.now();
-	    var roll = this.attributeDefaults.roll;
-	    var delta;
-	
-	    this.interval = setInterval(function () {
-	
-	      if (currentNote < roll.length) {
-	        delta = Date.now() - playbackStartTime;
-	
-	        if (delta >= roll[currentNote].time) {
-	
-	          var notes = roll[currentNote].notes || [];
-	          KeyActions.groupUpdate(notes);
-	          currentNote++;
-	        }
-	      } else {
-	        clearInterval(this.interval);
-	        delete this.interval;
-	      }
-	    }.bind(this), 1);
-	  },
-	
-	  save: function () {
-	    if (this.isBlank()) {
-	      throw "Cannot save a blank track.";
-	    } else if (this.attributeDefaults.name === "") {
-	      throw "Cannot save an unnamed track";
-	    } else {
-	      TrackClientActions.createTrack(this.attributeDefaults);
-	    }
-	  },
-	
-	  delete: function () {
-	    TrackClientActions.deleteTrack(this.attributeDefaults);
-	  },
-	
-	  setAttribute: function (attribute, value) {
-	    this.attributeDefaults[attribute] = value;
-	  }
-	
-	};
-	
-	module.exports = Track;
-
-/***/ },
 /* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var TrackApiUtil = __webpack_require__(199);
-	
-	var TrackClientActions = {
-	
-	  createTrack: function (trackData) {
-	    trackData.roll = JSON.stringify(trackData.roll);
-	    TrackApiUtil.createTrack(trackData);
-	  },
-	
-	  deleteTrack: function (id) {
-	    TrackApiUtil.deleteTrack(id);
-	  },
-	
-	  fetchAllTracks: function () {
-	    TrackApiUtil.fetchAllTracks();
-	  },
-	
-	  fetchSingleTrack: function (id) {
-	    TrackApiUtil.fetchSingleTrack(id);
-	  }
-	
-	};
-	
-	module.exports = TrackClientActions;
-
-/***/ },
-/* 199 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var TrackServerActions = __webpack_require__(200);
-	
-	var TrackApiUtil = {
-	
-	  createTrack: function (trackData) {
-	    $.ajax({
-	      url: '/api/tracks',
-	      method: 'POST',
-	      data: { track: trackData },
-	      // dataType: 'json',
-	      // contentType: "application/json",
-	      success: function (track) {
-	        TrackServerActions.receiveSingleTrack(track);
-	      }
-	    });
-	  },
-	
-	  deleteTrack: function (id) {
-	
-	    $.ajax({
-	      url: "api/tracks/" + id,
-	      type: "DELETE",
-	      success: function (track) {
-	        TrackServerActions.removeTrack(track);
-	      },
-	      error: function (data) {}
-	    });
-	  },
-	
-	  fetchAllTracks: function () {
-	    $.ajax({
-	      url: "api/tracks",
-	      type: "GET",
-	      success: function (tracks) {
-	        TrackServerActions.receiveAllTracks(tracks);
-	      }
-	    });
-	  },
-	
-	  fetchSingleTrack: function (id) {
-	    $.ajax({
-	      url: "api/tracks/" + id,
-	      type: "GET",
-	      success: function (track) {
-	        TrackServerActions.receiveSingleTrack(track);
-	      }
-	    });
-	  }
-	};
-	
-	module.exports = TrackApiUtil;
-
-/***/ },
-/* 200 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var Dispatcher = __webpack_require__(171);
-	// constants
-	
-	var TrackServerActions = {
-	  receiveSingleTrack: function (track) {
-	    Dispatcher.dispatch({
-	      actionType: "ADD_TRACK",
-	      track: track
-	    });
-	  },
-	
-	  removeTrack: function (track) {
-	    Dispatcher.dispatch({
-	      actionType: "REMOVE_TRACK",
-	      track: track
-	    });
-	  },
-	
-	  receiveAllTracks: function (tracks) {
-	    Dispatcher.dispatch({
-	      actionType: "TRACKS_RECEIVED",
-	      tracks: tracks
-	    });
-	  }
-	
-	};
-	
-	module.exports = TrackServerActions;
-
-/***/ },
-/* 201 */
-/***/ function(module, exports, __webpack_require__) {
-
 	var React = __webpack_require__(1),
-	    TrackStore = __webpack_require__(202),
-	    TrackApiUtil = __webpack_require__(199),
-	    TrackClientActions = __webpack_require__(198),
-	    TrackPlayer = __webpack_require__(203);
+	    TrackStore = __webpack_require__(199),
+	    TrackApiUtil = __webpack_require__(177),
+	    TrackClientActions = __webpack_require__(176),
+	    TrackPlayer = __webpack_require__(200);
 	
 	var JukeBox = React.createClass({
 	  displayName: 'JukeBox',
@@ -27773,15 +27656,19 @@
 	    var trackUpdate = this.getTracks;
 	    return React.createElement(
 	      'div',
-	      null,
+	      { className: 'jukebox' },
 	      React.createElement(
 	        'h3',
 	        null,
 	        'XYLOPHONE JAMS JUKEBOX'
 	      ),
-	      this.state.tracks.map(function (track) {
-	        return React.createElement(TrackPlayer, { key: track.id, track: track, trackUpdate: trackUpdate });
-	      })
+	      React.createElement(
+	        'div',
+	        { className: 'track-holder' },
+	        this.state.tracks.map(function (track) {
+	          return React.createElement(TrackPlayer, { key: track.id, track: track, trackUpdate: trackUpdate });
+	        })
+	      )
 	    );
 	  }
 	
@@ -27790,11 +27677,11 @@
 	module.exports = JukeBox;
 
 /***/ },
-/* 202 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Store = __webpack_require__(176).Store,
-	    Dispatcher = __webpack_require__(171);
+	var Store = __webpack_require__(180).Store,
+	    Dispatcher = __webpack_require__(172);
 	
 	var TrackStore = new Store(Dispatcher);
 	var _tracks = [];
@@ -27855,13 +27742,13 @@
 	module.exports = TrackStore;
 
 /***/ },
-/* 203 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1),
-	    Track = __webpack_require__(197),
-	    TrackStore = __webpack_require__(202),
-	    TrackClientActions = __webpack_require__(198);
+	    Track = __webpack_require__(170),
+	    TrackStore = __webpack_require__(199),
+	    TrackClientActions = __webpack_require__(176);
 	
 	var TrackPlayer = React.createClass({
 	  displayName: "TrackPlayer",
@@ -27904,27 +27791,148 @@
 	
 	    return React.createElement(
 	      "div",
-	      null,
+	      { className: "track" },
 	      React.createElement(
-	        "p",
-	        null,
+	        "div",
+	        { className: "track-name" },
 	        this.props.track.name
 	      ),
 	      React.createElement(
 	        "button",
 	        { onClick: this.playTrack },
-	        "Play"
+	        React.createElement("i", { className: "fa fa-play-circle-o" })
 	      ),
 	      React.createElement(
 	        "button",
 	        { onClick: this.deleteTrack },
-	        "Delete"
+	        React.createElement("i", { className: "fa fa-trash-o" })
 	      )
 	    );
 	  }
 	});
 	
 	module.exports = TrackPlayer;
+
+/***/ },
+/* 201 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1),
+	    KeyActions = __webpack_require__(171),
+	    KeyStore = __webpack_require__(179),
+	    Note = __webpack_require__(197),
+	    Tones = __webpack_require__(202);
+	
+	var OrganKey = React.createClass({
+	  displayName: "OrganKey",
+	
+	
+	  getInitialState: function () {
+	    return {
+	      playing: false
+	    };
+	  },
+	
+	  componentDidMount: function () {
+	    KeyStore.addListener(this.handleChange);
+	  },
+	
+	  componentWillUnmount: function () {
+	    this.currentNote.stop();
+	    // this.state.notes.splice(index, 1);
+	  },
+	
+	  handleChange: function () {
+	    this.setState({
+	      playing: KeyStore.playing(this.props.note)
+	    });
+	  },
+	
+	  sound: function () {
+	    this.currentNote = this.currentNote || new Note(Tones[this.props.note]);
+	
+	    if (this.state.playing) {
+	      this.currentNote.start();
+	    } else {
+	      this.currentNote.stop();
+	    }
+	  },
+	  render: function () {
+	    this.sound();
+	    if (this.props.note.length > 2) {
+	      var classy = "ivory";
+	    } else {
+	      var classy = "ivory";
+	    }
+	
+	    return React.createElement(
+	      "div",
+	      { className: classy },
+	      React.createElement("div", { className: "top-nail" }),
+	      React.createElement("div", { className: "bottom-nail" })
+	    );
+	  }
+	});
+	
+	// {JSON.stringify(this.state.playing)}
+	// {JSON.stringify(this.currentNote)}
+	module.exports = OrganKey;
+
+/***/ },
+/* 202 */
+/***/ function(module, exports) {
+
+	var TONES = {
+	  "C4": 261.63,
+	  // "Db4": 277.18,
+	  "D4": 293.66,
+	  // "Eb4": 311.13,
+	  "E4": 329.63,
+	  "F4": 349.23,
+	  // "Gb4": 369.99,
+	  "G4": 392.00,
+	  // "Ab4": 415.30,
+	  "A4": 440.00,
+	  // "Bb4": 466.16,
+	  "B4": 493.88,
+	  "C5": 523.25
+	};
+	
+	module.exports = TONES;
+
+/***/ },
+/* 203 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var KeyActions = __webpack_require__(171),
+	    Tones = __webpack_require__(202);
+	
+	$(document).on("keyup", function (event) {
+	  var note = Mapping[event.keyCode];
+	  KeyActions.removeKey(note);
+	});
+	
+	$(document).on("keydown", function (event) {
+	
+	  var note = Mapping[event.keyCode];
+	  KeyActions.addKey(note);
+	});
+	
+	var Mapping = {
+	  65: 'C4',
+	  87: 'Db4',
+	  83: 'D4',
+	  69: 'Eb4',
+	  68: 'E4',
+	  70: 'F4',
+	  85: 'Gb4',
+	  74: 'G4',
+	  73: 'Ab4',
+	  75: 'A4',
+	  79: 'Bb4',
+	  76: 'B4',
+	  186: 'C5'
+	};
 
 /***/ }
 /******/ ]);

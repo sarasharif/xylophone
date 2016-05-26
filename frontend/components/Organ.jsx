@@ -22,8 +22,8 @@ var Organ = React.createClass({
             })
           }
         </div>
-        <Recorder/>
-        <JukeBox/>
+        <div className="recorder"><Recorder /></div>
+        <JukeBox />
     </div>
     );
   }
