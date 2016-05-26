@@ -27776,7 +27776,6 @@
 	var _tracks = [];
 	
 	TrackStore.all = function () {
-	  debugger;
 	  return _tracks.slice(0);
 	};
 	
