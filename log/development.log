@@ -10090,3 +10090,54 @@ Processing by Api::TracksController#destroy as JSON
   [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = $1[0m  [["id", 1]]
   [1m[35m (60.4ms)[0m  COMMIT
 Completed 200 OK in 67ms (Views: 0.9ms | ActiveRecord: 60.9ms)
+
+
+Started GET "/" for ::1 at 2016-05-26 11:15:28 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 263ms (Views: 262.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-26 11:15:28 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-26 11:15:28 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for ::1 at 2016-05-26 11:15:28 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-26 11:15:28 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-26 11:15:28 -0700
+
+
+Started GET "/assets/bundle.self-a180d743ce75db4e44689fcd73948f3638484caf0eb570ecd03f26387b4ff9e9.js?body=1" for ::1 at 2016-05-26 11:15:28 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-26 11:15:28 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-26 11:15:28 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-26 11:15:28 -0700
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2016-05-26 11:15:28 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2016-05-26 11:15:28 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.3ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/tracks" for ::1 at 2016-05-26 11:15:47 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"track"=>{"name"=>"Emily's Jammy", "roll"=>"[{\"time\":240,\"notes\":[\"C4\"]},{\"time\":359,\"notes\":[\"C4\",\"E4\"]},{\"time\":439,\"notes\":[\"E4\"]},{\"time\":487,\"notes\":[\"E4\",\"F4\"]},{\"time\":509,\"notes\":[\"F4\"]},{\"time\":582},{\"time\":592,\"notes\":[\"E4\"]},{\"time\":598,\"notes\":[\"E4\",\"C4\"]},{\"time\":710,\"notes\":[\"E4\"]},{\"time\":718,\"notes\":[\"E4\",\"F4\"]},{\"time\":822,\"notes\":[\"E4\"]},{\"time\":861},{\"time\":1273}]"}}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tracks" ("name", "roll", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Emily's Jammy"], ["roll", "[{\"time\":240,\"notes\":[\"C4\"]},{\"time\":359,\"notes\":[\"C4\",\"E4\"]},{\"time\":439,\"notes\":[\"E4\"]},{\"time\":487,\"notes\":[\"E4\",\"F4\"]},{\"time\":509,\"notes\":[\"F4\"]},{\"time\":582},{\"time\":592,\"notes\":[\"E4\"]},{\"time\":598,\"notes\":[\"E4\",\"C4\"]},{\"time\":710,\"notes\":[\"E4\"]},{\"time\":718,\"notes\":[\"E4\",\"F4\"]},{\"time\":822,\"notes\":[\"E4\"]},{\"time\":861},{\"time\":1273}]"], ["created_at", "2016-05-26 18:15:47.603655"], ["updated_at", "2016-05-26 18:15:47.603655"]]
+  [1m[35m (46.9ms)[0m  COMMIT
+Completed 200 OK in 50ms (Views: 0.4ms | ActiveRecord: 47.1ms)
