@@ -27600,10 +27600,6 @@
 	
 	  setAttribute: function (attribute, value) {
 	    this.attributeDefaults[attribute] = value;
-	  },
-	
-	  getAttribute: function (attribute) {
-	    return this.attributeDefaults[attribute];
 	  }
 	
 	};
@@ -27629,7 +27625,12 @@
 	
 	  fetchAllTracks: function () {
 	    TrackApiUtil.fetchAllTracks();
+	  },
+	
+	  fetchSingleTrack: function (id) {
+	    TrackApiUtil.fetchSingleTrack(id);
 	  }
+	
 	};
 	
 	module.exports = TrackClientActions;
@@ -27673,6 +27674,16 @@
 	        TrackServerActions.receiveAllTracks(tracks);
 	      }
 	    });
+	  },
+	
+	  fetchSingleTrack: function (id) {
+	    $.ajax({
+	      url: "api/tracks/" + id,
+	      type: "GET",
+	      success: function (track) {
+	        TrackServerActions.receiveSingleTrack(track);
+	      }
+	    });
 	  }
 	};
 	
@@ -27688,14 +27699,14 @@
 	var TrackServerActions = {
 	  receiveSingleTrack: function (track) {
 	    Dispatcher.dispatch({
-	      actionType: "TRACK_RECEIVED",
+	      actionType: "ADD_TRACK",
 	      track: track
 	    });
 	  },
 	
 	  removeTrack: function (track) {
 	    Dispatcher.dispatch({
-	      actionType: "TRACK_REMOVED",
+	      actionType: "REMOVE_TRACK",
 	      track: track
 	    });
 	  },
@@ -27747,6 +27758,7 @@
 	  },
 	
 	  render: function () {
+	
 	    return React.createElement(
 	      'div',
 	      null,
@@ -27756,7 +27768,7 @@
 	        'XYLOPHONE JAMS JUKEBOX'
 	      ),
 	      this.state.tracks.map(function (track) {
-	        return React.createElement(TrackPlayer, { key: track.getAttribute("id"), track: track });
+	        return React.createElement(TrackPlayer, { key: track.id, track: track });
 	      })
 	    );
 	  }
@@ -27777,6 +27789,14 @@
 	
 	TrackStore.all = function () {
 	  return _tracks.slice(0);
+	};
+	
+	TrackStore.find = function (trackId) {
+	  for (var i = 0; i < _tracks.length; i++) {
+	    if (_tracks[i].id === trackId) {
+	      return _tracks[i];
+	    }
+	  }
 	};
 	
 	TrackStore.addTrack = function (track) {
@@ -27824,28 +27844,58 @@
 /* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var React = __webpack_require__(1);
+	var React = __webpack_require__(1),
+	    Track = __webpack_require__(197),
+	    TrackStore = __webpack_require__(202),
+	    TrackClientActions = __webpack_require__(198);
 	
 	var TrackPlayer = React.createClass({
 	  displayName: "TrackPlayer",
 	
+	  //
+	  // getInitialState: function(){
+	  //   return({
+	  //     track: TrackStore.find(this.props.track.id)
+	  //   })
+	  // },
+	  //
+	  // componentDidMount: function(){
+	  //   this.trackListener = TrackStore.addListener(this.getTrack);
+	  //   TrackClientActions.fetchSingleTrack(this.props.track.id);
+	  // },
+	  //
+	  // componentWillUnmount: function(){
+	  //   this.trackListener.remove();
+	  // },
+	  //
+	  // getTrack: function(){
+	  //   this.setState({
+	  //     track: TrackStore.find(this.props.track.id)
+	  //   });
+	  // },
 	
+	  //tried using above code to make state with pulled out track and then
+	  // this.state.track.play in playTrack
 	  playTrack: function () {
-	    this.props.track.play();
+	    var track = new Track(this.props.track);
+	
+	    track.play();
 	  },
 	
-	  deleteTrack: function () {
-	    this.props.track.delete();
+	  deleteTrack: function (event) {
+	    event.preventDefault();
+	    TrackClientActions.deleteTrack(this.props.track.id);
 	  },
 	
 	  render: function () {
+	
 	    return React.createElement(
 	      "div",
 	      null,
 	      React.createElement(
 	        "p",
 	        null,
-	        this.props.track.getAttribute("name")
+	        this.props.track.name
 	      ),
 	      React.createElement(
 	        "button",

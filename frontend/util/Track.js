@@ -83,10 +83,6 @@ Track.prototype = {
 
   setAttribute: function(attribute, value){
     this.attributeDefaults[attribute] = value;
-  },
-
-  getAttribute: function(attribute){
-    return this.attributeDefaults[attribute];
   }
 
 };

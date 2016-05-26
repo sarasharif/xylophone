@@ -13,7 +13,12 @@ var TrackClientActions = {
 
   fetchAllTracks: function () {
     TrackApiUtil.fetchAllTracks();
+  },
+
+  fetchSingleTrack: function (id) {
+    TrackApiUtil.fetchSingleTrack(id);
   }
+
 };
 
 module.exports = TrackClientActions;

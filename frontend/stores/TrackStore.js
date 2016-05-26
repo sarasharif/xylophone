@@ -9,6 +9,14 @@ TrackStore.all = function () {
   return _tracks.slice(0);
 };
 
+TrackStore.find = function (trackId) {
+  for (var i = 0; i < _tracks.length; i++) {
+    if (_tracks[i].id === trackId) {
+      return _tracks[i];
+    }
+  }
+};
+
 TrackStore.addTrack = function (track) {
   var idx = _tracks.indexOf(track);
   if (idx == -1) {
@@ -44,6 +52,7 @@ TrackStore.__onDispatch = function(payload) {
   case "TRACKS_RECEIVED":
     TrackStore.resetTracks(payload.tracks);
     break;
+
 
   }
   this.__emitChange();

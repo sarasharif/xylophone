@@ -33,6 +33,16 @@ var TrackApiUtil = {
         TrackServerActions.receiveAllTracks(tracks);
       }
     });
+  },
+
+  fetchSingleTrack: function(id){
+    $.ajax({
+      url: "api/tracks/" + id,
+      type: "GET",
+      success: function (track) {
+        TrackServerActions.receiveSingleTrack(track);
+      }
+    });
   }
 };
 

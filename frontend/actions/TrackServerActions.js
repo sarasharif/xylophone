@@ -4,14 +4,14 @@ var Dispatcher = require("../dispatcher/Dispatcher");
 var TrackServerActions = {
   receiveSingleTrack: function (track) {
     Dispatcher.dispatch({
-      actionType: "TRACK_RECEIVED",
+      actionType: "ADD_TRACK",
       track: track
     });
   },
 
   removeTrack: function (track) {
     Dispatcher.dispatch({
-      actionType: "TRACK_REMOVED",
+      actionType: "REMOVE_TRACK",
       track: track
     });
   },
