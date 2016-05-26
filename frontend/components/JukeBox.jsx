@@ -8,12 +8,12 @@ var JukeBox = React.createClass({
 
   getInitialState: function(){
     return {
-      tracks: TrackStore.all()
+      tracks: []
     };
   },
 
   componentDidMount: function(){
-    this.trackListener = TrackStore.addListener(this.handleChange);
+    this.trackListener = TrackStore.addListener(this.getTracks);
     TrackClientActions.fetchAllTracks();
   },
 
@@ -21,7 +21,7 @@ var JukeBox = React.createClass({
     this.trackListener.remove();
   },
 
-  handleChange: function(){
+  getTracks: function(){
     this.setState({
       tracks: TrackStore.all()
     });

@@ -27727,12 +27727,12 @@
 	
 	  getInitialState: function () {
 	    return {
-	      tracks: TrackStore.all()
+	      tracks: []
 	    };
 	  },
 	
 	  componentDidMount: function () {
-	    this.trackListener = TrackStore.addListener(this.handleChange);
+	    this.trackListener = TrackStore.addListener(this.getTracks);
 	    TrackClientActions.fetchAllTracks();
 	  },
 	
@@ -27740,7 +27740,7 @@
 	    this.trackListener.remove();
 	  },
 	
-	  handleChange: function () {
+	  getTracks: function () {
 	    this.setState({
 	      tracks: TrackStore.all()
 	    });
@@ -27776,6 +27776,7 @@
 	var _tracks = [];
 	
 	TrackStore.all = function () {
+	  debugger;
 	  return _tracks.slice(0);
 	};
 	
@@ -27802,13 +27803,19 @@
 	      TrackStore.addTrack(payload.track);
 	      break;
 	
+	    case "REMOVE_TRACK":
+	      TrackStore.removeTrack(payload.track);
+	      break;
+	
 	    case "RESET_TRACK":
 	      TrackStore.resetTracks(payload.tracks);
 	      break;
 	
-	    default:
-	  }
+	    case "TRACKS_RECEIVED":
+	      TrackStore.resetTracks(payload.tracks);
+	      break;
 	
+	  }
 	  this.__emitChange();
 	};
 	

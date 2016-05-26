@@ -6,6 +6,7 @@ var _tracks = [];
 
 
 TrackStore.all = function () {
+  debugger;
   return _tracks.slice(0);
 };
 
@@ -25,20 +26,27 @@ TrackStore.removeTrack = function(track){
   _tracks.splice(index, 1);
 };
 
-TrackStore.__onDispatch = function (payload) {
+
+TrackStore.__onDispatch = function(payload) {
   switch(payload.actionType){
 
   case "ADD_TRACK":
     TrackStore.addTrack(payload.track);
     break;
 
+  case "REMOVE_TRACK":
+    TrackStore.removeTrack(payload.track);
+    break;
+
   case "RESET_TRACK":
     TrackStore.resetTracks(payload.tracks);
     break;
 
-  default:
-  }
+  case "TRACKS_RECEIVED":
+    TrackStore.resetTracks(payload.tracks);
+    break;
 
+  }
   this.__emitChange();
 };
 
