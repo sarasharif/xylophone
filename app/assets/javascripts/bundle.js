@@ -27483,8 +27483,12 @@
 	  },
 	
 	  saveTrack: function (event) {
-	    this.state.track.setAttribute("name", prompt("Name your song!"));
-	    this.state.track.save();
+	    if (!this.isDoneRecording()) {
+	      alert("Nothing to save here.");
+	    } else {
+	      this.state.track.setAttribute("name", prompt("Name your song!"));
+	      this.state.track.save();
+	    }
 	  },
 	
 	  render: function () {
@@ -27501,11 +27505,15 @@
 	        { onClick: this.handleRecordClick },
 	        this.recordingMessage()
 	      ),
-	      this.trackSavingElements(),
 	      React.createElement(
 	        'button',
 	        { onClick: this.handlePlayClick },
 	        'Play'
+	      ),
+	      React.createElement(
+	        'button',
+	        { onClick: this.saveTrack },
+	        'Save Your Song'
 	      )
 	    );
 	  }
@@ -27815,7 +27823,6 @@
 	};
 	
 	TrackStore.removeTrack = function (track) {
-	  // var index = parseInt(_tracks.indexOf(track));
 	  _tracks;
 	  var found = this.find(track.id);
 	  var index = _tracks.indexOf(found);

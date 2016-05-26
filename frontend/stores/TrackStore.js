@@ -29,7 +29,6 @@ TrackStore.resetTracks = function (tracks) {
 };
 
 TrackStore.removeTrack = function(track){
-  // var index = parseInt(_tracks.indexOf(track));
   _tracks;
   var found = this.find(track.id);
   var index = _tracks.indexOf(found)

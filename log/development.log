@@ -15146,3 +15146,116 @@ Processing by Api::TracksController#create as JSON
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "tracks" ("name", "roll", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "Much pretty."], ["roll", "[{\"time\":327,\"notes\":[\"C4\"]},{\"time\":598},{\"time\":695,\"notes\":[\"E4\"]},{\"time\":950},{\"time\":1042,\"notes\":[\"F4\"]},{\"time\":1414},{\"time\":1566,\"notes\":[\"C4\"]},{\"time\":1879},{\"time\":1958,\"notes\":[\"E4\"]},{\"time\":2181},{\"time\":2334,\"notes\":[\"F4\"]},{\"time\":2835,\"notes\":[\"F4\"]},{\"time\":2837},{\"time\":2894,\"notes\":[\"C4\"]},{\"time\":3197},{\"time\":3230,\"notes\":[\"E4\"]},{\"time\":3438},{\"time\":3566,\"notes\":[\"F4\"]},{\"time\":3845},{\"time\":3934,\"notes\":[\"D4\"]},{\"time\":4029},{\"time\":4038,\"notes\":[\"E4\"]},{\"time\":4538,\"notes\":[\"E4\"]},{\"time\":4613},{\"time\":4886,\"notes\":[\"C4\"]},{\"time\":5205},{\"time\":5262,\"notes\":[\"E4\"]},{\"time\":5453},{\"time\":5590,\"notes\":[\"F4\"]},{\"time\":6021},{\"time\":6110,\"notes\":[\"C4\"]},{\"time\":6374},{\"time\":6471,\"notes\":[\"E4\"]},{\"time\":6622},{\"time\":6766,\"notes\":[\"F4\"]},{\"time\":6957},{\"time\":7366,\"notes\":[\"C4\"]},{\"time\":7662,\"notes\":[\"C4\",\"E4\"]},{\"time\":7685,\"notes\":[\"E4\"]},{\"time\":7885},{\"time\":7966,\"notes\":[\"F4\"]},{\"time\":8213},{\"time\":8294,\"notes\":[\"G4\"]},{\"time\":8429},{\"time\":8526,\"notes\":[\"A4\"]},{\"time\":8741},{\"time\":9766,\"notes\":[\"A4\"]},{\"time\":9981},{\"time\":10126,\"notes\":[\"G4\"]},{\"time\":10253},{\"time\":10406,\"notes\":[\"E4\"]},{\"time\":10565},{\"time\":11305}]"], ["created_at", "2016-05-26 21:23:33.681712"], ["updated_at", "2016-05-26 21:23:33.681712"]]
   [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
 Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-26 14:39:40 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 251ms (Views: 251.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-26 14:39:41 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-26 14:39:41 -0700
+
+
+Started GET "/assets/bundle.self-6e92437b23bf438b3c7cc51d86777952f378746e253a802e86b2a1ec8d082d0a.js?body=1" for ::1 at 2016-05-26 14:39:41 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for ::1 at 2016-05-26 14:39:41 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-26 14:39:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-26 14:39:41 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-26 14:39:41 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-26 14:39:41 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-26 14:39:41 -0700
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2016-05-26 14:39:41 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2016-05-26 14:39:41 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/api/tracks/33" for ::1 at 2016-05-26 14:39:45 -0700
+Processing by Api::TracksController#destroy as JSON
+  Parameters: {"id"=>"33"}
+  [1m[36mTrack Load (0.2ms)[0m  [1mSELECT  "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT 1[0m  [["id", 33]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (2.2ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = $1[0m  [["id", 33]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 2.7ms)
+
+
+Started DELETE "/api/tracks/32" for ::1 at 2016-05-26 14:39:47 -0700
+Processing by Api::TracksController#destroy as JSON
+  Parameters: {"id"=>"32"}
+  [1m[36mTrack Load (0.1ms)[0m  [1mSELECT  "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = $1[0m  [["id", 32]]
+  [1m[35m (1.9ms)[0m  COMMIT
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/api/tracks" for ::1 at 2016-05-26 14:40:46 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"track"=>{"name"=>"What a great singer!", "roll"=>"[{\"time\":457,\"notes\":[\"C4\"]},{\"time\":574,\"notes\":[\"C4\",\"E4\"]},{\"time\":622,\"notes\":[\"E4\"]},{\"time\":768,\"notes\":[\"E4\",\"F4\"]},{\"time\":789,\"notes\":[\"F4\"]},{\"time\":919,\"notes\":[\"F4\",\"E4\"]},{\"time\":942,\"notes\":[\"E4\"]},{\"time\":1125},{\"time\":1182,\"notes\":[\"C4\"]},{\"time\":1398,\"notes\":[\"C4\",\"E4\"]},{\"time\":1453,\"notes\":[\"E4\"]},{\"time\":1578,\"notes\":[\"E4\",\"F4\"]},{\"time\":1589,\"notes\":[\"F4\"]},{\"time\":1702,\"notes\":[\"F4\",\"E4\"]},{\"time\":1717,\"notes\":[\"E4\"]},{\"time\":1901},{\"time\":3126}]"}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tracks" ("name", "roll", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "What a great singer!"], ["roll", "[{\"time\":457,\"notes\":[\"C4\"]},{\"time\":574,\"notes\":[\"C4\",\"E4\"]},{\"time\":622,\"notes\":[\"E4\"]},{\"time\":768,\"notes\":[\"E4\",\"F4\"]},{\"time\":789,\"notes\":[\"F4\"]},{\"time\":919,\"notes\":[\"F4\",\"E4\"]},{\"time\":942,\"notes\":[\"E4\"]},{\"time\":1125},{\"time\":1182,\"notes\":[\"C4\"]},{\"time\":1398,\"notes\":[\"C4\",\"E4\"]},{\"time\":1453,\"notes\":[\"E4\"]},{\"time\":1578,\"notes\":[\"E4\",\"F4\"]},{\"time\":1589,\"notes\":[\"F4\"]},{\"time\":1702,\"notes\":[\"F4\",\"E4\"]},{\"time\":1717,\"notes\":[\"E4\"]},{\"time\":1901},{\"time\":3126}]"], ["created_at", "2016-05-26 21:40:46.736931"], ["updated_at", "2016-05-26 21:40:46.736931"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-26 14:40:48 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-26 14:40:49 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-26 14:40:49 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-26 14:40:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-26 14:40:49 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-26 14:40:49 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for ::1 at 2016-05-26 14:40:49 -0700
+
+
+Started GET "/assets/bundle.self-6e92437b23bf438b3c7cc51d86777952f378746e253a802e86b2a1ec8d082d0a.js?body=1" for ::1 at 2016-05-26 14:40:49 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-26 14:40:49 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-26 14:40:49 -0700
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2016-05-26 14:40:49 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2016-05-26 14:40:49 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms)

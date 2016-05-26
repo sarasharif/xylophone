@@ -73,8 +73,12 @@ var Recorder = React.createClass({
   },
 
   saveTrack: function (event) {
-    this.state.track.setAttribute("name", prompt("Name your song!"));
-    this.state.track.save();
+    if (!this.isDoneRecording()) {
+      alert("Nothing to save here.")
+    } else {
+      this.state.track.setAttribute("name", prompt("Name your song!"));
+      this.state.track.save();
+    }
   },
 
   render: function () {
@@ -86,10 +90,12 @@ var Recorder = React.createClass({
           { this.recordingMessage() }
         </button>
 
-        { this.trackSavingElements() }
-
         <button onClick={this.handlePlayClick} >
           Play
+        </button>
+
+        <button onClick={this.saveTrack} >
+          Save Your Song
         </button>
 
       </div>
