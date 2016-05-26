@@ -27663,7 +27663,7 @@
 	      url: "api/tracks",
 	      type: "GET",
 	      success: function (tracks) {
-	        ServerActions.receiveAllTracks(tracks);
+	        TrackServerActions.receiveAllTracks(tracks);
 	      }
 	    });
 	  }
@@ -27675,15 +27675,31 @@
 /* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var AppDispatcher = __webpack_require__(171);
+	var Dispatcher = __webpack_require__(171);
 	// constants
 	
 	var TrackServerActions = {
-	  receiveSingleTrack: function (track) {},
+	  receiveSingleTrack: function (track) {
+	    Dispatcher.dispatch({
+	      actionType: "TRACK_RECEIVED",
+	      track: track
+	    });
+	  },
 	
-	  removeTrack: function (track) {},
+	  removeTrack: function (track) {
+	    Dispatcher.dispatch({
+	      actionType: "TRACK_REMOVED",
+	      track: track
+	    });
+	  },
 	
-	  receiveAllTracks: function (tracks) {}
+	  receiveAllTracks: function (tracks) {
+	    Dispatcher.dispatch({
+	      actionType: "TRACKS_RECEIVED",
+	      tracks: tracks
+	    });
+	  }
+	
 	};
 	
 	module.exports = TrackServerActions;

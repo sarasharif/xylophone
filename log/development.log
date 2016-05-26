@@ -3715,3 +3715,45 @@ Started GET "/assets/bundle.self-6a7a2e27e456a5a80f7e94c819c084af92f3793ac9e97ff
 
 
 Started GET "/assets/bundle.js.map" for ::1 at 2016-05-25 19:12:03 -0700
+
+
+Started GET "/" for ::1 at 2016-05-25 19:14:55 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 220ms (Views: 219.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-25 19:14:55 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-25 19:14:55 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-25 19:14:55 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for ::1 at 2016-05-25 19:14:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-25 19:14:55 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-25 19:14:55 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-25 19:14:55 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-25 19:14:55 -0700
+
+
+Started GET "/assets/bundle.self-743764f16b5e2120595bc9a7882cb89f45876b25c875441f974778dc1414dd04.js?body=1" for ::1 at 2016-05-25 19:14:55 -0700
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2016-05-25 19:14:55 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2016-05-25 19:14:56 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (3.1ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 6ms (Views: 1.3ms | ActiveRecord: 3.8ms)

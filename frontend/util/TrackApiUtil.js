@@ -28,7 +28,7 @@ var TrackApiUtil = {
       url: "api/tracks",
       type: "GET",
       success: function (tracks) {
-        ServerActions.receiveAllTracks(tracks);
+        TrackServerActions.receiveAllTracks(tracks);
       }
     });
   }
