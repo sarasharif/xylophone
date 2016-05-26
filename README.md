@@ -11,30 +11,46 @@ Xylophonica is a full-stack web application for playing, recording, and re-playi
 ## Single Page App powered by React and Flux
 
 ##Database, Schema, & API
-The database was built-up using PostgreSQL. The schema was architected around the idea of saving as little data to the database as possible. In this case, only songs and notes. The only data attached to songs is an id, while keys only capture id, song_id, and key_info. The simple but effective API is built-out through models and controllers for each Song and Key.
+The database was built-up using PostgreSQL. The schema was architected around the idea of saving as little data to the database as possible. In this case, tracks are saved. The notes associated with each song or "track" are saved in a JSON object called "roll." The simple but effective API is built-out through a model and controller, as shown below:
 
-Model level validations ensuring that each note has a song_id. The ActiveRecord associations on the models include the following:
+Model level validations are simple for this particular database:
 
-For Key
 ```ruby
-class Key < ActiveRecord::Base
-  belongs_to :song
+class Track < ActiveRecord::Base
+  validates :name, :roll, presence: true
 end
 ```
 
-For Song
-```ruby
-class Song < ActiveRecord::Base
-  has_many :keys, dependent: :destroy
-end
-```
-
-Within the Controllers, the API allows for key and song creation, and deletion. Incoming data is restricted using "strong parameters", as follows:
+Within the Controllers, the API allows for track creation, indexing, and deletion. Incoming data is restricted using "strong parameters".
 
 ```ruby
-def key_params
-  params.require(:key).permit(:song_id, :key_info)
-end
+class Api::TracksController < ApplicationController
+
+  def create
+    @track = Track.new(track_params)
+    if @track.save
+      render json: @track
+    else
+      render json: @track.errors.full_messages, status: 422
+    end
+  end
+
+  def index
+    @tracks = Track.all
+    render json: @tracks
+  end
+
+  def delete
+    @track = Track.find(params[:id])
+    @track.destroy
+    render json: @track
+  end
+
+  private
+  def track_params
+    params.require(:track).permit(:name, :roll)
+  end
+
 ```
 
 
