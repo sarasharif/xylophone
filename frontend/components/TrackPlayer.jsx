@@ -3,11 +3,11 @@ var React = require("react");
 
 var TrackPlayer = React.createClass({
 
-  playClick: function() {
+  playTrack: function() {
     this.props.track.play();
   },
 
-  deleteClick: function(){
+  deleteTrack: function(){
     this.props.track.delete();
   },
 
@@ -15,8 +15,8 @@ var TrackPlayer = React.createClass({
     return (
       <div>
         <p>{this.props.track.getAttribute("name")}</p>
-        <button onClick={this.playClick}>Play</button>
-        <button onClick={this.deleteClick}>Delete</button>
+        <button onClick={this.playTrack}>Play</button>
+        <button onClick={this.deleteTrack}>Delete</button>
       </div>
     );
   }

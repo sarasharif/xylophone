@@ -3,8 +3,6 @@ var React = require('react'),
     TrackApiUtil = require('../util/TrackApiUtil'),
     TrackPlayer = require('../components/TrackPlayer');
 
-
-
 var JukeBox = React.createClass({
 
   getInitialState: function(){

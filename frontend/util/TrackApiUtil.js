@@ -1,5 +1,4 @@
-var $ = require("jquery"),
-    TrackServerActions = require("../actions/TrackServerActions");
+var TrackServerActions = require("../actions/TrackServerActions");
 
 var TrackApiUtil = {
 

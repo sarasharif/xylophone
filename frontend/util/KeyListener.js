@@ -1,8 +1,6 @@
 var KeyActions = require("../actions/KeyActions"),
     Tones = require("../constants/Tones");
 
-
-
 $(document).on("keyup", function(event){
   var note = Mapping[event.keyCode];
   KeyActions.removeKey(note);

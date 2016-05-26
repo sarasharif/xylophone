@@ -12,7 +12,7 @@ var TrackServerActions = {
 
   receiveAllTracks: function (tracks) {
 
-  },
+  }
 };
 
 module.exports = TrackServerActions;
