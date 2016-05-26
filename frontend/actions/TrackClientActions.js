@@ -10,7 +10,7 @@ var TrackClientActions = {
     TrackApiUtil.destroyTrack(id);
   },
 
-  getAllTracks: function () {
+  fetchAllTracks: function () {
     TrackApiUtil.fetchAllTracks();
   }
 };

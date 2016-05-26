@@ -13,7 +13,7 @@ var JukeBox = React.createClass({
 
   componentDidMount: function(){
     this.trackListener = TrackStore.addListener(this.handleChange);
-    TrackApiUtil.fetchAllTracks();
+    TrackClientActions.fetchAllTracks();
   },
 
   componentWillUnmount: function(){
