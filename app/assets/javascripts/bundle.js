@@ -27433,11 +27433,15 @@
 	  },
 	
 	  isTrackNew: function () {
+	
 	    return this.state.track.isBlank();
 	  },
 	
 	  isDoneRecording: function () {
-	    return !this.isTrackNew && !this.state.isRecording;
+	    if (this.isTrackNew() || this.state.isRecording) {
+	      return false;
+	    }
+	    return true;
 	  },
 	
 	  recordingMessage: function () {
@@ -27641,7 +27645,9 @@
 	    $.ajax({
 	      url: '/api/tracks',
 	      method: 'POST',
-	      data: { track: trackData },
+	      data: { name: trackData.name, roll: JSON.stringify(trackData.roll) },
+	      dataType: 'json',
+	      contentType: "application/json",
 	      success: function (track) {
 	        TrackServerActions.receiveSingleTrack(track);
 	      }

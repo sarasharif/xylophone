@@ -6,7 +6,9 @@ var TrackApiUtil = {
     $.ajax({
       url: '/api/tracks',
       method: 'POST',
-      data: ({ track: trackData }),
+      data: {name: trackData.name, roll: JSON.stringify(trackData.roll) },
+      dataType: 'json',
+      contentType: "application/json",
       success: function (track) {
         TrackServerActions.receiveSingleTrack(track);
       }

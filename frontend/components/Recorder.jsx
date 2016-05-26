@@ -30,11 +30,15 @@ var Recorder = React.createClass({
   },
 
   isTrackNew: function(){
+
     return this.state.track.isBlank();
   },
 
   isDoneRecording: function(){
-    return !this.isTrackNew && !this.state.isRecording;
+    if (this.isTrackNew() || this.state.isRecording){
+      return false;
+    }
+    return true;
   },
 
   recordingMessage: function () {
@@ -82,13 +86,17 @@ var Recorder = React.createClass({
     return (
       <div>
         <h3>Record & Play Jams!</h3>
+
         <button onClick={this.handleRecordClick}>
           { this.recordingMessage() }
         </button>
-          { this.trackSavingElements() }
+
+        { this.trackSavingElements() }
+
         <button onClick={this.handlePlayClick} >
           Play
         </button>
+
       </div>
     );
   }
