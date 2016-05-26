@@ -27435,7 +27435,6 @@
 	  },
 	
 	  isTrackNew: function () {
-	
 	    return this.state.track.isBlank();
 	  },
 	
@@ -27449,8 +27448,6 @@
 	  recordingMessage: function () {
 	    if (this.isRecording()) {
 	      return "Stop Recording";
-	    } else if (this.isDoneRecording()) {
-	      return "Finished Recording";
 	    } else {
 	      return "Start Recording";
 	    }
@@ -27472,6 +27469,7 @@
 	    }
 	  },
 	
+	  //TODO reconfigure this to always show save button but only allow to save if isDoneRecording is true
 	  trackSavingElements: function () {
 	    if (this.isDoneRecording()) {
 	      return React.createElement(

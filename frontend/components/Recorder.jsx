@@ -30,25 +30,17 @@ var Recorder = React.createClass({
   },
 
   isTrackNew: function(){
-
     return this.state.track.isBlank();
   },
 
   isDoneRecording: function(){
-    if (this.isTrackNew() || this.state.isRecording){
-      return false;
-    }
+    if (this.isTrackNew() || this.state.isRecording){ return false; }
     return true;
   },
 
   recordingMessage: function () {
-    if (this.isRecording()) {
-      return "Stop Recording";
-    } else if (this.isDoneRecording()) {
-      return "Finished Recording";
-    } else {
-      return "Start Recording";
-    }
+    if (this.isRecording()) { return "Stop Recording"; }
+    else { return "Start Recording"; }
   },
 
   handleRecordClick: function(event){
@@ -67,6 +59,7 @@ var Recorder = React.createClass({
     }
   },
 
+//TODO reconfigure this to always show save button but only allow to save if isDoneRecording is true
   trackSavingElements: function () {
     if (this.isDoneRecording()) {
       return (
