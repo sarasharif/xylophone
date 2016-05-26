@@ -5223,3 +5223,1031 @@ ActionDispatch::ParamsParser::ParseError (795: unexpected token at 'name=sara&ro
   Rendered /Users/emily/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.3ms)
   Rendered /Users/emily/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
   Rendered /Users/emily/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:32:54 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 582ms (Views: 581.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:32:54 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-a955210b39be70995d1adfc5de0a0f4e86fb012cedb00649db7b499ddbf6ad1a.js?body=1" for 127.0.0.1 at 2016-05-25 20:32:55 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:32:55 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (3.0ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 7ms (Views: 1.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for 127.0.0.1 at 2016-05-25 20:32:55 -0700
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-25 20:33:12 -0700
+Error occurred while parsing request parameters.
+Contents:
+
+name=this+thing&roll=%5B%7B%22time%22%3A1210%2C%22notes%22%3A%5B%22C5%22%5D%7D%2C%7B%22time%22%3A1213%2C%22notes%22%3A%5B%22C5%22%2C%22G4%22%5D%7D%2C%7B%22time%22%3A1217%2C%22notes%22%3A%5B%22C5%22%2C%22G4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A1223%2C%22notes%22%3A%5B%22C5%22%2C%22G4%22%2C%22F4%22%2C%22C4%22%5D%7D%2C%7B%22time%22%3A1708%2C%22notes%22%3A%5B%22G4%22%2C%22F4%22%2C%22C4%22%5D%7D%2C%7B%22time%22%3A1710%2C%22notes%22%3A%5B%22F4%22%2C%22C4%22%5D%7D%2C%7B%22time%22%3A1711%2C%22notes%22%3A%5B%22C4%22%5D%7D%2C%7B%22time%22%3A1714%7D%2C%7B%22time%22%3A1808%2C%22notes%22%3A%5B%22B4%22%5D%7D%2C%7B%22time%22%3A1828%2C%22notes%22%3A%5B%22B4%22%2C%22D4%22%5D%7D%2C%7B%22time%22%3A2193%2C%22notes%22%3A%5B%22D4%22%5D%7D%2C%7B%22time%22%3A2196%2C%22notes%22%3A%5B%22D4%22%2C%22A4%22%5D%7D%2C%7B%22time%22%3A2198%2C%22notes%22%3A%5B%22A4%22%5D%7D%2C%7B%22time%22%3A2310%2C%22notes%22%3A%5B%22A4%22%2C%22G4%22%5D%7D%2C%7B%22time%22%3A2326%2C%22notes%22%3A%5B%22G4%22%5D%7D%2C%7B%22time%22%3A2546%7D%2C%7B%22time%22%3A2567%2C%22notes%22%3A%5B%22E4%22%5D%7D%2C%7B%22time%22%3A2886%2C%22notes%22%3A%5B%22E4%22%2C%22G4%22%5D%7D%2C%7B%22time%22%3A2890%2C%22notes%22%3A%5B%22G4%22%5D%7D%2C%7B%22time%22%3A3109%7D%2C%7B%22time%22%3A3140%2C%22notes%22%3A%5B%22D4%22%5D%7D%2C%7B%22time%22%3A3454%2C%22notes%22%3A%5B%22D4%22%2C%22A4%22%5D%7D%2C%7B%22time%22%3A3475%2C%22notes%22%3A%5B%22A4%22%5D%7D%2C%7B%22time%22%3A3618%7D%2C%7B%22time%22%3A3729%2C%22notes%22%3A%5B%22B4%22%5D%7D%2C%7B%22time%22%3A3896%7D%2C%7B%22time%22%3A4063%2C%22notes%22%3A%5B%22C5%22%5D%7D%2C%7B%22time%22%3A4561%2C%22notes%22%3A%5B%22C5%22%5D%7D%2C%7B%22time%22%3A4591%2C%22notes%22%3A%5B%22C5%22%5D%7D%2C%7B%22time%22%3A4622%2C%22notes%22%3A%5B%22C5%22%5D%7D%2C%7B%22time%22%3A4652%2C%22notes%22%3A%5B%22C5%22%5D%7D%2C%7B%22time%22%3A4656%7D%2C%7B%22time%22%3A5768%7D%5D
+
+ActionDispatch::ParamsParser::ParseError (795: unexpected token at 'name=this+thing&roll=%5B%7B%22time%22%3A1210%2C%22notes%22%3A%5B%22C5%22%5D%7D%2C%7B%22time%22%3A1213%2C%22notes%22%3A%5B%22C5%22%2C%22G4%22%5D%7D%2C%7B%22time%22%3A1217%2C%22notes%22%3A%5B%22C5%22%2C%22G4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A1223%2C%22notes%22%3A%5B%22C5%22%2C%22G4%22%2C%22F4%22%2C%22C4%22%5D%7D%2C%7B%22time%22%3A1708%2C%22notes%22%3A%5B%22G4%22%2C%22F4%22%2C%22C4%22%5D%7D%2C%7B%22time%22%3A1710%2C%22notes%22%3A%5B%22F4%22%2C%22C4%22%5D%7D%2C%7B%22time%22%3A1711%2C%22notes%22%3A%5B%22C4%22%5D%7D%2C%7B%22time%22%3A1714%7D%2C%7B%22time%22%3A1808%2C%22notes%22%3A%5B%22B4%22%5D%7D%2C%7B%22time%22%3A1828%2C%22notes%22%3A%5B%22B4%22%2C%22D4%22%5D%7D%2C%7B%22time%22%3A2193%2C%22notes%22%3A%5B%22D4%22%5D%7D%2C%7B%22time%22%3A2196%2C%22notes%22%3A%5B%22D4%22%2C%22A4%22%5D%7D%2C%7B%22time%22%3A2198%2C%22notes%22%3A%5B%22A4%22%5D%7D%2C%7B%22time%22%3A2310%2C%22notes%22%3A%5B%22A4%22%2C%22G4%22%5D%7D%2C%7B%22time%22%3A2326%2C%22notes%22%3A%5B%22G4%22%5D%7D%2C%7B%22time%22%3A2546%7D%2C%7B%22time%22%3A2567%2C%22notes%22%3A%5B%22E4%22%5D%7D%2C%7B%22time%22%3A2886%2C%22notes%22%3A%5B%22E4%22%2C%22G4%22%5D%7D%2C%7B%22time%22%3A2890%2C%22notes%22%3A%5B%22G4%22%5D%7D%2C%7B%22time%22%3A3109%7D%2C%7B%22time%22%3A3140%2C%22notes%22%3A%5B%22D4%22%5D%7D%2C%7B%22time%22%3A3454%2C%22notes%22%3A%5B%22D4%22%2C%22A4%22%5D%7D%2C%7B%22time%22%3A3475%2C%22notes%22%3A%5B%22A4%22%5D%7D%2C%7B%22time%22%3A3618%7D%2C%7B%22time%22%3A3729%2C%22notes%22%3A%5B%22B4%22%5D%7D%2C%7B%22time%22%3A3896%7D%2C%7B%22time%22%3A4063%2C%22notes%22%3A%5B%22C5%22%5D%7D%2C%7B%22time%22%3A4561%2C%22notes%22%3A%5B%22C5%22%5D%7D%2C%7B%22time%22%3A4591%2C%22notes%22%3A%5B%22C5%22%5D%7D%2C%7B%22time%22%3A4622%2C%22notes%22%3A%5B%22C5%22%5D%7D%2C%7B%22time%22%3A4652%2C%22notes%22%3A%5B%22C5%22%5D%7D%2C%7B%22time%22%3A4656%7D%2C%7B%22time%22%3A5768%7D%5D'):
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:53:in `rescue in parse_formatted_parameters'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:32:in `parse_formatted_parameters'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:23:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/sara2/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/sara2/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/sara2/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (12.5ms)
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:33:15 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:34:07 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 243ms (Views: 242.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:34:07 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:34:07 -0700
+
+
+Started GET "/assets/bundle.self-32af3f8d37e31aa66b511def7de692289ff1fd4a5da24c802fbb1b2fa8040a44.js?body=1" for 127.0.0.1 at 2016-05-25 20:34:07 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:34:07 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:34:07 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:34:07 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:34:07 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:34:07 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:34:07 -0700
+
+
+Started GET "/assets/bundle.self-32af3f8d37e31aa66b511def7de692289ff1fd4a5da24c802fbb1b2fa8040a44.js?body=1" for 127.0.0.1 at 2016-05-25 20:34:07 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:34:07 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:34:07 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:34:07 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:34:07 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-25 20:36:49 -0700
+Error occurred while parsing request parameters.
+Contents:
+
+name=asdf&roll=%5B%7B%22time%22%3A1433%2C%22notes%22%3A%5B%22C4%22%5D%7D%2C%7B%22time%22%3A1568%2C%22notes%22%3A%5B%22C4%22%2C%22D4%22%5D%7D%2C%7B%22time%22%3A1631%2C%22notes%22%3A%5B%22D4%22%5D%7D%2C%7B%22time%22%3A1677%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%5D%7D%2C%7B%22time%22%3A1786%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A1788%2C%22notes%22%3A%5B%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A1858%2C%22notes%22%3A%5B%22F4%22%5D%7D%2C%7B%22time%22%3A1950%7D%2C%7B%22time%22%3A1952%2C%22notes%22%3A%5B%22C4%22%5D%7D%2C%7B%22time%22%3A2091%2C%22notes%22%3A%5B%22C4%22%2C%22D4%22%5D%7D%2C%7B%22time%22%3A2170%2C%22notes%22%3A%5B%22C4%22%2C%22D4%22%2C%22E4%22%5D%7D%2C%7B%22time%22%3A2192%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%5D%7D%2C%7B%22time%22%3A2271%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A2307%2C%22notes%22%3A%5B%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A2374%2C%22notes%22%3A%5B%22F4%22%5D%7D%2C%7B%22time%22%3A2483%7D%2C%7B%22time%22%3A4150%7D%5D
+
+ActionDispatch::ParamsParser::ParseError (795: unexpected token at 'name=asdf&roll=%5B%7B%22time%22%3A1433%2C%22notes%22%3A%5B%22C4%22%5D%7D%2C%7B%22time%22%3A1568%2C%22notes%22%3A%5B%22C4%22%2C%22D4%22%5D%7D%2C%7B%22time%22%3A1631%2C%22notes%22%3A%5B%22D4%22%5D%7D%2C%7B%22time%22%3A1677%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%5D%7D%2C%7B%22time%22%3A1786%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A1788%2C%22notes%22%3A%5B%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A1858%2C%22notes%22%3A%5B%22F4%22%5D%7D%2C%7B%22time%22%3A1950%7D%2C%7B%22time%22%3A1952%2C%22notes%22%3A%5B%22C4%22%5D%7D%2C%7B%22time%22%3A2091%2C%22notes%22%3A%5B%22C4%22%2C%22D4%22%5D%7D%2C%7B%22time%22%3A2170%2C%22notes%22%3A%5B%22C4%22%2C%22D4%22%2C%22E4%22%5D%7D%2C%7B%22time%22%3A2192%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%5D%7D%2C%7B%22time%22%3A2271%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A2307%2C%22notes%22%3A%5B%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A2374%2C%22notes%22%3A%5B%22F4%22%5D%7D%2C%7B%22time%22%3A2483%7D%2C%7B%22time%22%3A4150%7D%5D'):
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:53:in `rescue in parse_formatted_parameters'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:32:in `parse_formatted_parameters'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:23:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/sara2/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/sara2/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/sara2/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (14.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:36:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:36:51 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:36:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:36:51 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:36:51 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:36:51 -0700
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:36:51 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:36:51 -0700
+
+
+Started GET "/assets/bundle.self-32af3f8d37e31aa66b511def7de692289ff1fd4a5da24c802fbb1b2fa8040a44.js?body=1" for 127.0.0.1 at 2016-05-25 20:36:51 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:36:51 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:36:51 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:36:51 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.3ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:36:58 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:36:58 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:36:58 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:36:58 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:36:58 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:36:58 -0700
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:36:58 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:36:58 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:36:58 -0700
+
+
+Started GET "/assets/bundle.self-32af3f8d37e31aa66b511def7de692289ff1fd4a5da24c802fbb1b2fa8040a44.js?body=1" for 127.0.0.1 at 2016-05-25 20:36:58 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:36:58 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:36:58 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-25 20:37:09 -0700
+Error occurred while parsing request parameters.
+Contents:
+
+name=asdf&roll=%5B%7B%22time%22%3A1510%2C%22notes%22%3A%5B%22C4%22%5D%7D%2C%7B%22time%22%3A1611%2C%22notes%22%3A%5B%22C4%22%2C%22D4%22%5D%7D%2C%7B%22time%22%3A1708%2C%22notes%22%3A%5B%22D4%22%5D%7D%2C%7B%22time%22%3A1728%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%5D%7D%2C%7B%22time%22%3A1799%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A1820%2C%22notes%22%3A%5B%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A1910%2C%22notes%22%3A%5B%22F4%22%5D%7D%2C%7B%22time%22%3A1953%2C%22notes%22%3A%5B%22F4%22%2C%22C4%22%5D%7D%2C%7B%22time%22%3A1968%2C%22notes%22%3A%5B%22C4%22%5D%7D%2C%7B%22time%22%3A2069%2C%22notes%22%3A%5B%22C4%22%2C%22D4%22%5D%7D%2C%7B%22time%22%3A2165%2C%22notes%22%3A%5B%22C4%22%2C%22D4%22%2C%22E4%22%5D%7D%2C%7B%22time%22%3A2185%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%5D%7D%2C%7B%22time%22%3A2236%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A2285%2C%22notes%22%3A%5B%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A2352%2C%22notes%22%3A%5B%22F4%22%5D%7D%2C%7B%22time%22%3A2430%7D%2C%7B%22time%22%3A2924%7D%5D
+
+ActionDispatch::ParamsParser::ParseError (795: unexpected token at 'name=asdf&roll=%5B%7B%22time%22%3A1510%2C%22notes%22%3A%5B%22C4%22%5D%7D%2C%7B%22time%22%3A1611%2C%22notes%22%3A%5B%22C4%22%2C%22D4%22%5D%7D%2C%7B%22time%22%3A1708%2C%22notes%22%3A%5B%22D4%22%5D%7D%2C%7B%22time%22%3A1728%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%5D%7D%2C%7B%22time%22%3A1799%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A1820%2C%22notes%22%3A%5B%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A1910%2C%22notes%22%3A%5B%22F4%22%5D%7D%2C%7B%22time%22%3A1953%2C%22notes%22%3A%5B%22F4%22%2C%22C4%22%5D%7D%2C%7B%22time%22%3A1968%2C%22notes%22%3A%5B%22C4%22%5D%7D%2C%7B%22time%22%3A2069%2C%22notes%22%3A%5B%22C4%22%2C%22D4%22%5D%7D%2C%7B%22time%22%3A2165%2C%22notes%22%3A%5B%22C4%22%2C%22D4%22%2C%22E4%22%5D%7D%2C%7B%22time%22%3A2185%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%5D%7D%2C%7B%22time%22%3A2236%2C%22notes%22%3A%5B%22D4%22%2C%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A2285%2C%22notes%22%3A%5B%22E4%22%2C%22F4%22%5D%7D%2C%7B%22time%22%3A2352%2C%22notes%22%3A%5B%22F4%22%5D%7D%2C%7B%22time%22%3A2430%7D%2C%7B%22time%22%3A2924%7D%5D'):
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:53:in `rescue in parse_formatted_parameters'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:32:in `parse_formatted_parameters'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:23:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/sara2/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/sara2/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/sara2/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.3ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (11.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:38:16 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 250ms (Views: 249.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-4f4c8bfd323af6b12836b8aed9eb85cef0fc6ced9e141750324f70472e48fde0.js?body=1" for 127.0.0.1 at 2016-05-25 20:38:17 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:38:17 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:38:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:38:17 -0700
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:38:17 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:38:17 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:38:17 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:38:17 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:38:17 -0700
+
+
+Started GET "/assets/bundle.self-4f4c8bfd323af6b12836b8aed9eb85cef0fc6ced9e141750324f70472e48fde0.js?body=1" for 127.0.0.1 at 2016-05-25 20:38:17 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:38:17 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:38:17 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.3ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-25 20:38:24 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"name"=>"asdf", "roll"=>"[{\"time\":589,\"notes\":[\"C4\"]},{\"time\":725,\"notes\":[\"C4\",\"D4\"]},{\"time\":822,\"notes\":[\"D4\"]},{\"time\":843,\"notes\":[\"D4\",\"E4\"]},{\"time\":935,\"notes\":[\"E4\"]},{\"time\":951,\"notes\":[\"E4\",\"F4\"]},{\"time\":1029,\"notes\":[\"F4\"]},{\"time\":1106},{\"time\":1108,\"notes\":[\"C4\"]},{\"time\":1199,\"notes\":[\"C4\",\"D4\"]},{\"time\":1289,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":1310,\"notes\":[\"D4\",\"E4\"]},{\"time\":1366,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1415,\"notes\":[\"E4\",\"F4\"]},{\"time\":1475,\"notes\":[\"F4\"]},{\"time\":1543},{\"time\":1870}]"}
+Completed 400 Bad Request in 228358ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: track):
+  app/controllers/api/tracks_controller.rb:27:in `track_params'
+  app/controllers/api/tracks_controller.rb:5:in `create'
+
+
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (10.7ms)
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-25 20:42:12 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"name"=>"asdf", "roll"=>"[{\"time\":589,\"notes\":[\"C4\"]},{\"time\":725,\"notes\":[\"C4\",\"D4\"]},{\"time\":822,\"notes\":[\"D4\"]},{\"time\":843,\"notes\":[\"D4\",\"E4\"]},{\"time\":935,\"notes\":[\"E4\"]},{\"time\":951,\"notes\":[\"E4\",\"F4\"]},{\"time\":1029,\"notes\":[\"F4\"]},{\"time\":1106},{\"time\":1108,\"notes\":[\"C4\"]},{\"time\":1199,\"notes\":[\"C4\",\"D4\"]},{\"time\":1289,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":1310,\"notes\":[\"D4\",\"E4\"]},{\"time\":1366,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1415,\"notes\":[\"E4\",\"F4\"]},{\"time\":1475,\"notes\":[\"F4\"]},{\"time\":1543},{\"time\":1870}]"}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: track):
+  app/controllers/api/tracks_controller.rb:25:in `track_params'
+  app/controllers/api/tracks_controller.rb:4:in `create'
+
+
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:42:12 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 236ms (Views: 235.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:42:13 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:42:13 -0700
+
+
+Started GET "/assets/bundle.self-6bf4be077326369143ce0b1b8d4066f3625c6f8ac4560356126e6ce23d9638de.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:13 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:42:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:13 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:13 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:13 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:13 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:13 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:42:13 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:42:13 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.3ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:42:15 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:42:15 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:42:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:15 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:42:15 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:15 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:15 -0700
+
+
+Started GET "/assets/bundle.self-6bf4be077326369143ce0b1b8d4066f3625c6f8ac4560356126e6ce23d9638de.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:15 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:15 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:15 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:42:15 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:42:15 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:42:16 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:42:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:16 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:16 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:16 -0700
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:42:16 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:42:16 -0700
+
+
+Started GET "/assets/bundle.self-6bf4be077326369143ce0b1b8d4066f3625c6f8ac4560356126e6ce23d9638de.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:16 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:16 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:42:16 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:42:17 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:42:17 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:44:21 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 255ms (Views: 254.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-25 20:44:21 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"name"=>"asdfff", "roll"=>"\"[{\\\"time\\\":370,\\\"notes\\\":[\\\"C4\\\"]},{\\\"time\\\":511,\\\"notes\\\":[\\\"C4\\\",\\\"D4\\\"]},{\\\"time\\\":614,\\\"notes\\\":[\\\"D4\\\"]},{\\\"time\\\":645,\\\"notes\\\":[\\\"D4\\\",\\\"E4\\\"]},{\\\"time\\\":814,\\\"notes\\\":[\\\"D4\\\",\\\"E4\\\",\\\"F4\\\"]},{\\\"time\\\":817,\\\"notes\\\":[\\\"E4\\\",\\\"F4\\\"]},{\\\"time\\\":911,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1311,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1340,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1369,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1403,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1448,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1465,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1493,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1522,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1556,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1587,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1622,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1648,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1677,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1706,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1737,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1770,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1800,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1829,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1859,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1888,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1918,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1948,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":1978,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":2009,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":2039,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":2069,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":2100,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":2130,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":2162,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":2192,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":2223,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":2254,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":2284,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":2316,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":2345,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":2377,\\\"notes\\\":[\\\"F4\\\"]},{\\\"time\\\":2399},{\\\"time\\\":5018}]\""}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: track):
+  app/controllers/api/tracks_controller.rb:25:in `track_params'
+  app/controllers/api/tracks_controller.rb:4:in `create'
+
+
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /home/sara2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (13.1ms)
+
+
+Started GET "/assets/bundle.self-af7afa5216d67794ebc8a431b94b8a8d2c4d310bda7304cf9233204e0c9251be.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:21 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:44:21 -0700
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:44:21 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:21 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:44:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:21 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:21 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:21 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:21 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:44:21 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:44:22 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.3ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:44:23 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:44:23 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:44:23 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:23 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:23 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:44:23 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:23 -0700
+
+
+Started GET "/assets/bundle.self-af7afa5216d67794ebc8a431b94b8a8d2c4d310bda7304cf9233204e0c9251be.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:23 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:23 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:23 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:44:23 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:44:24 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (1.8ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:44:35 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:44:35 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:44:35 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:44:35 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:35 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:35 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:35 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:35 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:35 -0700
+
+
+Started GET "/assets/bundle.self-af7afa5216d67794ebc8a431b94b8a8d2c4d310bda7304cf9233204e0c9251be.js?body=1" for 127.0.0.1 at 2016-05-25 20:44:35 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:44:35 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:44:36 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.5ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-25 20:44:45 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"track"=>{"name"=>"asdfasdf", "roll"=>"[{\"time\":1414,\"notes\":[\"C4\"]},{\"time\":1547,\"notes\":[\"C4\",\"D4\"]},{\"time\":1610,\"notes\":[\"D4\"]},{\"time\":1680,\"notes\":[\"D4\",\"E4\"]},{\"time\":1798,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1800,\"notes\":[\"E4\",\"F4\"]},{\"time\":1883,\"notes\":[\"F4\"]},{\"time\":1969,\"notes\":[\"F4\",\"C4\"]},{\"time\":1993,\"notes\":[\"C4\"]},{\"time\":2088,\"notes\":[\"C4\",\"D4\"]},{\"time\":2178,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":2208,\"notes\":[\"D4\",\"E4\"]},{\"time\":2276,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":2312,\"notes\":[\"E4\",\"F4\"]},{\"time\":2397,\"notes\":[\"F4\"]},{\"time\":2551},{\"time\":2920}]"}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "tracks" ("name", "roll", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "asdfasdf"], ["roll", "[{\"time\":1414,\"notes\":[\"C4\"]},{\"time\":1547,\"notes\":[\"C4\",\"D4\"]},{\"time\":1610,\"notes\":[\"D4\"]},{\"time\":1680,\"notes\":[\"D4\",\"E4\"]},{\"time\":1798,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1800,\"notes\":[\"E4\",\"F4\"]},{\"time\":1883,\"notes\":[\"F4\"]},{\"time\":1969,\"notes\":[\"F4\",\"C4\"]},{\"time\":1993,\"notes\":[\"C4\"]},{\"time\":2088,\"notes\":[\"C4\",\"D4\"]},{\"time\":2178,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":2208,\"notes\":[\"D4\",\"E4\"]},{\"time\":2276,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":2312,\"notes\":[\"E4\",\"F4\"]},{\"time\":2397,\"notes\":[\"F4\"]},{\"time\":2551},{\"time\":2920}]"], ["created_at", "2016-05-26 03:44:45.750497"], ["updated_at", "2016-05-26 03:44:45.750497"]]
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 21ms (Views: 0.6ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:45:11 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 239ms (Views: 239.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-5b1e5e1233660175cbbc8314bb9e701e823f4c6a7c8d12372a1c03cfbea41469.js?body=1" for 127.0.0.1 at 2016-05-25 20:45:11 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:45:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:45:11 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:45:11 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:45:11 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:45:11 -0700
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:45:11 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:45:11 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:45:11 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:45:12 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:45:12 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.4ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-25 20:45:24 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"track"=>{"name"=>"asdfasdf", "roll"=>"[{\"time\":472,\"notes\":[\"C4\"]},{\"time\":596,\"notes\":[\"C4\",\"D4\"]},{\"time\":666,\"notes\":[\"D4\"]},{\"time\":706,\"notes\":[\"D4\",\"E4\"]},{\"time\":814,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":817,\"notes\":[\"E4\",\"F4\"]},{\"time\":870,\"notes\":[\"F4\"]},{\"time\":947,\"notes\":[\"F4\",\"C4\"]},{\"time\":961,\"notes\":[\"C4\"]},{\"time\":1073,\"notes\":[\"C4\",\"D4\"]},{\"time\":1172,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":1174,\"notes\":[\"D4\",\"E4\"]},{\"time\":1238,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1263,\"notes\":[\"E4\",\"F4\"]},{\"time\":1306,\"notes\":[\"F4\"]},{\"time\":1741,\"notes\":[\"F4\"]},{\"time\":1769,\"notes\":[\"F4\"]},{\"time\":1798,\"notes\":[\"F4\"]},{\"time\":1828,\"notes\":[\"F4\"]},{\"time\":1858,\"notes\":[\"F4\"]},{\"time\":1890,\"notes\":[\"F4\"]},{\"time\":1919,\"notes\":[\"F4\"]},{\"time\":1949,\"notes\":[\"F4\"]},{\"time\":1980,\"notes\":[\"F4\"]},{\"time\":2010,\"notes\":[\"F4\"]},{\"time\":2012},{\"time\":3063,\"notes\":[\"C4\"]},{\"time\":3188,\"notes\":[\"C4\",\"D4\"]},{\"time\":3257,\"notes\":[\"D4\"]},{\"time\":3296,\"notes\":[\"D4\",\"E4\"]},{\"time\":3404,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":3408,\"notes\":[\"E4\",\"F4\"]},{\"time\":3460,\"notes\":[\"F4\"]},{\"time\":3536,\"notes\":[\"F4\",\"C4\"]},{\"time\":3552,\"notes\":[\"C4\"]},{\"time\":3664,\"notes\":[\"C4\",\"D4\"]},{\"time\":3760,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":3764,\"notes\":[\"D4\",\"E4\"]},{\"time\":3828,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":3853,\"notes\":[\"E4\",\"F4\"]},{\"time\":3896,\"notes\":[\"F4\"]},{\"time\":4328,\"notes\":[\"F4\"]},{\"time\":4357,\"notes\":[\"F4\"]},{\"time\":4388,\"notes\":[\"F4\"]},{\"time\":4416,\"notes\":[\"F4\"]},{\"time\":4448,\"notes\":[\"F4\"]},{\"time\":4480,\"notes\":[\"F4\"]},{\"time\":4508,\"notes\":[\"F4\"]},{\"time\":4536,\"notes\":[\"F4\"]},{\"time\":4568,\"notes\":[\"F4\"]},{\"time\":4600,\"notes\":[\"F4\"]},{\"time\":4604},{\"time\":4878}]"}}
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tracks" ("name", "roll", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "asdfasdf"], ["roll", "[{\"time\":472,\"notes\":[\"C4\"]},{\"time\":596,\"notes\":[\"C4\",\"D4\"]},{\"time\":666,\"notes\":[\"D4\"]},{\"time\":706,\"notes\":[\"D4\",\"E4\"]},{\"time\":814,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":817,\"notes\":[\"E4\",\"F4\"]},{\"time\":870,\"notes\":[\"F4\"]},{\"time\":947,\"notes\":[\"F4\",\"C4\"]},{\"time\":961,\"notes\":[\"C4\"]},{\"time\":1073,\"notes\":[\"C4\",\"D4\"]},{\"time\":1172,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":1174,\"notes\":[\"D4\",\"E4\"]},{\"time\":1238,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1263,\"notes\":[\"E4\",\"F4\"]},{\"time\":1306,\"notes\":[\"F4\"]},{\"time\":1741,\"notes\":[\"F4\"]},{\"time\":1769,\"notes\":[\"F4\"]},{\"time\":1798,\"notes\":[\"F4\"]},{\"time\":1828,\"notes\":[\"F4\"]},{\"time\":1858,\"notes\":[\"F4\"]},{\"time\":1890,\"notes\":[\"F4\"]},{\"time\":1919,\"notes\":[\"F4\"]},{\"time\":1949,\"notes\":[\"F4\"]},{\"time\":1980,\"notes\":[\"F4\"]},{\"time\":2010,\"notes\":[\"F4\"]},{\"time\":2012},{\"time\":3063,\"notes\":[\"C4\"]},{\"time\":3188,\"notes\":[\"C4\",\"D4\"]},{\"time\":3257,\"notes\":[\"D4\"]},{\"time\":3296,\"notes\":[\"D4\",\"E4\"]},{\"time\":3404,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":3408,\"notes\":[\"E4\",\"F4\"]},{\"time\":3460,\"notes\":[\"F4\"]},{\"time\":3536,\"notes\":[\"F4\",\"C4\"]},{\"time\":3552,\"notes\":[\"C4\"]},{\"time\":3664,\"notes\":[\"C4\",\"D4\"]},{\"time\":3760,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":3764,\"notes\":[\"D4\",\"E4\"]},{\"time\":3828,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":3853,\"notes\":[\"E4\",\"F4\"]},{\"time\":3896,\"notes\":[\"F4\"]},{\"time\":4328,\"notes\":[\"F4\"]},{\"time\":4357,\"notes\":[\"F4\"]},{\"time\":4388,\"notes\":[\"F4\"]},{\"time\":4416,\"notes\":[\"F4\"]},{\"time\":4448,\"notes\":[\"F4\"]},{\"time\":4480,\"notes\":[\"F4\"]},{\"time\":4508,\"notes\":[\"F4\"]},{\"time\":4536,\"notes\":[\"F4\"]},{\"time\":4568,\"notes\":[\"F4\"]},{\"time\":4600,\"notes\":[\"F4\"]},{\"time\":4604},{\"time\":4878}]"], ["created_at", "2016-05-26 03:46:09.730504"], ["updated_at", "2016-05-26 03:46:09.730504"]]
+  [1m[36m (7.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:47:14 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 317ms (Views: 316.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:47:15 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:47:15 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:47:15 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:47:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:47:15 -0700
+
+
+Started GET "/assets/bundle.self-5b1e5e1233660175cbbc8314bb9e701e823f4c6a7c8d12372a1c03cfbea41469.js?body=1" for 127.0.0.1 at 2016-05-25 20:47:15 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:47:15 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:47:15 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:47:15 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:47:15 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:47:15 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (1.1ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 16ms (Views: 8.4ms | ActiveRecord: 3.9ms)
+  [1m[36mTrack Load (0.3ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-25 20:47:57 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"track"=>{"name"=>"aaa", "roll"=>"[{\"time\":711,\"notes\":[\"C4\"]},{\"time\":1009},{\"time\":1112,\"notes\":[\"C4\"]},{\"time\":1380},{\"time\":1525,\"notes\":[\"C4\"]},{\"time\":2023,\"notes\":[\"C4\"]},{\"time\":2053,\"notes\":[\"C4\"]},{\"time\":2084,\"notes\":[\"C4\"]},{\"time\":2114,\"notes\":[\"C4\"]},{\"time\":2144,\"notes\":[\"C4\"]},{\"time\":2175,\"notes\":[\"C4\"]},{\"time\":2195},{\"time\":3363}]"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "tracks" ("name", "roll", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "aaa"], ["roll", "[{\"time\":711,\"notes\":[\"C4\"]},{\"time\":1009},{\"time\":1112,\"notes\":[\"C4\"]},{\"time\":1380},{\"time\":1525,\"notes\":[\"C4\"]},{\"time\":2023,\"notes\":[\"C4\"]},{\"time\":2053,\"notes\":[\"C4\"]},{\"time\":2084,\"notes\":[\"C4\"]},{\"time\":2114,\"notes\":[\"C4\"]},{\"time\":2144,\"notes\":[\"C4\"]},{\"time\":2175,\"notes\":[\"C4\"]},{\"time\":2195},{\"time\":3363}]"], ["created_at", "2016-05-26 03:47:57.632966"], ["updated_at", "2016-05-26 03:47:57.632966"]]
+  [1m[36m (7.7ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 23ms (Views: 0.8ms | ActiveRecord: 8.8ms)
+  [1m[35mTrack Load (0.6ms)[0m  SELECT "tracks".* FROM "tracks"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "tracks"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:49:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:49:51 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:49:51 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:49:51 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:49:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:49:51 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:49:51 -0700
+
+
+Started GET "/assets/bundle.self-5b1e5e1233660175cbbc8314bb9e701e823f4c6a7c8d12372a1c03cfbea41469.js?body=1" for 127.0.0.1 at 2016-05-25 20:49:51 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:49:51 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:49:51 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:49:51 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:49:51 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-25 20:50:02 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"track"=>{"name"=>"aaaa", "roll"=>"[{\"time\":731,\"notes\":[\"C4\"]},{\"time\":1232,\"notes\":[\"C4\"]},{\"time\":1263,\"notes\":[\"C4\"]},{\"time\":1293,\"notes\":[\"C4\"]},{\"time\":1323,\"notes\":[\"C4\"]},{\"time\":1354,\"notes\":[\"C4\"]},{\"time\":1387,\"notes\":[\"C4\"]},{\"time\":1415,\"notes\":[\"C4\"]},{\"time\":1445,\"notes\":[\"C4\"]},{\"time\":1475,\"notes\":[\"C4\"]},{\"time\":1506,\"notes\":[\"C4\"]},{\"time\":1536,\"notes\":[\"C4\"]},{\"time\":1569,\"notes\":[\"C4\"]},{\"time\":1602,\"notes\":[\"C4\"]},{\"time\":1636,\"notes\":[\"C4\"]},{\"time\":1643},{\"time\":3050,\"notes\":[\"C4\"]},{\"time\":3549,\"notes\":[\"C4\"]},{\"time\":3581,\"notes\":[\"C4\"]},{\"time\":3609,\"notes\":[\"C4\"]},{\"time\":3640,\"notes\":[\"C4\"]},{\"time\":3672,\"notes\":[\"C4\"]},{\"time\":3702,\"notes\":[\"C4\"]},{\"time\":3731,\"notes\":[\"C4\"]},{\"time\":3759,\"notes\":[\"C4\"]},{\"time\":3790,\"notes\":[\"C4\"]},{\"time\":3823,\"notes\":[\"C4\"]},{\"time\":3851,\"notes\":[\"C4\"]},{\"time\":3883,\"notes\":[\"C4\"]},{\"time\":3920,\"notes\":[\"C4\"]},{\"time\":3953,\"notes\":[\"C4\"]},{\"time\":3961},{\"time\":4383}]"}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tracks" ("name", "roll", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "aaaa"], ["roll", "[{\"time\":731,\"notes\":[\"C4\"]},{\"time\":1232,\"notes\":[\"C4\"]},{\"time\":1263,\"notes\":[\"C4\"]},{\"time\":1293,\"notes\":[\"C4\"]},{\"time\":1323,\"notes\":[\"C4\"]},{\"time\":1354,\"notes\":[\"C4\"]},{\"time\":1387,\"notes\":[\"C4\"]},{\"time\":1415,\"notes\":[\"C4\"]},{\"time\":1445,\"notes\":[\"C4\"]},{\"time\":1475,\"notes\":[\"C4\"]},{\"time\":1506,\"notes\":[\"C4\"]},{\"time\":1536,\"notes\":[\"C4\"]},{\"time\":1569,\"notes\":[\"C4\"]},{\"time\":1602,\"notes\":[\"C4\"]},{\"time\":1636,\"notes\":[\"C4\"]},{\"time\":1643},{\"time\":3050,\"notes\":[\"C4\"]},{\"time\":3549,\"notes\":[\"C4\"]},{\"time\":3581,\"notes\":[\"C4\"]},{\"time\":3609,\"notes\":[\"C4\"]},{\"time\":3640,\"notes\":[\"C4\"]},{\"time\":3672,\"notes\":[\"C4\"]},{\"time\":3702,\"notes\":[\"C4\"]},{\"time\":3731,\"notes\":[\"C4\"]},{\"time\":3759,\"notes\":[\"C4\"]},{\"time\":3790,\"notes\":[\"C4\"]},{\"time\":3823,\"notes\":[\"C4\"]},{\"time\":3851,\"notes\":[\"C4\"]},{\"time\":3883,\"notes\":[\"C4\"]},{\"time\":3920,\"notes\":[\"C4\"]},{\"time\":3953,\"notes\":[\"C4\"]},{\"time\":3961},{\"time\":4383}]"], ["created_at", "2016-05-26 03:50:02.151419"], ["updated_at", "2016-05-26 03:50:02.151419"]]
+  [1m[36m (4.7ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 5.0ms)
+  [1m[35mTrack Load (0.6ms)[0m  SELECT "tracks".* FROM "tracks"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "tracks"[0m
+  [1m[35mTrack Load (0.8ms)[0m  SELECT  "tracks".* FROM "tracks"  ORDER BY "tracks"."id" DESC LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:51:27 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 235ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:51:27 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:51:27 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:51:27 -0700
+
+
+Started GET "/assets/bundle.self-2cd6edc4bbab7568a525581e7d87beeaedec81064748fae399cc1f269e9662ff.js?body=1" for 127.0.0.1 at 2016-05-25 20:51:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:51:27 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:51:27 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:51:27 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:51:27 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:51:27 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:51:27 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:51:30 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.3ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-25 20:51:39 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"track"=>{"name"=>"fdsa", "roll"=>"[{\"time\":1912,\"notes\":[\"C4\"]},{\"time\":2039,\"notes\":[\"C4\",\"D4\"]},{\"time\":2166,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":2171,\"notes\":[\"D4\",\"E4\"]},{\"time\":2243,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":2263,\"notes\":[\"E4\",\"F4\"]},{\"time\":2354,\"notes\":[\"F4\"]},{\"time\":2502},{\"time\":3364}]"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tracks" ("name", "roll", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "fdsa"], ["roll", "[{\"time\":1912,\"notes\":[\"C4\"]},{\"time\":2039,\"notes\":[\"C4\",\"D4\"]},{\"time\":2166,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":2171,\"notes\":[\"D4\",\"E4\"]},{\"time\":2243,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":2263,\"notes\":[\"E4\",\"F4\"]},{\"time\":2354,\"notes\":[\"F4\"]},{\"time\":2502},{\"time\":3364}]"], ["created_at", "2016-05-26 03:51:39.396988"], ["updated_at", "2016-05-26 03:51:39.396988"]]
+  [1m[36m (10.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:51:49 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:51:49 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:51:49 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:51:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:51:49 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:51:49 -0700
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:51:49 -0700
+
+
+Started GET "/assets/bundle.self-2cd6edc4bbab7568a525581e7d87beeaedec81064748fae399cc1f269e9662ff.js?body=1" for 127.0.0.1 at 2016-05-25 20:51:49 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:51:49 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:51:49 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:51:49 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:53:15 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.6ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:53:17 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:53:17 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:53:17 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:53:17 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:53:17 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:53:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:53:17 -0700
+
+
+Started GET "/assets/bundle.self-2cd6edc4bbab7568a525581e7d87beeaedec81064748fae399cc1f269e9662ff.js?body=1" for 127.0.0.1 at 2016-05-25 20:53:17 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:53:17 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:53:17 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:53:17 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:53:19 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.4ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-25 20:53:46 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 227ms (Views: 226.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:53:46 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-25 20:53:46 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:53:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-25 20:53:46 -0700
+
+
+Started GET "/assets/application.self-a4dd085996f23b21296c894f35f83cea9a54feaa2b6c65ffbd3dd4bb2b4aba81.css?body=1" for 127.0.0.1 at 2016-05-25 20:53:46 -0700
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-25 20:53:46 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-25 20:53:46 -0700
+
+
+Started GET "/assets/bundle.self-d0a214b89cb35bb22b9409c2d2606b56dffbd3cfb5716f1c27bcdb7e2c23f541.js?body=1" for 127.0.0.1 at 2016-05-25 20:53:46 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-25 20:53:46 -0700
+
+
+Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-25 20:53:46 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-25 20:53:46 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.3ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms)

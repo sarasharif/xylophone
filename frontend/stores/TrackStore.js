@@ -35,7 +35,7 @@ TrackStore.__onDispatch = function (payload) {
   case "RESET_TRACK":
     TrackStore.resetTracks(payload.tracks);
     break;
-    
+
   default:
   }
 
