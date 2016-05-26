@@ -74,7 +74,7 @@ var Recorder = React.createClass({
   },
 
   saveTrack: function (event) {
-    this.state.track.set("name", prompt("Name your song!"));
+    this.state.track.setAttribute("name", prompt("Name your song!"));
     this.state.track.save();
   },
 

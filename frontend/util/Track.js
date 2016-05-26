@@ -78,13 +78,15 @@ Track.prototype = {
     }
   },
 
-  //TODO Add delete 
+  delete: function(){
+    TrackClientActions.deleteTrack(this.attributeDefaults);
+  },
 
-  set: function(attribute, value){
+  setAttribute: function(attribute, value){
     this.attributeDefaults[attribute] = value;
   },
 
-  get: function(attribute){
+  getAttribute: function(attribute){
     return this.attributeDefaults[attribute];
   }
 
