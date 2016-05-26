@@ -47,7 +47,7 @@ var Recorder = React.createClass({
     }
   },
 
-  recordClick: function(event){
+  handleRecordClick: function(event){
     if (this.state.isRecording) {
       this.state.track.stopRecording();
       this.setState({ isRecording: false });
@@ -57,7 +57,7 @@ var Recorder = React.createClass({
     }
   },
 
-  playClick: function(){
+  handlePlayClick: function(){
     if(!this.isTrackNew()){
       this.state.track.play();
     }
@@ -82,11 +82,11 @@ var Recorder = React.createClass({
     return (
       <div>
         <h3>Record your Jams!</h3>
-        <button onClick={this.recordClick} className="record-button">
+        <button onClick={this.handleRecordClick}>
           { this.recordingMessage() }
         </button>
         { this.trackSavingElements() }
-        <button onClick={this.playClick} >
+        <button onClick={this.handlePlayClick} >
           Play
         </button>
       </div>

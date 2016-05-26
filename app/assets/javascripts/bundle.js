@@ -27450,7 +27450,7 @@
 	    }
 	  },
 	
-	  recordClick: function (event) {
+	  handleRecordClick: function (event) {
 	    if (this.state.isRecording) {
 	      this.state.track.stopRecording();
 	      this.setState({ isRecording: false });
@@ -27460,7 +27460,7 @@
 	    }
 	  },
 	
-	  playClick: function () {
+	  handlePlayClick: function () {
 	    if (!this.isTrackNew()) {
 	      this.state.track.play();
 	    }
@@ -27492,13 +27492,13 @@
 	      ),
 	      React.createElement(
 	        'button',
-	        { onClick: this.recordClick, className: 'record-button' },
+	        { onClick: this.handleRecordClick },
 	        this.recordingMessage()
 	      ),
 	      this.trackSavingElements(),
 	      React.createElement(
 	        'button',
-	        { onClick: this.playClick },
+	        { onClick: this.handlePlayClick },
 	        'Play'
 	      )
 	    );
@@ -27711,6 +27711,7 @@
 	var React = __webpack_require__(1),
 	    TrackStore = __webpack_require__(202),
 	    TrackApiUtil = __webpack_require__(199),
+	    TrackClientActions = __webpack_require__(198),
 	    TrackPlayer = __webpack_require__(203);
 	
 	var JukeBox = React.createClass({

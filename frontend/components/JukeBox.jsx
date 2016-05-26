@@ -1,6 +1,7 @@
 var React = require('react'),
     TrackStore = require('../stores/TrackStore'),
     TrackApiUtil = require('../util/TrackApiUtil'),
+    TrackClientActions = require('../actions/TrackClientActions'),
     TrackPlayer = require('../components/TrackPlayer');
 
 var JukeBox = React.createClass({
