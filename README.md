@@ -84,13 +84,21 @@ KeyStore.__onDispatch = function(payload){
 
 A code snippet from the Flux loop Key Actions:
 ```javascript
+removeKey: function(note) {
+//all content inside curly brackets is the PAYLOAD
+  Dispatcher.dispatch({
+    actionType: 'REMOVEKEY',
+    note: note
+  });
+},
+
 addKey: function(note) {
 
   Dispatcher.dispatch({
     actionType: 'ADDKEY',
     note: note
   });
-}
+},
 ```
 
 
@@ -99,13 +107,22 @@ Xylophonica utilizes React.js components to immediately render and re-render thi
 
 A code sample from one React component for Xylophonica:
 ```javascript
-sound: function(){
-  this.currentNote = this.currentNote || new Note(Tones[this.props.note]);
+getInitialState: function(){
+  return {
+    playing: false
+  };
+},
 
-  if (this.state.playing) {
-    this.currentNote.start();
-  } else {
-    this.currentNote.stop();
-  }
-}
+componentDidMount: function(){
+  KeyStore.addListener(this.handleChange);
+},
+
+componentWillUnmount: function(){
+  this.currentNote.stop();
+},
+
+handleChange: function(){
+  this.setState({
+    playing: KeyStore.playing(this.props.note)
+  });
 ```

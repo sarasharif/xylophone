@@ -20383,12 +20383,15 @@
 	var OrganKey = React.createClass({
 	  displayName: "OrganKey",
 	
+	
 	  getInitialState: function () {
-	    return { playing: false };
+	    return {
+	      playing: false
+	    };
 	  },
 	
 	  componentDidMount: function () {
-	    KeyStore.addListener(this.updateState);
+	    KeyStore.addListener(this.handleChange);
 	  },
 	
 	  componentWillUnmount: function () {
@@ -20396,8 +20399,10 @@
 	    // this.state.notes.splice(index, 1);
 	  },
 	
-	  updateState: function () {
-	    this.setState({ playing: KeyStore.playing(this.props.note) });
+	  handleChange: function () {
+	    this.setState({
+	      playing: KeyStore.playing(this.props.note)
+	    });
 	  },
 	
 	  sound: function () {
