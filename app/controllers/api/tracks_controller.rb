@@ -15,10 +15,11 @@ class Api::TracksController < ApplicationController
     render json: @tracks
   end
 
-  def delete
+  def destroy
     @track = Track.find(params[:id])
+
     @track.destroy
-    render json: @track
+    render json: @track, status: 200
   end
 
   private

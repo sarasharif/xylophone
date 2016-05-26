@@ -31,13 +31,12 @@ var TrackPlayer = React.createClass({
 // this.state.track.play in playTrack
   playTrack: function() {
     var track = new Track (this.props.track);
-    
     track.play();
   },
 
   deleteTrack: function(event){
     event.preventDefault();
-    TrackClientActions.deleteTrack(this.props.track.id);
+    TrackClientActions.deleteTrack(parseInt(this.props.track.id));
   },
 
   render: function() {

@@ -10,15 +10,13 @@ var React = require("react"),
 var Organ = React.createClass({
 
   render: function() {
-    var i = 0;
 
     return (
       <div>
         <div className="organ">
           {
             Object.keys(TONES).map(function(tone){
-            i++;
-            return <OrganKey note={tone} key={i}/>;
+            return <OrganKey note={tone} />;
             })
           }
         </div>

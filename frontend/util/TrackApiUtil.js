@@ -15,12 +15,16 @@ var TrackApiUtil = {
     });
   },
 
-  destroyTrack: function (id) {
+  deleteTrack: function (id) {
+
     $.ajax({
       url: "api/tracks/" + id,
       type: "DELETE",
       success: function (track) {
         TrackServerActions.removeTrack(track);
+      },
+      error: function(data){
+        debugger
       }
     });
   },

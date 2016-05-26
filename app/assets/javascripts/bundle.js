@@ -20358,7 +20358,6 @@
 	
 	
 	  render: function () {
-	    var i = 0;
 	
 	    return React.createElement(
 	      "div",
@@ -20367,8 +20366,7 @@
 	        "div",
 	        { className: "organ" },
 	        Object.keys(TONES).map(function (tone) {
-	          i++;
-	          return React.createElement(OrganKey, { note: tone, key: i });
+	          return React.createElement(OrganKey, { note: tone });
 	        })
 	      ),
 	      React.createElement(Recorder, null),
@@ -27622,7 +27620,7 @@
 	  },
 	
 	  deleteTrack: function (id) {
-	    TrackApiUtil.destroyTrack(id);
+	    TrackApiUtil.deleteTrack(id);
 	  },
 	
 	  fetchAllTracks: function () {
@@ -27658,12 +27656,16 @@
 	    });
 	  },
 	
-	  destroyTrack: function (id) {
+	  deleteTrack: function (id) {
+	
 	    $.ajax({
 	      url: "api/tracks/" + id,
 	      type: "DELETE",
 	      success: function (track) {
 	        TrackServerActions.removeTrack(track);
+	      },
+	      error: function (data) {
+	        debugger;
 	      }
 	    });
 	  },
@@ -27880,13 +27882,12 @@
 	  // this.state.track.play in playTrack
 	  playTrack: function () {
 	    var track = new Track(this.props.track);
-	
 	    track.play();
 	  },
 	
 	  deleteTrack: function (event) {
 	    event.preventDefault();
-	    TrackClientActions.deleteTrack(this.props.track.id);
+	    TrackClientActions.deleteTrack(parseInt(this.props.track.id));
 	  },
 	
 	  render: function () {
