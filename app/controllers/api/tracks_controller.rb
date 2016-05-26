@@ -10,6 +10,11 @@ class Api::TracksController < ApplicationController
     end
   end
 
+  def show
+    @track = Track.find(params[:id])
+    render json: @track
+  end
+
   def index
     @tracks = Track.all
     render json: @tracks

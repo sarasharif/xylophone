@@ -27666,9 +27666,7 @@
 	      success: function (track) {
 	        TrackServerActions.removeTrack(track);
 	      },
-	      error: function (data) {
-	        debugger;
-	      }
+	      error: function (data) {}
 	    });
 	  },
 	
@@ -27764,7 +27762,7 @@
 	  },
 	
 	  render: function () {
-	
+	    var trackUpdate = this.getTracks;
 	    return React.createElement(
 	      'div',
 	      null,
@@ -27774,7 +27772,7 @@
 	        'XYLOPHONE JAMS JUKEBOX'
 	      ),
 	      this.state.tracks.map(function (track) {
-	        return React.createElement(TrackPlayer, { key: track.id, track: track });
+	        return React.createElement(TrackPlayer, { key: track.id, track: track, trackUpdate: trackUpdate });
 	      })
 	    );
 	  }
@@ -27817,7 +27815,10 @@
 	};
 	
 	TrackStore.removeTrack = function (track) {
-	  var index = _tracks.indexOf(track);
+	  // var index = parseInt(_tracks.indexOf(track));
+	  _tracks;
+	  var found = this.find(track.id);
+	  var index = _tracks.indexOf(found);
 	  _tracks.splice(index, 1);
 	};
 	
@@ -27858,13 +27859,13 @@
 	var TrackPlayer = React.createClass({
 	  displayName: "TrackPlayer",
 	
-	  //
+	
 	  // getInitialState: function(){
 	  //   return({
 	  //     track: TrackStore.find(this.props.track.id)
 	  //   })
 	  // },
-	  //
+	
 	  // componentDidMount: function(){
 	  //   this.trackListener = TrackStore.addListener(this.getTrack);
 	  //   TrackClientActions.fetchSingleTrack(this.props.track.id);
@@ -27880,16 +27881,16 @@
 	  //   });
 	  // },
 	
-	  //tried using above code to make state with pulled out track and then
-	  // this.state.track.play in playTrack
+	  //creating state causes console errors in the JukeBox component
+	
 	  playTrack: function () {
 	    var track = new Track(this.props.track);
 	    track.play();
 	  },
 	
-	  deleteTrack: function (event) {
-	    event.preventDefault();
+	  deleteTrack: function () {
 	    TrackClientActions.deleteTrack(parseInt(this.props.track.id));
+	    this.props.trackUpdate();
 	  },
 	
 	  render: function () {

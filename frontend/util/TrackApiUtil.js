@@ -24,7 +24,6 @@ var TrackApiUtil = {
         TrackServerActions.removeTrack(track);
       },
       error: function(data){
-        debugger
       }
     });
   },
