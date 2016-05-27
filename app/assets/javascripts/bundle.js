@@ -27790,12 +27790,12 @@
 	      React.createElement(
 	        "button",
 	        { title: "play", onClick: this.playTrack },
-	        React.createElement("i", { className: "fa fa-play-circle-o" })
+	        React.createElement("i", { className: "fa fa-play-circle" })
 	      ),
 	      React.createElement(
 	        "button",
 	        { title: "delete", onClick: this.deleteTrack },
-	        React.createElement("i", { className: "fa fa-trash-o" })
+	        React.createElement("i", { className: "fa fa-trash" })
 	      )
 	    );
 	  }
@@ -27829,7 +27829,6 @@
 	
 	  componentWillUnmount: function () {
 	    this.currentNote.stop();
-	    // this.state.notes.splice(index, 1);
 	  },
 	
 	  handleChange: function () {
@@ -27855,9 +27854,15 @@
 	      var classy = "ivory";
 	    }
 	
+	    if (this.state.playing === true) {
+	      var klass = " active";
+	    } else {
+	      var klass = " inactive";
+	    }
+	
 	    return React.createElement(
 	      "div",
-	      { className: classy },
+	      { className: classy + klass },
 	      React.createElement("div", { className: "top-nail" }),
 	      React.createElement("div", { className: "bottom-nail" })
 	    );

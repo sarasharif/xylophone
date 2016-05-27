@@ -18,7 +18,6 @@ var OrganKey = React.createClass({
 
   componentWillUnmount: function(){
     this.currentNote.stop();
-      // this.state.notes.splice(index, 1);
   },
 
   handleChange: function(){
@@ -44,8 +43,14 @@ var OrganKey = React.createClass({
       var classy = "ivory";
     }
 
+    if (this.state.playing === true) {
+      var klass = " active";
+    } else {
+      var klass = " inactive";
+    }
+
     return (
-      <div className={classy}>
+      <div className={classy + klass}>
         <div className="top-nail"></div>
 
         <div className="bottom-nail"></div>
