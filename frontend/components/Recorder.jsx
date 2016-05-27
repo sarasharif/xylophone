@@ -38,11 +38,13 @@ var Recorder = React.createClass({
     return true;
   },
 
-  //TODO we will actually refactor/change this function to render
-  //clear/red depending on recording/not recording
+
   recordingMessage: function () {
-    if (this.isRecording()) { return <i className="fa fa-dot-circle-o turn-red"></i>; }
-    else { return <i className="fa fa-dot-circle-o"></i>; }
+    if (this.isRecording()) {
+      return <i className="fa fa-circle fa-stack-1x turn-red"></i>;
+    } else {
+      return <i className="fa fa-circle fa-stack-1x"></i>;
+    }
   },
 
   handleRecordClick: function(event){
@@ -61,7 +63,6 @@ var Recorder = React.createClass({
     }
   },
 
-//TODO reconfigure this to always show save button but only allow to save if isDoneRecording is true
   trackSavingElements: function () {
     if (this.isDoneRecording()) {
       return (
@@ -84,16 +85,17 @@ var Recorder = React.createClass({
   render: function () {
     return (
       <div className="recorder-buttons">
-        <button title="RECORD" onClick={this.handleRecordClick}>
+        <button className="fa-stack" title="RECORD" onClick={this.handleRecordClick}>
+          <i className="fa fa-circle-o fa-stack-1x"></i>
           { this.recordingMessage() }
         </button>
 
-        <button title="PLAY" onClick={this.handlePlayClick} >
-          <i className="fa fa-play-circle-o"></i>
+        <button className="fa-stack" title="PLAY" onClick={this.handlePlayClick} >
+          <i className="fa fa-play-circle-o fa-stack-1x"></i>
         </button>
 
-        <button title="SAVE" onClick={this.saveTrack} >
-          <i className="fa fa-floppy-o"></i>
+        <button className="fa-stack" title="SAVE" onClick={this.saveTrack} >
+          <i className="fa fa-floppy-o fa-stack-1x"></i>
         </button>
       </div>
     );

@@ -20431,13 +20431,11 @@
 	    return true;
 	  },
 	
-	  //TODO we will actually refactor/change this function to render
-	  //clear/red depending on recording/not recording
 	  recordingMessage: function () {
 	    if (this.isRecording()) {
-	      return React.createElement('i', { className: 'fa fa-dot-circle-o turn-red' });
+	      return React.createElement('i', { className: 'fa fa-circle fa-stack-1x turn-red' });
 	    } else {
-	      return React.createElement('i', { className: 'fa fa-dot-circle-o' });
+	      return React.createElement('i', { className: 'fa fa-circle fa-stack-1x' });
 	    }
 	  },
 	
@@ -20457,7 +20455,6 @@
 	    }
 	  },
 	
-	  //TODO reconfigure this to always show save button but only allow to save if isDoneRecording is true
 	  trackSavingElements: function () {
 	    if (this.isDoneRecording()) {
 	      return React.createElement(
@@ -20483,18 +20480,19 @@
 	      { className: 'recorder-buttons' },
 	      React.createElement(
 	        'button',
-	        { title: 'RECORD', onClick: this.handleRecordClick },
+	        { className: 'fa-stack', title: 'RECORD', onClick: this.handleRecordClick },
+	        React.createElement('i', { className: 'fa fa-circle-o fa-stack-1x' }),
 	        this.recordingMessage()
 	      ),
 	      React.createElement(
 	        'button',
-	        { title: 'PLAY', onClick: this.handlePlayClick },
-	        React.createElement('i', { className: 'fa fa-play-circle-o' })
+	        { className: 'fa-stack', title: 'PLAY', onClick: this.handlePlayClick },
+	        React.createElement('i', { className: 'fa fa-play-circle-o fa-stack-1x' })
 	      ),
 	      React.createElement(
 	        'button',
-	        { title: 'SAVE', onClick: this.saveTrack },
-	        React.createElement('i', { className: 'fa fa-floppy-o' })
+	        { className: 'fa-stack', title: 'SAVE', onClick: this.saveTrack },
+	        React.createElement('i', { className: 'fa fa-floppy-o fa-stack-1x' })
 	      )
 	    );
 	  }

@@ -128,13 +128,14 @@ h1 {
   display: flex;
   position: relative;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: -70px;
   width: 100%;
 }
 
 .recorder-buttons {
   display: flex;
   justify-content: space-around;
+  align-content: center
   width: 60%;
 }
 
@@ -200,6 +201,10 @@ button {
 
 button:hover {
   color: gray;
+}
+
+.fa-circle {
+  font-size: 30px !important;
 }
 
 .turn-red {
