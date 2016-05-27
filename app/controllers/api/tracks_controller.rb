@@ -1,8 +1,10 @@
+require 'byebug'
+
 class Api::TracksController < ApplicationController
 
   def create
     @track = Track.new(track_params)
-
+    @track.name = @track.name.titleize
     if @track.save
       render json: @track
     else

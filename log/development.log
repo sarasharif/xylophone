@@ -19463,3 +19463,226 @@ Processing by Api::TracksController#create as JSON
   [1m[36m (10.1ms)[0m  [1mCOMMIT[0m
 Completed 200 OK in 18ms (Views: 0.6ms | ActiveRecord: 10.6ms)
 >>>>>>> styling
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-27 09:30:37 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 291ms (Views: 290.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-27 09:30:38 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.5ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 17ms (Views: 11.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-27 09:30:40 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 09:30:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-27 09:30:40 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 09:30:40 -0700
+
+
+Started GET "/assets/bundle.self-6f122736ba461bc65cd9cae15fbe5843ecd8c3f3cc46b4bd1b17ec1330fc0f25.js?body=1" for 127.0.0.1 at 2016-05-27 09:30:40 -0700
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 09:30:40 -0700
+
+
+Started GET "/assets/application.self-bcbd2fb8c8c3af349c3629c7f1dbbc9c3b8697d7e331bd8efe953606f851d7a6.css?body=1" for 127.0.0.1 at 2016-05-27 09:30:40 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 09:30:40 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-27 09:30:40 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-27 09:30:40 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-27 09:30:41 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for 127.0.0.1 at 2016-05-27 09:30:41 -0700
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-27 09:31:19 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"track"=>{"name"=>"things", "roll"=>"[{\"time\":81,\"notes\":[\"E4\",\"D4\"]},{\"time\":152,\"notes\":[\"D4\"]},{\"time\":403,\"notes\":[\"C5\"]},{\"time\":430,\"notes\":[\"C5\"]},{\"time\":461,\"notes\":[\"C5\"]},{\"time\":480},{\"time\":531,\"notes\":[\"C4\"]},{\"time\":545,\"notes\":[\"B4\"]},{\"time\":554},{\"time\":562,\"notes\":[\"C4\"]},{\"time\":645,\"notes\":[\"C4\",\"D4\"]},{\"time\":747,\"notes\":[\"D4\"]},{\"time\":779,\"notes\":[\"D4\",\"E4\"]},{\"time\":928,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":932,\"notes\":[\"E4\",\"F4\"]},{\"time\":1018},{\"time\":1030},{\"time\":1043,\"notes\":[\"B4\"]},{\"time\":1075,\"notes\":[\"B4\"]},{\"time\":1091},{\"time\":1211},{\"time\":1235,\"notes\":[\"C5\"]},{\"time\":1494,\"notes\":[\"C5\"]},{\"time\":1664},{\"time\":1786,\"notes\":[\"A4\"]},{\"time\":1979},{\"time\":1998,\"notes\":[\"C5\"]},{\"time\":2027,\"notes\":[\"C5\"]},{\"time\":2058,\"notes\":[\"C5\"]},{\"time\":2074},{\"time\":2143,\"notes\":[\"B4\"]},{\"time\":2151,\"notes\":[\"G4\"]},{\"time\":2642,\"notes\":[\"B4\"]},{\"time\":2647,\"notes\":[\"G4\"]},{\"time\":2674,\"notes\":[\"B4\"]},{\"time\":2677,\"notes\":[\"G4\"]},{\"time\":2690},{\"time\":2711,\"notes\":[\"G4\"]},{\"time\":2741,\"notes\":[\"G4\"]},{\"time\":2771,\"notes\":[\"G4\"]},{\"time\":2799,\"notes\":[\"G4\"]},{\"time\":2828},{\"time\":2831,\"notes\":[\"C5\"]},{\"time\":2834,\"notes\":[\"F4\"]},{\"time\":2918}]"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tracks" ("name", "roll", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "things"], ["roll", "[{\"time\":81,\"notes\":[\"E4\",\"D4\"]},{\"time\":152,\"notes\":[\"D4\"]},{\"time\":403,\"notes\":[\"C5\"]},{\"time\":430,\"notes\":[\"C5\"]},{\"time\":461,\"notes\":[\"C5\"]},{\"time\":480},{\"time\":531,\"notes\":[\"C4\"]},{\"time\":545,\"notes\":[\"B4\"]},{\"time\":554},{\"time\":562,\"notes\":[\"C4\"]},{\"time\":645,\"notes\":[\"C4\",\"D4\"]},{\"time\":747,\"notes\":[\"D4\"]},{\"time\":779,\"notes\":[\"D4\",\"E4\"]},{\"time\":928,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":932,\"notes\":[\"E4\",\"F4\"]},{\"time\":1018},{\"time\":1030},{\"time\":1043,\"notes\":[\"B4\"]},{\"time\":1075,\"notes\":[\"B4\"]},{\"time\":1091},{\"time\":1211},{\"time\":1235,\"notes\":[\"C5\"]},{\"time\":1494,\"notes\":[\"C5\"]},{\"time\":1664},{\"time\":1786,\"notes\":[\"A4\"]},{\"time\":1979},{\"time\":1998,\"notes\":[\"C5\"]},{\"time\":2027,\"notes\":[\"C5\"]},{\"time\":2058,\"notes\":[\"C5\"]},{\"time\":2074},{\"time\":2143,\"notes\":[\"B4\"]},{\"time\":2151,\"notes\":[\"G4\"]},{\"time\":2642,\"notes\":[\"B4\"]},{\"time\":2647,\"notes\":[\"G4\"]},{\"time\":2674,\"notes\":[\"B4\"]},{\"time\":2677,\"notes\":[\"G4\"]},{\"time\":2690},{\"time\":2711,\"notes\":[\"G4\"]},{\"time\":2741,\"notes\":[\"G4\"]},{\"time\":2771,\"notes\":[\"G4\"]},{\"time\":2799,\"notes\":[\"G4\"]},{\"time\":2828},{\"time\":2831,\"notes\":[\"C5\"]},{\"time\":2834,\"notes\":[\"F4\"]},{\"time\":2918}]"], ["created_at", "2016-05-27 16:34:11.103998"], ["updated_at", "2016-05-27 16:34:11.103998"]]
+  [1m[35m (11.4ms)[0m  COMMIT
+Completed 200 OK in 171809ms (Views: 0.7ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-27 09:34:30 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 168ms (Views: 168.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bcbd2fb8c8c3af349c3629c7f1dbbc9c3b8697d7e331bd8efe953606f851d7a6.css?body=1" for 127.0.0.1 at 2016-05-27 09:34:30 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-27 09:34:30 -0700
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 09:34:30 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 09:34:30 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 09:34:30 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-27 09:34:30 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 09:34:30 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-27 09:34:30 -0700
+
+
+Started GET "/assets/bundle.self-6f122736ba461bc65cd9cae15fbe5843ecd8c3f3cc46b4bd1b17ec1330fc0f25.js?body=1" for 127.0.0.1 at 2016-05-27 09:34:30 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-27 09:34:30 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.5ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for 127.0.0.1 at 2016-05-27 09:34:31 -0700
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-27 09:34:42 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"track"=>{"name"=>"hihih hi", "roll"=>"[{\"time\":291,\"notes\":[\"C4\"]},{\"time\":441,\"notes\":[\"C4\",\"D4\"]},{\"time\":500,\"notes\":[\"D4\"]},{\"time\":545,\"notes\":[\"D4\",\"E4\"]},{\"time\":675,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":680,\"notes\":[\"E4\",\"F4\"]},{\"time\":740,\"notes\":[\"F4\"]},{\"time\":871},{\"time\":877,\"notes\":[\"C4\"]},{\"time\":959,\"notes\":[\"C4\",\"D4\"]},{\"time\":1071,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":1087,\"notes\":[\"D4\",\"E4\"]},{\"time\":1140,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1186,\"notes\":[\"E4\",\"F4\"]},{\"time\":1246,\"notes\":[\"F4\"]},{\"time\":1348},{\"time\":3824}]"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tracks" ("name", "roll", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "hihih hi"], ["roll", "[{\"time\":291,\"notes\":[\"C4\"]},{\"time\":441,\"notes\":[\"C4\",\"D4\"]},{\"time\":500,\"notes\":[\"D4\"]},{\"time\":545,\"notes\":[\"D4\",\"E4\"]},{\"time\":675,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":680,\"notes\":[\"E4\",\"F4\"]},{\"time\":740,\"notes\":[\"F4\"]},{\"time\":871},{\"time\":877,\"notes\":[\"C4\"]},{\"time\":959,\"notes\":[\"C4\",\"D4\"]},{\"time\":1071,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":1087,\"notes\":[\"D4\",\"E4\"]},{\"time\":1140,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1186,\"notes\":[\"E4\",\"F4\"]},{\"time\":1246,\"notes\":[\"F4\"]},{\"time\":1348},{\"time\":3824}]"], ["created_at", "2016-05-27 16:34:42.066596"], ["updated_at", "2016-05-27 16:34:42.066596"]]
+  [1m[36m (10.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-27 09:35:03 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 09:35:03 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 09:35:03 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-27 09:35:03 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-27 09:35:03 -0700
+
+
+Started GET "/assets/application.self-bcbd2fb8c8c3af349c3629c7f1dbbc9c3b8697d7e331bd8efe953606f851d7a6.css?body=1" for 127.0.0.1 at 2016-05-27 09:35:03 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 09:35:03 -0700
+
+
+Started GET "/assets/bundle.self-6f122736ba461bc65cd9cae15fbe5843ecd8c3f3cc46b4bd1b17ec1330fc0f25.js?body=1" for 127.0.0.1 at 2016-05-27 09:35:03 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 09:35:03 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-27 09:35:03 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-27 09:35:03 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.3ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for 127.0.0.1 at 2016-05-27 09:35:03 -0700
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-27 09:35:12 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"track"=>{"name"=>"this thing this", "roll"=>"[{\"time\":434,\"notes\":[\"C4\"]},{\"time\":566,\"notes\":[\"C4\",\"D4\"]},{\"time\":604,\"notes\":[\"D4\"]},{\"time\":670,\"notes\":[\"D4\",\"E4\"]},{\"time\":743,\"notes\":[\"E4\"]},{\"time\":791,\"notes\":[\"E4\",\"F4\"]},{\"time\":836,\"notes\":[\"F4\"]},{\"time\":906,\"notes\":[\"F4\",\"C4\"]},{\"time\":938,\"notes\":[\"C4\"]},{\"time\":1007,\"notes\":[\"C4\",\"D4\"]},{\"time\":1101,\"notes\":[\"D4\"]},{\"time\":1127,\"notes\":[\"D4\",\"E4\"]},{\"time\":1235,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1240,\"notes\":[\"E4\",\"F4\"]},{\"time\":1281,\"notes\":[\"F4\"]},{\"time\":1382},{\"time\":1387,\"notes\":[\"C4\"]},{\"time\":1452,\"notes\":[\"C4\",\"D4\"]},{\"time\":1552,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":1557,\"notes\":[\"D4\",\"E4\"]},{\"time\":1600,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1638,\"notes\":[\"E4\",\"F4\"]},{\"time\":1685,\"notes\":[\"F4\"]},{\"time\":1765},{\"time\":1967}]"}}
+  [1m[36mTrack Load (0.5ms)[0m  [1mSELECT  "tracks".* FROM "tracks"  ORDER BY "tracks"."id" ASC LIMIT 1[0m
+  [1m[35mTrack Load (0.3ms)[0m  SELECT  "tracks".* FROM "tracks"  ORDER BY "tracks"."id" ASC LIMIT 1
+  [1m[36mTrack Load (0.5ms)[0m  [1mSELECT  "tracks".* FROM "tracks"  ORDER BY "tracks"."id" ASC LIMIT 1[0m
+  [1m[35mTrack Load (0.6ms)[0m  SELECT  "tracks".* FROM "tracks"  ORDER BY "tracks"."id" ASC LIMIT 1
+  [1m[36mTrack Load (0.4ms)[0m  [1mSELECT  "tracks".* FROM "tracks"  ORDER BY "tracks"."id" ASC LIMIT 1[0m
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tracks" ("name", "roll", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "this thing this"], ["roll", "[{\"time\":434,\"notes\":[\"C4\"]},{\"time\":566,\"notes\":[\"C4\",\"D4\"]},{\"time\":604,\"notes\":[\"D4\"]},{\"time\":670,\"notes\":[\"D4\",\"E4\"]},{\"time\":743,\"notes\":[\"E4\"]},{\"time\":791,\"notes\":[\"E4\",\"F4\"]},{\"time\":836,\"notes\":[\"F4\"]},{\"time\":906,\"notes\":[\"F4\",\"C4\"]},{\"time\":938,\"notes\":[\"C4\"]},{\"time\":1007,\"notes\":[\"C4\",\"D4\"]},{\"time\":1101,\"notes\":[\"D4\"]},{\"time\":1127,\"notes\":[\"D4\",\"E4\"]},{\"time\":1235,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1240,\"notes\":[\"E4\",\"F4\"]},{\"time\":1281,\"notes\":[\"F4\"]},{\"time\":1382},{\"time\":1387,\"notes\":[\"C4\"]},{\"time\":1452,\"notes\":[\"C4\",\"D4\"]},{\"time\":1552,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":1557,\"notes\":[\"D4\",\"E4\"]},{\"time\":1600,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1638,\"notes\":[\"E4\",\"F4\"]},{\"time\":1685,\"notes\":[\"F4\"]},{\"time\":1765},{\"time\":1967}]"], ["created_at", "2016-05-27 16:37:29.273631"], ["updated_at", "2016-05-27 16:37:29.273631"]]
+  [1m[36m (7.7ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 136806ms (Views: 0.5ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-27 09:37:33 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 09:37:33 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-27 09:37:33 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 09:37:33 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 09:37:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-27 09:37:33 -0700
+
+
+Started GET "/assets/application.self-bcbd2fb8c8c3af349c3629c7f1dbbc9c3b8697d7e331bd8efe953606f851d7a6.css?body=1" for 127.0.0.1 at 2016-05-27 09:37:33 -0700
+
+
+Started GET "/assets/bundle.self-6f122736ba461bc65cd9cae15fbe5843ecd8c3f3cc46b4bd1b17ec1330fc0f25.js?body=1" for 127.0.0.1 at 2016-05-27 09:37:33 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 09:37:33 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-27 09:37:33 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-27 09:37:33 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.5ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for 127.0.0.1 at 2016-05-27 09:37:33 -0700
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-27 09:37:41 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"track"=>{"name"=>"he hi sl", "roll"=>"[{\"time\":859,\"notes\":[null]},{\"time\":916,\"notes\":[null]},{\"time\":993},{\"time\":1039},{\"time\":1056,\"notes\":[\"Ab4\"]},{\"time\":1093},{\"time\":1460,\"notes\":[\"C4\"]},{\"time\":1586,\"notes\":[\"C4\",\"D4\"]},{\"time\":1652,\"notes\":[\"D4\"]},{\"time\":1692,\"notes\":[\"D4\",\"E4\"]},{\"time\":1824,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1832,\"notes\":[\"E4\",\"F4\"]},{\"time\":1902,\"notes\":[\"F4\"]},{\"time\":1959,\"notes\":[\"F4\",\"C4\"]},{\"time\":1980,\"notes\":[\"C4\"]},{\"time\":2058,\"notes\":[\"C4\",\"D4\"]},{\"time\":2161,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":2170,\"notes\":[\"D4\",\"E4\"]},{\"time\":2246,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":2276,\"notes\":[\"E4\",\"F4\"]},{\"time\":2314,\"notes\":[\"F4\"]},{\"time\":2393},{\"time\":3414}]"}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tracks" ("name", "roll", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "He Hi Sl"], ["roll", "[{\"time\":859,\"notes\":[null]},{\"time\":916,\"notes\":[null]},{\"time\":993},{\"time\":1039},{\"time\":1056,\"notes\":[\"Ab4\"]},{\"time\":1093},{\"time\":1460,\"notes\":[\"C4\"]},{\"time\":1586,\"notes\":[\"C4\",\"D4\"]},{\"time\":1652,\"notes\":[\"D4\"]},{\"time\":1692,\"notes\":[\"D4\",\"E4\"]},{\"time\":1824,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1832,\"notes\":[\"E4\",\"F4\"]},{\"time\":1902,\"notes\":[\"F4\"]},{\"time\":1959,\"notes\":[\"F4\",\"C4\"]},{\"time\":1980,\"notes\":[\"C4\"]},{\"time\":2058,\"notes\":[\"C4\",\"D4\"]},{\"time\":2161,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":2170,\"notes\":[\"D4\",\"E4\"]},{\"time\":2246,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":2276,\"notes\":[\"E4\",\"F4\"]},{\"time\":2314,\"notes\":[\"F4\"]},{\"time\":2393},{\"time\":3414}]"], ["created_at", "2016-05-27 16:37:41.924928"], ["updated_at", "2016-05-27 16:37:41.924928"]]
+  [1m[36m (4.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 5.1ms)
