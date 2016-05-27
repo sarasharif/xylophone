@@ -23637,3 +23637,123 @@ Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df
 
 
 Started GET "/assets/bundle.js.map" for 127.0.0.1 at 2016-05-27 15:29:21 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-27 15:33:38 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5e1525b19b01b36c9c44562693d171edc53ef9c5248283c0e0688b78eb2514d0.css?body=1" for 127.0.0.1 at 2016-05-27 15:33:39 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-27 15:33:39 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-27 15:33:39 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+
+
+Started GET "/assets/application.self-5e1525b19b01b36c9c44562693d171edc53ef9c5248283c0e0688b78eb2514d0.css?body=1" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+
+
+Started GET "/assets/bundle.self-ac68ffafb5871b487cce5ffbb4a4ce266086cfd0e0c9fe80e333c16118820dfb.js?body=1" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5e1525b19b01b36c9c44562693d171edc53ef9c5248283c0e0688b78eb2514d0.css?body=1" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-27 15:33:40 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 15:33:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-27 15:33:41 -0700
+
+
+Started GET "/assets/bundle.self-ac68ffafb5871b487cce5ffbb4a4ce266086cfd0e0c9fe80e333c16118820dfb.js?body=1" for 127.0.0.1 at 2016-05-27 15:33:41 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 15:33:41 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-27 15:33:41 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-27 15:33:41 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-27 15:33:41 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for 127.0.0.1 at 2016-05-27 15:33:41 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-27 15:33:41 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-27 15:33:41 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for 127.0.0.1 at 2016-05-27 15:33:41 -0700

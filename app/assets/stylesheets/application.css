@@ -135,8 +135,8 @@ h1 {
 .recorder-buttons {
   display: flex;
   justify-content: space-around;
-  align-content: center
-  width: 60%;
+  align-content: center;
+  width: 60%
 }
 
 .recorder-buttons * {
