@@ -19782,3 +19782,174 @@ Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for 127.0.0.1 at 2016-05-27 09:45:56 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-27 09:50:37 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 09:50:37 -0700
+
+
+Started GET "/assets/application.self-bcbd2fb8c8c3af349c3629c7f1dbbc9c3b8697d7e331bd8efe953606f851d7a6.css?body=1" for 127.0.0.1 at 2016-05-27 09:50:37 -0700
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 09:50:37 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-27 09:50:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-27 09:50:37 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 09:50:37 -0700
+
+
+Started GET "/assets/bundle.self-6f122736ba461bc65cd9cae15fbe5843ecd8c3f3cc46b4bd1b17ec1330fc0f25.js?body=1" for 127.0.0.1 at 2016-05-27 09:50:37 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 09:50:37 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-27 09:50:37 -0700
+
+
+Started GET "/api/tracks" for 127.0.0.1 at 2016-05-27 09:50:37 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.3ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for 127.0.0.1 at 2016-05-27 09:50:37 -0700
+
+
+Started DELETE "/api/tracks/9" for 127.0.0.1 at 2016-05-27 09:50:41 -0700
+Processing by Api::TracksController#destroy as JSON
+  Parameters: {"id"=>"9"}
+  [1m[35mTrack Load (0.3ms)[0m  SELECT  "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = $1  [["id", 9]]
+  [1m[36m (8.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 33ms (Views: 1.1ms | ActiveRecord: 8.9ms)
+
+
+Started DELETE "/api/tracks/10" for 127.0.0.1 at 2016-05-27 09:50:41 -0700
+Processing by Api::TracksController#destroy as JSON
+  Parameters: {"id"=>"10"}
+  [1m[35mTrack Load (0.4ms)[0m  SELECT  "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = $1  [["id", 10]]
+  [1m[36m (12.9ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 17ms (Views: 0.6ms | ActiveRecord: 13.7ms)
+
+
+Started DELETE "/api/tracks/11" for 127.0.0.1 at 2016-05-27 09:50:41 -0700
+Processing by Api::TracksController#destroy as JSON
+  Parameters: {"id"=>"11"}
+  [1m[35mTrack Load (0.5ms)[0m  SELECT  "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = $1  [["id", 11]]
+  [1m[36m (11.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 17ms (Views: 0.6ms | ActiveRecord: 12.3ms)
+
+
+Started DELETE "/api/tracks/13" for 127.0.0.1 at 2016-05-27 09:50:42 -0700
+Processing by Api::TracksController#destroy as JSON
+  Parameters: {"id"=>"13"}
+  [1m[35mTrack Load (0.2ms)[0m  SELECT  "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = $1  [["id", 13]]
+  [1m[36m (10.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 10.7ms)
+
+
+Started DELETE "/api/tracks/14" for 127.0.0.1 at 2016-05-27 09:50:42 -0700
+Processing by Api::TracksController#destroy as JSON
+  Parameters: {"id"=>"14"}
+  [1m[35mTrack Load (0.3ms)[0m  SELECT  "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT 1  [["id", 14]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = $1  [["id", 14]]
+  [1m[36m (10.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 11.2ms)
+
+
+Started DELETE "/api/tracks/15" for 127.0.0.1 at 2016-05-27 09:50:42 -0700
+Processing by Api::TracksController#destroy as JSON
+  Parameters: {"id"=>"15"}
+  [1m[35mTrack Load (0.2ms)[0m  SELECT  "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = $1  [["id", 15]]
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 4.9ms)
+
+
+Started DELETE "/api/tracks/16" for 127.0.0.1 at 2016-05-27 09:50:44 -0700
+Processing by Api::TracksController#destroy as JSON
+  Parameters: {"id"=>"16"}
+  [1m[35mTrack Load (0.2ms)[0m  SELECT  "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = $1  [["id", 16]]
+  [1m[36m (10.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.6ms | ActiveRecord: 10.5ms)
+
+
+Started DELETE "/api/tracks/17" for 127.0.0.1 at 2016-05-27 09:50:44 -0700
+Processing by Api::TracksController#destroy as JSON
+  Parameters: {"id"=>"17"}
+  [1m[35mTrack Load (0.2ms)[0m  SELECT  "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT 1  [["id", 17]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = $1  [["id", 17]]
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 8ms (Views: 2.5ms | ActiveRecord: 4.7ms)
+
+
+Started DELETE "/api/tracks/18" for 127.0.0.1 at 2016-05-27 09:50:45 -0700
+Processing by Api::TracksController#destroy as JSON
+  Parameters: {"id"=>"18"}
+  [1m[35mTrack Load (0.2ms)[0m  SELECT  "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT 1  [["id", 18]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = $1  [["id", 18]]
+  [1m[36m (10.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.7ms | ActiveRecord: 10.7ms)
+
+
+Started DELETE "/api/tracks/19" for 127.0.0.1 at 2016-05-27 09:50:46 -0700
+Processing by Api::TracksController#destroy as JSON
+  Parameters: {"id"=>"19"}
+  [1m[35mTrack Load (0.2ms)[0m  SELECT  "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT 1  [["id", 19]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = $1  [["id", 19]]
+  [1m[36m (10.6ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 11.0ms)
+
+
+Started DELETE "/api/tracks/20" for 127.0.0.1 at 2016-05-27 09:50:47 -0700
+Processing by Api::TracksController#destroy as JSON
+  Parameters: {"id"=>"20"}
+  [1m[35mTrack Load (0.3ms)[0m  SELECT  "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT 1  [["id", 20]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = $1  [["id", 20]]
+  [1m[36m (10.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 11.7ms)
+
+
+Started DELETE "/api/tracks/21" for 127.0.0.1 at 2016-05-27 09:50:47 -0700
+Processing by Api::TracksController#destroy as JSON
+  Parameters: {"id"=>"21"}
+  [1m[35mTrack Load (0.2ms)[0m  SELECT  "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT 1  [["id", 21]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = $1  [["id", 21]]
+  [1m[36m (10.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.8ms | ActiveRecord: 10.4ms)
+
+
+Started POST "/api/tracks" for 127.0.0.1 at 2016-05-27 09:50:53 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"track"=>{"name"=>"hi hi", "roll"=>"[{\"time\":253,\"notes\":[\"C4\"]},{\"time\":368,\"notes\":[\"C4\",\"D4\"]},{\"time\":435,\"notes\":[\"D4\"]},{\"time\":469,\"notes\":[\"D4\",\"E4\"]},{\"time\":561,\"notes\":[\"E4\"]},{\"time\":577,\"notes\":[\"E4\",\"F4\"]},{\"time\":639,\"notes\":[\"F4\"]},{\"time\":717,\"notes\":[\"F4\",\"C4\"]},{\"time\":748,\"notes\":[\"C4\"]},{\"time\":812,\"notes\":[\"C4\",\"D4\"]},{\"time\":911,\"notes\":[\"D4\"]},{\"time\":944,\"notes\":[\"D4\",\"E4\"]},{\"time\":1006,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1028,\"notes\":[\"E4\",\"F4\"]},{\"time\":1107,\"notes\":[\"F4\"]},{\"time\":1184,\"notes\":[\"F4\",\"C4\"]},{\"time\":1210,\"notes\":[\"C4\"]},{\"time\":1254,\"notes\":[\"C4\",\"D4\"]},{\"time\":1363,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":1365,\"notes\":[\"D4\",\"E4\"]},{\"time\":1419,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1464,\"notes\":[\"E4\",\"F4\"]},{\"time\":1503,\"notes\":[\"F4\"]},{\"time\":1574},{\"time\":1883}]"}}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tracks" ("name", "roll", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hi Hi"], ["roll", "[{\"time\":253,\"notes\":[\"C4\"]},{\"time\":368,\"notes\":[\"C4\",\"D4\"]},{\"time\":435,\"notes\":[\"D4\"]},{\"time\":469,\"notes\":[\"D4\",\"E4\"]},{\"time\":561,\"notes\":[\"E4\"]},{\"time\":577,\"notes\":[\"E4\",\"F4\"]},{\"time\":639,\"notes\":[\"F4\"]},{\"time\":717,\"notes\":[\"F4\",\"C4\"]},{\"time\":748,\"notes\":[\"C4\"]},{\"time\":812,\"notes\":[\"C4\",\"D4\"]},{\"time\":911,\"notes\":[\"D4\"]},{\"time\":944,\"notes\":[\"D4\",\"E4\"]},{\"time\":1006,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1028,\"notes\":[\"E4\",\"F4\"]},{\"time\":1107,\"notes\":[\"F4\"]},{\"time\":1184,\"notes\":[\"F4\",\"C4\"]},{\"time\":1210,\"notes\":[\"C4\"]},{\"time\":1254,\"notes\":[\"C4\",\"D4\"]},{\"time\":1363,\"notes\":[\"C4\",\"D4\",\"E4\"]},{\"time\":1365,\"notes\":[\"D4\",\"E4\"]},{\"time\":1419,\"notes\":[\"D4\",\"E4\",\"F4\"]},{\"time\":1464,\"notes\":[\"E4\",\"F4\"]},{\"time\":1503,\"notes\":[\"F4\"]},{\"time\":1574},{\"time\":1883}]"], ["created_at", "2016-05-27 16:50:53.695635"], ["updated_at", "2016-05-27 16:50:53.695635"]]
+  [1m[35m (7.8ms)[0m  COMMIT
+Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 8.1ms)
