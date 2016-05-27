@@ -1,0 +1,311 @@
+[33mcommit 27cde93f2873c5ca50cf3d4487cd6e88619841aa[m
+Author: Sara <sara@sharif.com>
+Date:   Fri May 27 09:38:55 2016 -0700
+
+    titleize track names
+
+[33mcommit 479c8a075e069894392d288a76eb16781db4ca67[m
+Author: Sara <sara@sharif.com>
+Date:   Thu May 26 16:51:46 2016 -0700
+
+    styles
+
+[33mcommit da98053a95bedfdaefdd6d082b21b740fa80deaf[m
+Author: Sara <sara@sharif.com>
+Date:   Thu May 26 15:10:07 2016 -0700
+
+    styling
+
+[33mcommit e937de1a97bd339d21183132e0a7e8910ecdded4[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Thu May 26 14:42:13 2016 -0700
+
+    save button persists and throws error for empty song
+
+[33mcommit 7c3b53f3db2dd2dd779c603aac68edf71ebeb797[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Thu May 26 14:25:26 2016 -0700
+
+    small fixes
+
+[33mcommit 8a07b34910e8ef9d0e624ed7dccb711993e9985a[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Thu May 26 14:15:12 2016 -0700
+
+    Fixing start/stop playing bugs
+
+[33mcommit 6d38cf4f961aaefc99e4c260bb80acdf1462fd27[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Thu May 26 13:50:52 2016 -0700
+
+    fix delete and track store bug
+
+[33mcommit 189db0c1577bd39ba484d5d9bb98afa06d18e7f8[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Thu May 26 11:20:20 2016 -0700
+
+    mapping key console error fix
+
+[33mcommit 1f129442cd214e295c3e97d8687bc7ceee91cae4[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Thu May 26 11:11:27 2016 -0700
+
+    fix controller bug
+
+[33mcommit f57dc4ff754ac971a1f3bea5c38ec40520b9a4b5[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Thu May 26 10:51:01 2016 -0700
+
+    add index to mapping in organ to fix console error
+
+[33mcommit 3349e4de094dcad54865b26da3045cdf25c17f27[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Thu May 26 08:59:49 2016 -0700
+
+    fix play bug in TrackPlayer
+
+[33mcommit 9ee08a029f17f585d55287c34f5e99d07ac9b7ab[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 23:28:32 2016 -0700
+
+    remove debugger
+
+[33mcommit 24b68708f99e4254d9121561a53bc764115d862d[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 23:27:20 2016 -0700
+
+    squashing Track Store bugs
+
+[33mcommit 66a7813e332d5425b1784b3afec61bfb08079492[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 23:07:25 2016 -0700
+
+    remove extra jsx file
+
+[33mcommit 36c0f9fd82f556800743cb3bcc36468b8171dab2[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 23:04:43 2016 -0700
+
+    remove debugger
+
+[33mcommit 92a8fe42302364949f9c531067abd8208988694d[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 23:01:21 2016 -0700
+
+    remove debugger
+
+[33mcommit cd9cfc8b5621f7040429c272c178e7af51a8ebe7[m
+Author: Sara <sara@sharif.com>
+Date:   Wed May 25 20:58:17 2016 -0700
+
+    stringify track roll for database compliance
+
+[33mcommit e264ab7137d4cd12e834790380461c6eacb3d783[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 20:23:52 2016 -0700
+
+    fix finish recording
+
+[33mcommit e8e2fbca374dc03bfc367922ec506de1bed0b67f[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 19:41:30 2016 -0700
+
+    fixing function calls
+
+[33mcommit 52652dc1326dc09b4aa363417ef9d68f92f91b2a[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 19:37:53 2016 -0700
+
+    refactor recorder
+
+[33mcommit 357fe0b2b16f5857c5e99e3664ea2b05fb27cd36[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 19:28:08 2016 -0700
+
+    naming
+
+[33mcommit 0bd90858f9336fbe06e1b08156f7526fdd222910[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 19:18:31 2016 -0700
+
+    TrackServerActions
+
+[33mcommit ab45545cf6e1799ecf6c359f19157ec3b0d08149[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 19:14:49 2016 -0700
+
+    fix KeyStore.groupUpdate and TrackApiUtil.fetchAllTracks
+
+[33mcommit 6d262e133299fe4d30571749615a59100698d900[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 19:05:52 2016 -0700
+
+    remove references to requiring jquery in react/flux
+
+[33mcommit e180d4aea0fb998e379cd8049894c4fd34ae3788[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 17:35:59 2016 -0700
+
+    fix emitChange
+
+[33mcommit 47d39053766d4490312bc815845b3b8622e9f094[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 17:34:00 2016 -0700
+
+    naming conventions
+
+[33mcommit a44ae4e1549e1d085c20cfe04e50d6de1094a6f3[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 17:30:38 2016 -0700
+
+    readme update
+
+[33mcommit 738af473ea46b6bd4bc5aa668f97fb7035e05209[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 17:26:01 2016 -0700
+
+    add references to api util and actions
+
+[33mcommit 19ea831e5ecaecddb18dfb8214a824ec9e993928[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 17:23:59 2016 -0700
+
+    migrations
+
+[33mcommit d58c5defd88955e15a350b92decac7bc089649d7[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 17:18:00 2016 -0700
+
+    jukebox component, trackplayer component, track get attribute and set attribute function update, recorder component update
+
+[33mcommit b1d0ce8441be8b52efcc196b24d213e7d267ec74[m
+Author: Sara <sara@sharif.com>
+Date:   Wed May 25 17:17:09 2016 -0700
+
+    change favicon
+
+[33mcommit 87e2a100a9033e8ceed8f67de8cfeb1160a4c359[m
+Author: Sara <sara@sharif.com>
+Date:   Wed May 25 17:09:33 2016 -0700
+
+    add favicon
+
+[33mcommit 215e67984e5b3d8495d9d045b8a44873d89510a0[m
+Author: Sara <sara@sharif.com>
+Date:   Wed May 25 16:42:14 2016 -0700
+
+    organize utils and actions for Tracks
+
+[33mcommit 8da0215b5fe2025e8f648f42de27114f82307edd[m
+Author: Sara <sara@sharif.com>
+Date:   Wed May 25 15:53:21 2016 -0700
+
+    add routes
+
+[33mcommit 8cbddc797fa60e2310ea81512f67512c6a470cbf[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 16:30:14 2016 -0700
+
+    track, keyactions, recorder component, trackstore
+
+[33mcommit ac39e37dac8964afb67092d65bc164dbdac20e6a[m
+Author: Sara <sara@sharif.com>
+Date:   Wed May 25 15:46:35 2016 -0700
+
+    set up track backend
+
+[33mcommit 9887dc93fbef5ef262715618d1d7a94dec7cb58d[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 13:12:47 2016 -0700
+
+    create recorder component, update track util
+
+[33mcommit de6a491bc91cfa1f468ae58ee50b7890f3e1931a[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 12:36:09 2016 -0700
+
+    add util/Track.js to represent recorded songs
+
+[33mcommit e0f5094bcf708a9bd467b29cc161823d9809f2a0[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 12:18:13 2016 -0700
+
+    readme
+
+[33mcommit 05316e3f9b4a601d3cc2a883138cdfc8e8598760[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 12:15:42 2016 -0700
+
+    readme
+
+[33mcommit f32a727a92acf379250e49ebb2ad4f7358226d51[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 12:12:23 2016 -0700
+
+    styling, npm, gitignore
+
+[33mcommit 4bf37b531688033f3ccfab83b765158795427040[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 11:35:04 2016 -0700
+
+    styling
+
+[33mcommit a4780509652f88abe5fc4d84050038d1f63787a4[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 10:59:52 2016 -0700
+
+    readme
+
+[33mcommit cf1c063b40db5c5a41d02066524c2bcc326f7859[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 10:57:45 2016 -0700
+
+    readme
+
+[33mcommit 5dd7db2476287f87746fee284a4e6b1025c1f1db[m
+Author: emariew <emariewestfall@gmail.com>
+Date:   Wed May 25 10:52:27 2016 -0700
+
+    readme
+
+[33mcommit 933122e59ce54138c2c9c069a911d4709cceaa38[m
+Author: Sara <sara@sharif.com>
+Date:   Tue May 24 23:56:23 2016 -0700
+
+    postgres
+
+[33mcommit c1ade01053f18abad186858022d936abd04272d4[m
+Author: Sara <sara@sharif.com>
+Date:   Tue May 24 23:45:53 2016 -0700
+
+    ughhh
+
+[33mcommit 044c08f85d309774284bee7ddd36e4dfb0733c90[m
+Author: Sara <sara@sharif.com>
+Date:   Tue May 24 23:30:23 2016 -0700
+
+    bundled gems
+
+[33mcommit 3788683a259e50a69330664f64c1358fb6d65b50[m
+Author: Sara <sara@sharif.com>
+Date:   Tue May 24 23:28:32 2016 -0700
+
+    fix gemfile
+
+[33mcommit 2a40d4ba9fbb553a60882f449c585c0141fc5089[m
+Author: Sara <sara@sharif.com>
+Date:   Tue May 24 23:26:56 2016 -0700
+
+    update for assets on heroku
+
+[33mcommit 2cdb3dea13563f3f419b0d3f190176a16879f139[m
+Author: Sara <sara@sharif.com>
+Date:   Mon May 23 02:32:53 2016 -0700
+
+    transfer files
+
+[33mcommit 676321cb6563e0e8e1b79e20656ec5a0009abe89[m
+Author: Sara <sara@sharif.com>
+Date:   Mon May 23 02:30:27 2016 -0700
+
+    first commit
