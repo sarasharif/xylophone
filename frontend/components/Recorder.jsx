@@ -82,6 +82,10 @@ var Recorder = React.createClass({
     }
   },
 
+  stopTrack: function (event) {
+    window.location.reload();
+  },
+
   render: function () {
     return (
       <div className="recorder-buttons">
@@ -96,6 +100,10 @@ var Recorder = React.createClass({
 
         <button className="fa-stack" title="SAVE" onClick={this.saveTrack} >
           <i className="fa fa-floppy-o fa-stack-1x"></i>
+        </button>
+
+        <button className="fa-stack" title="STOP" onClick={this.stopTrack} >
+          <i className="fa fa-stop fa-stack-1x"></i>
         </button>
       </div>
     );

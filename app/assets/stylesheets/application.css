@@ -28,7 +28,7 @@ h1, h3 {
 
  h3 {
    font-family: 'Raleway', sans-serif;
-   font-size: 15px;
+   font-size: 20px;
  }
 
 * {
@@ -139,6 +139,7 @@ h1, h3 {
 
 .recorder-buttons {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-content: center;
   width: 60%

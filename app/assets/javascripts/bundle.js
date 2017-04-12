@@ -20462,6 +20462,10 @@
 	    }
 	  },
 	
+	  stopTrack: function (event) {
+	    window.location.reload();
+	  },
+	
 	  render: function () {
 	    return React.createElement(
 	      'div',
@@ -20481,6 +20485,11 @@
 	        'button',
 	        { className: 'fa-stack', title: 'SAVE', onClick: this.saveTrack },
 	        React.createElement('i', { className: 'fa fa-floppy-o fa-stack-1x' })
+	      ),
+	      React.createElement(
+	        'button',
+	        { className: 'fa-stack', title: 'STOP', onClick: this.stopTrack },
+	        React.createElement('i', { className: 'fa fa-stop fa-stack-1x' })
 	      )
 	    );
 	  }

@@ -24034,3 +24034,306 @@ Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for ::1 at 2017-04-12 15:20:50 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:25:08 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 53ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-90d551ef6e306fcf1f25c02872a3fac9f34c7798dcfc2bd732664192816aae20.css?body=1" for ::1 at 2017-04-12 15:25:08 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:25:09 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for ::1 at 2017-04-12 15:25:09 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:33:06 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 345ms (Views: 345.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-67a2ad13dbec3436ded837907273ff2defdda58f2e9ce18626b68f143e1189ae.js?body=1" for ::1 at 2017-04-12 15:33:07 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:33:07 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for ::1 at 2017-04-12 15:33:07 -0700
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-12 15:33:10 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:38:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 225ms (Views: 224.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-48c66f551ab705b41e72eff95b9e206885eacfd2ba7b195ec734166c9e939480.js?body=1" for ::1 at 2017-04-12 15:38:51 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:38:52 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.8ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-12 15:38:52 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:41:30 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 260ms (Views: 259.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-f3ecfc7b6ec4854b482f24bf6cc171cd1cd77dd5679b036c8ef962621d623671.js?body=1" for ::1 at 2017-04-12 15:41:30 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:41:31 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-12 15:41:31 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:43:09 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 220ms (Views: 219.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-f7d6bde3150a5f4b6b134df58208c2a9ab14957f985cf9d84b5973e19a58547f.js?body=1" for ::1 at 2017-04-12 15:43:10 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:43:10 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-12 15:43:10 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:43:14 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:43:14 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-12 15:43:14 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:43:17 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:43:18 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-12 15:43:18 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:43:38 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:43:38 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-12 15:43:38 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:47:14 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-51bdefedc7d03039c97044d4c1a127e5d1c5a85b0123acdc74d54ca54331f311.css?body=1" for ::1 at 2017-04-12 15:47:14 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:47:15 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-12 15:47:15 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:47:16 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:47:17 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-12 15:47:17 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:47:44 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-244c6dd0b462d1d5cf1e93169897c4894df88897d9218c6240772945e4094052.css?body=1" for ::1 at 2017-04-12 15:47:44 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:47:44 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-12 15:47:44 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:48:07 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 82ms (Views: 81.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-79a7e1394786f69a97f491a44b8d853dd78af632b12108b803d4aaf608d5aabc.css?body=1" for ::1 at 2017-04-12 15:48:07 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:48:07 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-12 15:48:07 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:48:09 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:48:09 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-12 15:48:09 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:49:14 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 225ms (Views: 225.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-d6694f125f4900542c7484dd4ff245d85fc207692878e6102488a83171c42ce2.js?body=1" for ::1 at 2017-04-12 15:49:15 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:49:15 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-12 15:49:15 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:49:25 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 242ms (Views: 242.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-bc645ca4889c3c24adc2256e9f768e86db956b6a628ee050dc596379cb720ea3.js?body=1" for ::1 at 2017-04-12 15:49:26 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:49:26 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-12 15:49:26 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:49:42 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 233ms (Views: 232.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-3691f35b08f8b0081ddc9babb0dc277b013b772065fe03bf5c9581f9c6bccdb7.js?body=1" for ::1 at 2017-04-12 15:49:42 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:49:42 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-12 15:49:42 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:49:58 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:49:58 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-12 15:49:59 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:49:59 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[36mTrack Load (0.4ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for ::1 at 2017-04-12 15:49:59 -0700
