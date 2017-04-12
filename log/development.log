@@ -23757,3 +23757,64 @@ Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for 127.0.0.1 at 2016-05-27 15:33:41 -0700
+
+
+Started GET "/" for ::1 at 2017-04-12 15:07:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (19.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 950ms (Views: 949.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/tracks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-12 15:07:47 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-12 15:07:47 -0700
+
+
+Started GET "/assets/application.self-5e1525b19b01b36c9c44562693d171edc53ef9c5248283c0e0688b78eb2514d0.css?body=1" for ::1 at 2017-04-12 15:07:47 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-12 15:07:47 -0700
+
+
+Started GET "/assets/bundle.self-ac68ffafb5871b487cce5ffbb4a4ce266086cfd0e0c9fe80e333c16118820dfb.js?body=1" for ::1 at 2017-04-12 15:07:47 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-12 15:07:47 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:07:48 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (3.4ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 17ms (Views: 5.8ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for ::1 at 2017-04-12 15:07:49 -0700
+
+
+Started POST "/api/tracks" for ::1 at 2017-04-12 15:09:14 -0700
+Processing by Api::TracksController#create as JSON
+  Parameters: {"track"=>{"name"=>"Finally", "roll"=>"[{\"time\":596,\"notes\":[\"D4\"]},{\"time\":779},{\"time\":997,\"notes\":[\"E4\"]},{\"time\":1196},{\"time\":1396,\"notes\":[\"F4\"]},{\"time\":1627},{\"time\":1781,\"notes\":[\"G4\"]},{\"time\":1963},{\"time\":2148,\"notes\":[\"C4\"]},{\"time\":2411},{\"time\":2557,\"notes\":[\"D4\"]},{\"time\":2804},{\"time\":2932,\"notes\":[\"E4\"]},{\"time\":3148},{\"time\":3276,\"notes\":[\"F4\"]},{\"time\":3430,\"notes\":[\"F4\",\"G4\"]},{\"time\":3445,\"notes\":[\"G4\"]},{\"time\":3531},{\"time\":4269,\"notes\":[\"D4\"]},{\"time\":4485,\"notes\":[\"D4\",\"B4\"]},{\"time\":4487,\"notes\":[\"B4\"]},{\"time\":4636,\"notes\":[\"B4\",\"D4\"]},{\"time\":4642,\"notes\":[\"D4\"]},{\"time\":4780,\"notes\":[\"D4\",\"B4\"]},{\"time\":4795,\"notes\":[\"B4\"]},{\"time\":4949,\"notes\":[\"B4\",\"D4\"]},{\"time\":4964,\"notes\":[\"D4\"]},{\"time\":5139},{\"time\":6185}]"}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (13.4ms)[0m  INSERT INTO "tracks" ("name", "roll", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "Finally"], ["roll", "[{\"time\":596,\"notes\":[\"D4\"]},{\"time\":779},{\"time\":997,\"notes\":[\"E4\"]},{\"time\":1196},{\"time\":1396,\"notes\":[\"F4\"]},{\"time\":1627},{\"time\":1781,\"notes\":[\"G4\"]},{\"time\":1963},{\"time\":2148,\"notes\":[\"C4\"]},{\"time\":2411},{\"time\":2557,\"notes\":[\"D4\"]},{\"time\":2804},{\"time\":2932,\"notes\":[\"E4\"]},{\"time\":3148},{\"time\":3276,\"notes\":[\"F4\"]},{\"time\":3430,\"notes\":[\"F4\",\"G4\"]},{\"time\":3445,\"notes\":[\"G4\"]},{\"time\":3531},{\"time\":4269,\"notes\":[\"D4\"]},{\"time\":4485,\"notes\":[\"D4\",\"B4\"]},{\"time\":4487,\"notes\":[\"B4\"]},{\"time\":4636,\"notes\":[\"B4\",\"D4\"]},{\"time\":4642,\"notes\":[\"D4\"]},{\"time\":4780,\"notes\":[\"D4\",\"B4\"]},{\"time\":4795,\"notes\":[\"B4\"]},{\"time\":4949,\"notes\":[\"B4\",\"D4\"]},{\"time\":4964,\"notes\":[\"D4\"]},{\"time\":5139},{\"time\":6185}]"], ["created_at", "2017-04-12 22:09:14.799150"], ["updated_at", "2017-04-12 22:09:14.799150"]]
+  [1m[36m (9.6ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 34ms (Views: 0.5ms | ActiveRecord: 23.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-12 15:10:42 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 310ms (Views: 310.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-51d9c0a6ce2ceb18e88cadcdfd69ec941fb14af2bf45ac2fd40e88e2d4073906.js?body=1" for ::1 at 2017-04-12 15:10:42 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-12 15:10:43 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for ::1 at 2017-04-12 15:10:43 -0700

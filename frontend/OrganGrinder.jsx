@@ -5,18 +5,7 @@ var ReactDOM = require('react-dom');
 var Organ = require('./components/Organ');
 require('./util/KeyListener');
 
-// var OrganGrinder = React.createClass({
-//   render: function(){
-//     return(
-//       <div>
-//         < Organ />
-//         <div>HI EYE LOVE MUSIC</div>
-//       </div>
-//     );
-//   }
-// });
 
-//
 document.addEventListener("DOMContentLoaded", function () {
   ReactDOM.render(<Organ />, document.getElementById('content'));
 });

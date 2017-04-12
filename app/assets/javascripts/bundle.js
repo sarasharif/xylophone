@@ -51,18 +51,6 @@
 	var Organ = __webpack_require__(168);
 	__webpack_require__(203);
 	
-	// var OrganGrinder = React.createClass({
-	//   render: function(){
-	//     return(
-	//       <div>
-	//         < Organ />
-	//         <div>HI EYE LOVE MUSIC</div>
-	//       </div>
-	//     );
-	//   }
-	// });
-	
-	//
 	document.addEventListener("DOMContentLoaded", function () {
 	  ReactDOM.render(React.createElement(Organ, null), document.getElementById('content'));
 	});
