@@ -20,10 +20,15 @@
   justify-content: center;
 }
 
-h1 {
+h1, h3 {
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
   font-size: 50px;
+ }
+
+ h3 {
+   font-family: 'Raleway', sans-serif;
+   font-size: 15px;
  }
 
 * {
@@ -209,4 +214,8 @@ button:hover {
 
 .turn-red {
   color: #CC0000;
+}
+
+.tag-line {
+  padding-bottom: 30px;
 }
