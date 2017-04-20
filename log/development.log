@@ -24337,3 +24337,31 @@ Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
 
 
 Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for ::1 at 2017-04-12 15:49:59 -0700
+
+
+Started GET "/" for ::1 at 2017-04-14 09:11:26 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (7.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 491ms (Views: 490.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-79a7e1394786f69a97f491a44b8d853dd78af632b12108b803d4aaf608d5aabc.css?body=1" for ::1 at 2017-04-14 09:11:26 -0700
+
+
+Started GET "/assets/api/tracks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-14 09:11:26 -0700
+
+
+Started GET "/assets/bundle.self-3691f35b08f8b0081ddc9babb0dc277b013b772065fe03bf5c9581f9c6bccdb7.js?body=1" for ::1 at 2017-04-14 09:11:26 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-14 09:11:26 -0700
+
+
+Started GET "/api/tracks" for ::1 at 2017-04-14 09:11:27 -0700
+Processing by Api::TracksController#index as JSON
+  [1m[35mTrack Load (6.0ms)[0m  SELECT "tracks".* FROM "tracks"
+Completed 200 OK in 23ms (Views: 5.4ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/assets/favicon-9e5ba5f1d0fcd55a2480010e268c80cbbe756d32987c3f380df54a5ff94c0a13.ico" for ::1 at 2017-04-14 09:11:28 -0700
